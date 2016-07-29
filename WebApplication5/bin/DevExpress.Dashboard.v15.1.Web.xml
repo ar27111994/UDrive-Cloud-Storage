@@ -1,0 +1,1905 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>DevExpress.Dashboard.v15.1.Web</name>
+    </assembly>
+    <members>
+        <member name="T:DevExpress.DashboardWeb.DashboardItemExportOptions">
+
+            <summary>
+                <para>Contains settings that specify export parameters related to individual dashboard items.
+
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.DashboardWeb.DashboardItemExportOptions.#ctor(DevExpress.DashboardWeb.DocumentContentExportOptions)">
+            <summary>
+                <para>Initializes a new instance of the DashboardItemExportOptions class.
+</para>
+            </summary>
+            <param name="options">
+		A <see cref="T:DevExpress.DashboardWeb.DocumentContentExportOptions"/> containing options specific to exporting additional content. 
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.DashboardWeb.DashboardItemExportOptions.Assign(DevExpress.DashboardWeb.OptionsBase)">
+            <summary>
+                <para>Copies settings of the specified object to the current object.
+</para>
+            </summary>
+            <param name="options">
+		An <see cref="T:DevExpress.DashboardWeb.OptionsBase"/> descendant whose settings are copied to the current object. 
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.DashboardWeb.DashboardItemExportOptions.IncludeCaption">
+            <summary>
+                <para>Gets or sets whether a dashboard item caption(s) is included on the exported page.
+
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.Utils.DefaultBoolean"/> value that specifies whether a dashboard item caption(s) is included on the exported page.
+
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.DashboardWeb.DashboardTheme">
+
+            <summary>
+                <para>Lists values that specify dashboard themes.
+</para>
+            </summary>
+
+        </member>
+        <member name="F:DevExpress.DashboardWeb.DashboardTheme.Dark">
+            <summary>
+                <para>The Dark theme is used to paint the dashboard.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.DashboardWeb.DashboardTheme.Light">
+            <summary>
+                <para>The Light theme is used to paint the dashboard.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="T:DevExpress.DashboardWeb.Localization.DashboardWebStringId">
+
+            <summary>
+                <para>Lists values corresponding to strings that can be localized. 
+</para>
+            </summary>
+
+        </member>
+        <member name="F:DevExpress.DashboardWeb.Localization.DashboardWebStringId.IncompatibleBrowser">
+            <summary>
+                <para><b>Default value</b>: Dashboard Viewer: The current browser version is not supported.Currently, the following browsers are supported: Internet Explorer 9, Chrome, Safari, FireFox, Opera, Android 3+.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="T:DevExpress.DashboardWeb.DocumentContentExportOptions">
+
+            <summary>
+                <para>Contains options specific to exporting additional content.
+
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.DashboardWeb.DocumentContentExportOptions.#ctor">
+            <summary>
+                <para>Initializes a new instance of the DocumentContentExportOptions class.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.DashboardWeb.DocumentContentExportOptions.Assign(DevExpress.DashboardWeb.OptionsBase)">
+            <summary>
+                <para>Copies settings of the specified object to the current object.
+</para>
+            </summary>
+            <param name="options">
+		An <see cref="T:DevExpress.DashboardWeb.OptionsBase"/> descendant whose settings are copied to the current object. 
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.DashboardWeb.DocumentContentExportOptions.FilterState">
+            <summary>
+                <para>Gets or sets the filter state's location on the exported document.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.DashboardWeb.DashboardExportFilterState"/> object that specifies the filter state's location on the exported document.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.DashboardWeb.DocumentContentExportOptions.ShowTitle">
+            <summary>
+                <para>Gets or sets whether a dashboard title (or dashboard item's caption) is included as the exported document title. 
+
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.Utils.DefaultBoolean"/> value that specifies whether a dashboard title (or dashboard item's caption) is included as the exported document title.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.DashboardWeb.DashboardExportFilterState">
+
+            <summary>
+                <para>Lists values that specify the filter state's location on the exported document.
+</para>
+            </summary>
+
+        </member>
+        <member name="F:DevExpress.DashboardWeb.DashboardExportFilterState.Below">
+            <summary>
+                <para>The filter state is placed below the dashboard (dashboard item) in the exported document.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.DashboardWeb.DashboardExportFilterState.None">
+            <summary>
+                <para>The filter state is not included in the exported document.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.DashboardWeb.DashboardExportFilterState.SeparatePage">
+            <summary>
+                <para>The filter state is placed on a separate page in the exported document.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="T:DevExpress.DashboardWeb.DashboardLoadingEventHandler">
+
+            <summary>
+                <para>References a method that will handle the <see cref="E:DevExpress.DashboardWeb.ASPxDashboardViewer.DashboardLoading"/> event.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.DashboardWeb.DashboardLoadingEventHandler.Invoke(System.Object,DevExpress.DashboardWeb.DashboardLoadingEventArgs)">
+            <summary>
+                <para>References a method that will handle the <see cref="E:DevExpress.DashboardWeb.ASPxDashboardViewer.DashboardLoading"/> event.
+</para>
+            </summary>
+            <param name="sender">
+		The event source.
+
+            </param>
+            <param name="e">
+		A <see cref="T:DevExpress.DashboardWeb.DashboardLoadingEventArgs"/> object that contains event data.
+
+            </param>
+
+
+        </member>
+        <member name="T:DevExpress.DashboardWeb.DashboardLoadingEventArgs">
+
+            <summary>
+                <para>Provides data for the <see cref="E:DevExpress.DashboardWeb.ASPxDashboardViewer.DashboardLoading"/> event.
+</para>
+            </summary>
+
+        </member>
+        <member name="P:DevExpress.DashboardWeb.DashboardLoadingEventArgs.DashboardId">
+            <summary>
+                <para>Gets the identifier of the required dashboard.
+</para>
+            </summary>
+            <value>A <see cref="T:System.String"/> that identifies a dashboard that should be provided via the <see cref="P:DevExpress.DashboardWeb.DashboardLoadingEventArgs.DashboardXml"/> property.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.DashboardWeb.DashboardLoadingEventArgs.DashboardType">
+            <summary>
+                <para>Gets or sets the type of the dashboard created at design time.
+</para>
+            </summary>
+            <value>A <see cref="T:System.Type"/> that specifies a type of the dashboard created at design time.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.DashboardWeb.DashboardLoadingEventArgs.DashboardXml">
+            <summary>
+                <para>Gets or sets the dashboard XML definition.
+</para>
+            </summary>
+            <value>A <see cref="T:System.String"/> containing XML data that defines the dashboard.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.DashboardWeb.ASPxDashboardViewer">
+
+            <summary>
+                <para>The Web Dashboard Viewer.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.DashboardWeb.ASPxDashboardViewer.#ctor">
+            <summary>
+                <para>Initializes a new instance of the ASPxDashboardViewer class.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.DashboardWeb.ASPxDashboardViewer.AllowExportDashboard">
+            <summary>
+                <para>Gets or sets whether end-users can export a dashboard.
+</para>
+            </summary>
+            <value><b>true</b>, if end-users can export a dashboard; otherwise, <b>false</b>. 
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.DashboardWeb.ASPxDashboardViewer.AllowExportDashboardItems">
+            <summary>
+                <para>Gets or sets whether end-users can export dashboard items.
+</para>
+            </summary>
+            <value><b>true</b>, if end-users can export dashboard items; otherwise, <b>false</b>. 
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.DashboardWeb.ASPxDashboardViewer.CalculateHiddenTotals">
+            <summary>
+                <para>Gets or sets whether to calculate totals that are not displayed in the dashboard item.
+</para>
+            </summary>
+            <value><b>true</b>, to calculate hidden totals; otherwise, <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.DashboardWeb.ASPxDashboardViewer.ClientInstanceName">
+            <summary>
+                <para>Gets or sets the Dashboard Viewer's client programmatic identifier.
+</para>
+            </summary>
+            <value>A <see cref="T:System.String"/> that specifies the Dashboard Viewer's client identifier.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.DashboardWeb.ASPxDashboardViewer.ClientSideEvents">
+            <summary>
+                <para>Gets an object that lists the client-side events specific to the ASPxDashboardViewer control.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.DashboardWeb.DashboardClientSideEvents"/> object which allows assigning handlers to the client-side events available to the ASPxDashboardViewer control.
+
+</value>
+
+
+        </member>
+        <member name="E:DevExpress.DashboardWeb.ASPxDashboardViewer.ConfigureDataConnection">
+            <summary>
+                <para>Allows you to customize connection settings before the ASPxDashboardViewer connects to a database.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="E:DevExpress.DashboardWeb.ASPxDashboardViewer.CustomFilterExpression">
+            <summary>
+                <para>Allows you to include WHERE clauses in SQL queries.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="E:DevExpress.DashboardWeb.ASPxDashboardViewer.CustomJSProperties">
+            <summary>
+                <para>Enables you to supply any server data that can then be parsed on the client.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="E:DevExpress.DashboardWeb.ASPxDashboardViewer.CustomParameters">
+            <summary>
+                <para>Allows you to change dashboard parameter settings at runtime.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.DashboardWeb.ASPxDashboardViewer.DashboardId">
+            <summary>
+                <para>Gets or sets the dashboard identifier.
+</para>
+            </summary>
+            <value>A <see cref="T:System.String"/> that specifies the dashboard identifier.
+</value>
+
+
+        </member>
+        <member name="E:DevExpress.DashboardWeb.ASPxDashboardViewer.DashboardLoaded">
+            <summary>
+                <para>Occurs after the dashboard is loaded to the ASPxDashboardViewer.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="E:DevExpress.DashboardWeb.ASPxDashboardViewer.DashboardLoading">
+            <summary>
+                <para>Allows you to load a dashboard at runtime.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.DashboardWeb.ASPxDashboardViewer.DashboardSource">
+            <summary>
+                <para>Gets or sets a dashboard supplier for the ASPxDashboardViewer.
+</para>
+            </summary>
+            <value>A <see cref="T:System.Object"/> value specifying a dashboard supplier for the ASPxDashboardViewer.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.DashboardWeb.ASPxDashboardViewer.DashboardTheme">
+            <summary>
+                <para>Gets or sets the theme used to paint the dashboard.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.DashboardWeb.DashboardTheme"/> enumeration member that specifies the theme used to paint the dashboard.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.DashboardWeb.ASPxDashboardViewer.DashboardXmlFile">
+            <summary>
+                <para>Gets or sets the path to an XML file that contains a dashboard.
+</para>
+            </summary>
+            <value>A <see cref="T:System.String"/> that specifies the path to an XML file that contains the dashboard.
+</value>
+
+
+        </member>
+        <member name="E:DevExpress.DashboardWeb.ASPxDashboardViewer.DataLoading">
+            <summary>
+                <para>Allows you to provide data for a data source assigned in code.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.DashboardWeb.ASPxDashboardViewer.Dispose">
+            <summary>
+                <para>Enables a server control to perform final clean up before it is released from memory. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.DashboardWeb.ASPxDashboardViewer.ExportOptions">
+            <summary>
+                <para>Provides access to dashboard options specific to export.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.DashboardWeb.DashboardExportOptions"/> object that contains settings which specify parameters affecting how the dashboard (dashboard items) is exported.
+
+</value>
+
+
+        </member>
+        <member name="E:DevExpress.DashboardWeb.ASPxDashboardViewer.FilterElementDefaultValues">
+            <summary>
+                <para>Provides the capability to apply default filtering to filter elements.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.DashboardWeb.ASPxDashboardViewer.FullscreenMode">
+            <summary>
+                <para>Gets or sets whether the ASPxDashboardViewer is in full-screen mode.
+</para>
+            </summary>
+            <value><b>true</b>, if the ASPxDashboardViewer is in the full-screen mode; otherwise, <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.DashboardWeb.ASPxDashboardViewer.Height">
+            <summary>
+                <para>Gets or sets the height of the ASPxDashboardViewer control.
+</para>
+            </summary>
+            <value>A <see cref="T:System.Web.UI.WebControls.Unit"/> that specifies the height of the ASPxDashboardViewer control.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.DashboardWeb.ASPxDashboardViewer.JSProperties">
+            <summary>
+                <para>Gets a collection of temporary client properties and their values. 
+
+</para>
+            </summary>
+            <value>A <see cref="T:System.Collections.Generic.Dictionary"/> object that represents the collection of properties and their values.
+
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.DashboardWeb.ASPxDashboardViewer.RedrawOnResize">
+            <summary>
+                <para>Gets or sets a value indicating whether the ASPxDashboardViewer redraws itself when the browser window is resized.
+
+</para>
+            </summary>
+            <value><b>true</b>, if the ASPxDashboardViewer redraws itself when the browser window is resized; otherwise, <b>false</b>. 
+
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.DashboardWeb.ASPxDashboardViewer.RegisterJQuery">
+            <summary>
+                <para>Gets or sets whether the ASPxDashboardViewer should automatically add the jQuery library to the web application and register it on the current page.
+</para>
+            </summary>
+            <value><b>true</b>, to add the jQuery library to the web application and register it on the current page; otherwise, <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.DashboardWeb.ASPxDashboardViewer.RegisterStyleSheets">
+            <summary>
+                <para>For internal use.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.DashboardWeb.ASPxDashboardViewer.SessionTimeout">
+            <summary>
+                <para>Gets or sets the session time-out (in seconds) specifying how long internal dashboard data are stored on the server.
+
+</para>
+            </summary>
+            <value>A <see cref="T:System.Double"/> value that is the session time-out (in seconds) specifying how long internal dashboard data are stored on the server.
+
+</value>
+
+
+        </member>
+        <member name="E:DevExpress.DashboardWeb.ASPxDashboardViewer.SingleFilterDefaultValue">
+            <summary>
+                <para>Allows you to specify a default filter value for the Single Master Filter.
+
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.DashboardWeb.ASPxDashboardViewer.Theme">
+            <summary>
+                <para>This property is not in effect for this class. It is overridden only for the purpose of preventing it from appearing in Microsoft Visual Studio designer tools. 
+
+
+</para>
+            </summary>
+            <value> 
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.DashboardWeb.ASPxDashboardViewer.UseDataAccessApi">
+            <summary>
+                <para>Gets or sets whether to enable the capability to access the client and underlying data.
+</para>
+            </summary>
+            <value><b>true</b>, to enable the capability to access the client and underlying data; otherwise, <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.DashboardWeb.ASPxDashboardViewer.Width">
+            <summary>
+                <para>Gets or sets the width of the ASPxDashboardViewer control.
+</para>
+            </summary>
+            <value>A <see cref="T:System.Web.UI.WebControls.Unit"/> that specifies the width of the ASPxDashboardViewer control.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.DashboardWeb.DataLoadingWebEventHandler">
+
+            <summary>
+                <para>References a method that will handle the <see cref="E:DevExpress.DashboardWeb.ASPxDashboardViewer.DataLoading"/> event.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.DashboardWeb.DataLoadingWebEventHandler.Invoke(System.Object,DevExpress.DashboardWeb.DataLoadingWebEventArgs)">
+            <summary>
+                <para>References a method that will handle the <see cref="E:DevExpress.DashboardWeb.ASPxDashboardViewer.DataLoading"/> event.
+</para>
+            </summary>
+            <param name="sender">
+		The event source.
+
+            </param>
+            <param name="e">
+		A <see cref="T:DevExpress.DashboardWeb.DataLoadingWebEventArgs"/> object that contains event data.
+
+            </param>
+
+
+        </member>
+        <member name="T:DevExpress.DashboardWeb.ExportFontInfo">
+
+            <summary>
+                <para>Contains the font settings of the exported document.
+
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.DashboardWeb.ExportFontInfo.#ctor">
+            <summary>
+                <para>Initializes a new instance of the ExportFontInfo class.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.DashboardWeb.ExportFontInfo.Assign(DevExpress.DashboardWeb.ExportFontInfo)">
+            <summary>
+                <para>Copies settings of the specified object to the current object.
+</para>
+            </summary>
+            <param name="fontInfo">
+		An <see cref="T:DevExpress.DashboardWeb.ExportFontInfo"/> object whose settings are copied to the current object. 
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.DashboardWeb.ExportFontInfo.GdiCharSet">
+            <summary>
+                <para>Gets or sets a value that specifies the GDI character set used by the current font.
+
+</para>
+            </summary>
+            <value>A <see cref="T:System.Byte"/> value that specifies the GDI character set used by the current font.
+
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.DashboardWeb.ExportFontInfo.Name">
+            <summary>
+                <para>Gets or sets the name of the font used in the exported document.
+
+</para>
+            </summary>
+            <value>A <see cref="T:System.String"/> that specifies the name of the font.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.DashboardWeb.ExportFontInfo.UseCustomFontInfo">
+            <summary>
+                <para>Gets or sets whether custom font settings are used in the exported document.
+</para>
+            </summary>
+            <value><b>true</b>, if custom font settings are used in the exported document; otherwise, <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.DashboardWeb.PivotExportOptions">
+
+            <summary>
+                <para>Contains settings that specify parameters affecting how the pivot dashboard item is exported.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.DashboardWeb.PivotExportOptions.#ctor">
+            <summary>
+                <para>Initialize a new instance of the PivotExportOptions class with default settings.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.DashboardWeb.PivotExportOptions.Assign(DevExpress.DashboardWeb.OptionsBase)">
+            <summary>
+                <para>Copies settings of the specified object to the current object.
+</para>
+            </summary>
+            <param name="options">
+		An <see cref="T:DevExpress.DashboardWeb.OptionsBase"/> descendant whose settings are copied to the current object. 
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.DashboardWeb.PivotExportOptions.PrintHeadersOnEveryPage">
+            <summary>
+                <para>Gets or sets whether to print column headers of the pivot dashboard item on every page.
+</para>
+            </summary>
+            <value><b>true</b>, to print column headers on every page; otherwise, <b>false</b>. 
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.DashboardWeb.PieExportOptions">
+
+            <summary>
+                <para>Contains settings that specify parameters affecting how the pie dashboard item is exported. 
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.DashboardWeb.PieExportOptions.#ctor">
+            <summary>
+                <para>Initialize a new instance of the PieExportOptions class with default settings.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.DashboardWeb.PieExportOptions.Assign(DevExpress.DashboardWeb.OptionsBase)">
+            <summary>
+                <para>Copies settings of the specified object to the current object.
+</para>
+            </summary>
+            <param name="options">
+		An <see cref="T:DevExpress.DashboardWeb.OptionsBase"/> descendant whose settings are copied to the current object. 
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.DashboardWeb.PieExportOptions.AutoArrangeContent">
+            <summary>
+                <para>Gets or sets whether dashboard item elements are arranged automatically on the exported page.
+</para>
+            </summary>
+            <value><b>true</b>, to arrange dashboard item elements automatically on the exported page; otherwise, <b>false</b>. 
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.DashboardWeb.GridExportOptions">
+
+            <summary>
+                <para>Contains settings that specify parameters affecting how the grid dashboard item is exported. 
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.DashboardWeb.GridExportOptions.#ctor">
+            <summary>
+                <para>Initialize a new instance of the GridExportOptions class with default settings.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.DashboardWeb.GridExportOptions.Assign(DevExpress.DashboardWeb.OptionsBase)">
+            <summary>
+                <para>Copies settings of the specified object to the current object.
+</para>
+            </summary>
+            <param name="options">
+		An <see cref="T:DevExpress.DashboardWeb.OptionsBase"/> descendant whose settings are copied to the current object. 
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.DashboardWeb.GridExportOptions.FitToPageWidth">
+            <summary>
+                <para>Gets or sets whether the size of the grid dashboard item is changed according to the width of the exported page.
+</para>
+            </summary>
+            <value><b>true</b>, to change the size of the grid dashboard item according to the width of the exported page; otherwise, <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.DashboardWeb.GridExportOptions.PrintHeadersOnEveryPage">
+            <summary>
+                <para>Gets or sets whether to print column headers of the grid dashboard item on every page.
+</para>
+            </summary>
+            <value><b>true</b>, to print column headers on every page; otherwise, <b>false</b>. 
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.DashboardWeb.GaugeExportOptions">
+
+            <summary>
+                <para>Contains settings that specify parameters affecting how the gauge dashboard item is exported. 
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.DashboardWeb.GaugeExportOptions.#ctor">
+            <summary>
+                <para>Initialize a new instance of the GaugeExportOptions class with default settings.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.DashboardWeb.GaugeExportOptions.Assign(DevExpress.DashboardWeb.OptionsBase)">
+            <summary>
+                <para>Copies settings of the specified object to the current object.
+</para>
+            </summary>
+            <param name="options">
+		An <see cref="T:DevExpress.DashboardWeb.OptionsBase"/> descendant whose settings are copied to the current object. 
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.DashboardWeb.GaugeExportOptions.AutoArrangeContent">
+            <summary>
+                <para>Gets or sets whether dashboard item elements are arranged automatically on the exported page.
+</para>
+            </summary>
+            <value><b>true</b>, to arrange dashboard item elements automatically on the exported page; otherwise, <b>false</b>. 
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.DashboardWeb.ChartExportOptions">
+
+            <summary>
+                <para>Contains settings that specify parameters affecting how the chart dashboard item is exported. 
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.DashboardWeb.ChartExportOptions.#ctor">
+            <summary>
+                <para>Initialize a new instance of the ChartExportOptions class with default settings.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.DashboardWeb.ChartExportOptions.Assign(DevExpress.DashboardWeb.OptionsBase)">
+            <summary>
+                <para>Copies settings of the specified object to the current object.
+</para>
+            </summary>
+            <param name="options">
+		An <see cref="T:DevExpress.DashboardWeb.OptionsBase"/> descendant whose settings are copied to the current object. 
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.DashboardWeb.ChartExportOptions.AutomaticPageLayout">
+            <summary>
+                <para>Gets or sets whether the page orientation used to export a chart dashboard item is selected automatically.
+</para>
+            </summary>
+            <value><b>true</b>, to automatically select the page orientation used to export a chart dashboard item; otherwise, <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.DashboardWeb.ChartExportOptions.SizeMode">
+            <summary>
+                <para>Gets or sets the export size mode for the chart dashboard item. 
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.DashboardWeb.ChartExportSizeMode"/> enumeration member that specifies the export size mode for the chart dashboard item. 
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.DashboardWeb.CardExportOptions">
+
+            <summary>
+                <para>Contains settings that specify parameters affecting how the card dashboard item is exported. 
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.DashboardWeb.CardExportOptions.#ctor">
+            <summary>
+                <para>Initialize a new instance of the CardExportOptions class with default settings.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.DashboardWeb.CardExportOptions.Assign(DevExpress.DashboardWeb.OptionsBase)">
+            <summary>
+                <para>Copies settings of the specified object to the current object.
+</para>
+            </summary>
+            <param name="options">
+		A <see cref="T:DevExpress.DashboardWeb.OptionsBase"/> descendant whose settings are copied to the current object. 
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.DashboardWeb.CardExportOptions.AutoArrangeContent">
+            <summary>
+                <para>Gets or sets whether dashboard item elements are arranged automatically on the exported page.
+</para>
+            </summary>
+            <value><b>true</b>, to arrange dashboard item elements automatically on the exported page; otherwise, <b>false</b>. 
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.DashboardWeb.ChartExportSizeMode">
+
+            <summary>
+                <para>Lists values used to specify how a chart dashboard item should be resized when being exported. 
+</para>
+            </summary>
+
+        </member>
+        <member name="F:DevExpress.DashboardWeb.ChartExportSizeMode.None">
+            <summary>
+                <para>A chart dashboard item is exported in a size identical to that shown on the dashboard.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.DashboardWeb.ChartExportSizeMode.Stretch">
+            <summary>
+                <para>A chart dashboard item is stretched or shrunk to fit the page to which it is exported.
+
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.DashboardWeb.ChartExportSizeMode.Zoom">
+            <summary>
+                <para>A chart dashboard item is resized proportionally to best fit the printed page.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="T:DevExpress.DashboardWeb.Localization.DashboardWebResLocalizer">
+
+            <summary>
+                <para>Provides localized strings for the <see cref="T:DevExpress.DashboardWeb.ASPxDashboardViewer"/> user interface elements.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.DashboardWeb.Localization.DashboardWebResLocalizer.#ctor(DevExpress.DashboardWeb.Localization.DashboardWebLocalizer)">
+            <summary>
+                <para>Initializes a new instance of the DashboardWebResLocalizer class.
+</para>
+            </summary>
+            <param name="localizer">
+		A <see cref="T:DevExpress.DashboardWeb.Localization.DashboardWebLocalizer"/> object specifying the default localizer.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.DashboardWeb.Localization.DashboardWebResLocalizer.#ctor">
+            <summary>
+                <para>Initializes a new instance of the DashboardWebResLocalizer class with default settings.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="T:DevExpress.DashboardWeb.DashboardClientSideEvents">
+
+            <summary>
+                <para>Contains a list of the client-side events available for the <see cref="T:DevExpress.DashboardWeb.ASPxDashboardViewer"/> control. 
+
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.DashboardWeb.DashboardClientSideEvents.#ctor">
+            <summary>
+                <para>Initializes a new instance of the DashboardClientSideEvents class.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.DashboardWeb.DashboardClientSideEvents.ActionAvailabilityChanged">
+            <summary>
+                <para>Gets or sets the name of the JavaScript function or the entire code which will handle the client <see cref="E:DevExpress.DashboardWeb.Scripts.ASPxClientDashboardViewer.ActionAvailabilityChanged"/> event. 
+</para>
+            </summary>
+            <value>A string that is either the name of a JavaScript function or the entire JavaScript function code used to handle an event. 
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.DashboardWeb.DashboardClientSideEvents.BeginCallback">
+            <summary>
+                <para>Gets or sets the name of the JavaScript function or the entire code which will handle the client <see cref="E:DevExpress.DashboardWeb.Scripts.ASPxClientDashboardViewer.BeginCallback"/> event. 
+</para>
+            </summary>
+            <value>A string that is either the name of a JavaScript function or the entire JavaScript function code used to handle an event. 
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.DashboardWeb.DashboardClientSideEvents.DrillDownPerformed">
+            <summary>
+                <para>Gets or sets the name of the JavaScript function or the entire code which will handle the client <see cref="E:DevExpress.DashboardWeb.Scripts.ASPxClientDashboardViewer.DrillDownPerformed"/> event. 
+</para>
+            </summary>
+            <value>A string that is either the name of a JavaScript function or the entire JavaScript function code used to handle an event. 
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.DashboardWeb.DashboardClientSideEvents.DrillUpPerformed">
+            <summary>
+                <para>Gets or sets the name of the JavaScript function or the entire code which will handle the client <see cref="E:DevExpress.DashboardWeb.Scripts.ASPxClientDashboardViewer.DrillUpPerformed"/> event. 
+</para>
+            </summary>
+            <value>A string that is either the name of a JavaScript function or the entire JavaScript function code used to handle an event. 
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.DashboardWeb.DashboardClientSideEvents.EndCallback">
+            <summary>
+                <para>Gets or sets the name of the JavaScript function or the entire code which will handle the client <see cref="E:DevExpress.DashboardWeb.Scripts.ASPxClientDashboardViewer.EndCallback"/> event. 
+</para>
+            </summary>
+            <value>A string that is either the name of a JavaScript function or the entire JavaScript function code used to handle an event. 
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.DashboardWeb.DashboardClientSideEvents.ItemBeforeWidgetDisposed">
+            <summary>
+                <para>Gets or sets the name of the JavaScript function or the entire code which will handle the client <see cref="E:DevExpress.DashboardWeb.Scripts.ASPxClientDashboardViewer.ItemBeforeWidgetDisposed"/> event. 
+</para>
+            </summary>
+            <value>A string that is either the name of a JavaScript function or the entire JavaScript function code used to handle an event. 
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.DashboardWeb.DashboardClientSideEvents.ItemClick">
+            <summary>
+                <para>Gets or sets the name of the JavaScript function or the entire code which will handle the client <see cref="E:DevExpress.DashboardWeb.Scripts.ASPxClientDashboardViewer.ItemClick"/> event. 
+</para>
+            </summary>
+            <value>A string that is either the name of a JavaScript function or the entire JavaScript function code used to handle an event. 
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.DashboardWeb.DashboardClientSideEvents.ItemElementCustomColor">
+            <summary>
+                <para>Gets or sets the name of the JavaScript function or the entire code which will handle the client <see cref="E:DevExpress.DashboardWeb.Scripts.ASPxClientDashboardViewer.ItemElementCustomColor"/> event. 
+</para>
+            </summary>
+            <value>A string that is either the name of a JavaScript function or the entire JavaScript function code used to handle an event. 
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.DashboardWeb.DashboardClientSideEvents.ItemSelectionChanged">
+            <summary>
+                <para>Gets or sets the name of the JavaScript function or the entire code which will handle the client <see cref="E:DevExpress.DashboardWeb.Scripts.ASPxClientDashboardViewer.ItemSelectionChanged"/> event. 
+</para>
+            </summary>
+            <value>A string that is either the name of a JavaScript function or the entire JavaScript function code used to handle an event. 
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.DashboardWeb.DashboardClientSideEvents.ItemVisualInteractivity">
+            <summary>
+                <para>Gets or sets the name of the JavaScript function or the entire code which will handle the client <see cref="E:DevExpress.DashboardWeb.Scripts.ASPxClientDashboardViewer.ItemVisualInteractivity"/> event. 
+</para>
+            </summary>
+            <value>A string that is either the name of a JavaScript function or the entire JavaScript function code used to handle an event. 
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.DashboardWeb.DashboardClientSideEvents.ItemWidgetCreated">
+            <summary>
+                <para>Gets or sets the name of the JavaScript function or the entire code which will handle the client <see cref="E:DevExpress.DashboardWeb.Scripts.ASPxClientDashboardViewer.ItemWidgetCreated"/> event. 
+</para>
+            </summary>
+            <value>A string that is either the name of a JavaScript function or the entire JavaScript function code used to handle an event. 
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.DashboardWeb.DashboardClientSideEvents.Loaded">
+            <summary>
+                <para>Gets or sets the name of the JavaScript function or the entire code which will handle the client <see cref="E:DevExpress.DashboardWeb.Scripts.ASPxClientDashboardViewer.Loaded"/> event. 
+</para>
+            </summary>
+            <value>A string that is either the name of a JavaScript function or the entire JavaScript function code used to handle an event. 
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.DashboardWeb.DashboardClientSideEvents.MasterFilterCleared">
+            <summary>
+                <para>Gets or sets the name of the JavaScript function or the entire code which will handle the client <see cref="E:DevExpress.DashboardWeb.Scripts.ASPxClientDashboardViewer.MasterFilterCleared"/> event. 
+</para>
+            </summary>
+            <value>A string that is either the name of a JavaScript function or the entire JavaScript function code used to handle an event. 
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.DashboardWeb.DashboardClientSideEvents.MasterFilterSet">
+            <summary>
+                <para>Gets or sets the name of the JavaScript function or the entire code which will handle the client <see cref="E:DevExpress.DashboardWeb.Scripts.ASPxClientDashboardViewer.MasterFilterSet"/> event. 
+</para>
+            </summary>
+            <value>A string that is either the name of a JavaScript function or the entire JavaScript function code used to handle an event. 
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.DashboardWeb.DashboardLoadedWebEventHandler">
+
+            <summary>
+                <para>References a method that will handle the <see cref="E:DevExpress.DashboardWeb.ASPxDashboardViewer.DashboardLoaded"/> event.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.DashboardWeb.DashboardLoadedWebEventHandler.Invoke(System.Object,DevExpress.DashboardWeb.DashboardLoadedWebEventArgs)">
+            <summary>
+                <para>References a method that will handle the <see cref="E:DevExpress.DashboardWeb.ASPxDashboardViewer.DashboardLoaded"/> event.
+</para>
+            </summary>
+            <param name="sender">
+		The event source.
+
+            </param>
+            <param name="e">
+		A <see cref="T:DevExpress.DashboardWeb.DashboardLoadedWebEventArgs"/> object that contains event data. 
+
+            </param>
+
+
+        </member>
+        <member name="T:DevExpress.DashboardWeb.DashboardLoadedWebEventArgs">
+
+            <summary>
+                <para>Provides data for the <see cref="E:DevExpress.DashboardWeb.ASPxDashboardViewer.DashboardLoaded"/> event.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.DashboardWeb.DashboardLoadedWebEventArgs.#ctor(System.String,DevExpress.DashboardCommon.Dashboard)">
+            <summary>
+                <para>Initializes a new instance of the DashboardLoadedWebEventArgs class.
+</para>
+            </summary>
+            <param name="dashboardId">
+		A <see cref="T:System.String"/> that specifies the dashboard identifier.
+
+            </param>
+            <param name="dashboard">
+		A <see cref="T:DevExpress.DashboardCommon.Dashboard"/> object that is the loaded dashboard.
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.DashboardWeb.DashboardLoadedWebEventArgs.Dashboard">
+            <summary>
+                <para>Gets the loaded dashboard.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.DashboardCommon.Dashboard"/> object that is the loaded dashboard.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.DashboardWeb.DashboardLoadedWebEventArgs.DashboardId">
+            <summary>
+                <para>Gets the identifier of the loaded dashboard. 
+</para>
+            </summary>
+            <value>A <see cref="T:System.String"/> that identifies a loaded dashboard.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.DashboardWeb.Localization.DashboardWebLocalizer">
+
+            <summary>
+                <para>Provides localized strings for the <see cref="T:DevExpress.DashboardWeb.ASPxDashboardViewer"/> user interface elements.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.DashboardWeb.Localization.DashboardWebLocalizer.#ctor">
+            <summary>
+                <para>Initializes a new instance of the DashboardWebLocalizer class.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.DashboardWeb.Localization.DashboardWebLocalizer.CreateResXLocalizer">
+            <summary>
+                <para>Returns an object representing resources based on the thread's language and regional settings (culture). 
+</para>
+            </summary>
+            <returns>An <see cref="T:DevExpress.Utils.Localization.XtraLocalizer`1"/> object representing resources based on the thread's culture.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.DashboardWeb.Localization.DashboardWebLocalizer.GetString(DevExpress.DashboardWeb.Localization.DashboardWebStringId)">
+            <summary>
+                <para>Returns a localized string for the specified string identifier. 
+</para>
+            </summary>
+            <param name="id">
+		A <see cref="T:DevExpress.DashboardWeb.Localization.DashboardWebStringId"/> enumeration value identifying the string to localize.
+
+            </param>
+            <returns>A <see cref="T:System.String"/> corresponding to the specified identifier. 
+</returns>
+
+
+        </member>
+        <member name="T:DevExpress.DashboardWeb.ImageFormatExportOptions">
+
+            <summary>
+                <para>Contains settings that specify parameters affecting how the dashboard or dashboard item is exported in Image format.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.DashboardWeb.ImageFormatExportOptions.#ctor">
+            <summary>
+                <para>Initializes a new instance of the ImageFormatExportOptions class.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.DashboardWeb.ImageFormatExportOptions.Assign(DevExpress.DashboardWeb.OptionsBase)">
+            <summary>
+                <para>Copies settings of the specified object to the current object.
+</para>
+            </summary>
+            <param name="options">
+		An <see cref="T:DevExpress.DashboardWeb.OptionsBase"/> descendant whose settings are copied to the current object. 
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.DashboardWeb.ImageFormatExportOptions.Format">
+            <summary>
+                <para>Gets or sets an image format in which the dashboard (dashboard item) is exported.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.DashboardWeb.DashboardExportImageFormat"/> enumeration member that specifies an image format in which the dashboard (dashboard item) is exported.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.DashboardWeb.ImageFormatExportOptions.Resolution">
+            <summary>
+                <para>Gets or sets the resolution (in dpi) used to export a dashboard (dashboard item) in Image format.
+
+</para>
+            </summary>
+            <value>An integer value that specifies the resolution (in dpi) used to export a dashboard (dashboard item) in Image format.
+
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.DashboardWeb.OptionsBase">
+
+            <summary>
+                <para>Serves as the base class for classes containing specific export options.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.DashboardWeb.OptionsBase.Assign(DevExpress.DashboardWeb.OptionsBase)">
+            <summary>
+                <para>Copies settings of the specified object to the current object.
+</para>
+            </summary>
+            <param name="options">
+		An <see cref="T:DevExpress.DashboardWeb.OptionsBase"/> descendant whose settings are copied to the current object. 
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.DashboardWeb.OptionsBase.ToString">
+            <summary>
+                <para>Returns the string that represents the current object.
+</para>
+            </summary>
+            <returns>A <see cref="T:System.String"/> that represents the current object. 
+</returns>
+
+
+        </member>
+        <member name="T:DevExpress.DashboardWeb.RangeFilterExportOptions">
+
+            <summary>
+                <para>Contains settings that specify parameters affecting how the Range Filter dashboard item is exported.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.DashboardWeb.RangeFilterExportOptions.#ctor">
+            <summary>
+                <para>Initializes a new instance of the RangeFilterExportOptions class.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.DashboardWeb.RangeFilterExportOptions.Assign(DevExpress.DashboardWeb.OptionsBase)">
+            <summary>
+                <para>Copies settings of the specified object to the current object.
+</para>
+            </summary>
+            <param name="options">
+		An <see cref="T:DevExpress.DashboardWeb.OptionsBase"/> descendant whose settings are copied to the current object. 
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.DashboardWeb.RangeFilterExportOptions.AutomaticPageLayout">
+            <summary>
+                <para>Gets or sets whether the page orientation used to export a Range Filter dashboard item is selected automatically.
+
+</para>
+            </summary>
+            <value><b>true</b>, to automatically select the page orientation used to export a Range Filter dashboard item; otherwise, <b>false</b>. 
+
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.DashboardWeb.RangeFilterExportOptions.SizeMode">
+            <summary>
+                <para>Gets or sets the export size mode for the Range Filter dashboard item.
+
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.DashboardWeb.RangeFilterExportSizeMode"/> enumeration member that specifies the export size mode for the Range Filter dashboard item. 
+
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.DashboardWeb.RangeFilterExportSizeMode">
+
+            <summary>
+                <para>Lists values used to specify how a range filter dashboard item should be resized when being exported. 
+</para>
+            </summary>
+
+        </member>
+        <member name="F:DevExpress.DashboardWeb.RangeFilterExportSizeMode.None">
+            <summary>
+                <para>A Range Filter dashboard item is exported in a size identical to that shown on the dashboard. 
+
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.DashboardWeb.RangeFilterExportSizeMode.Stretch">
+            <summary>
+                <para>A Range Filter dashboard item is stretched or shrunk to fit the page to which it is exported. 
+
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.DashboardWeb.RangeFilterExportSizeMode.Zoom">
+            <summary>
+                <para>A Range Filter dashboard item is resized proportionally to best fit the printed page. 
+
+</para>
+            </summary>
+
+
+        </member>
+        <member name="T:DevExpress.DashboardWeb.MapExportSizeMode">
+
+            <summary>
+                <para>Lists values used to specify how a map dashboard item should be resized when being exported. 
+</para>
+            </summary>
+
+        </member>
+        <member name="F:DevExpress.DashboardWeb.MapExportSizeMode.None">
+            <summary>
+                <para>A map dashboard item is exported in a size identical to that shown on the dashboard
+
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.DashboardWeb.MapExportSizeMode.Zoom">
+            <summary>
+                <para>A map dashboard item is resized proportionally to best fit the exported page. 
+
+</para>
+            </summary>
+
+
+        </member>
+        <member name="T:DevExpress.DashboardWeb.MapExportOptions">
+
+            <summary>
+                <para>Contains settings that specify parameters affecting how map dashboard items are exported.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.DashboardWeb.MapExportOptions.#ctor">
+            <summary>
+                <para>Initializes a new instance of the MapExportOptions class.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.DashboardWeb.MapExportOptions.Assign(DevExpress.DashboardWeb.OptionsBase)">
+            <summary>
+                <para>Copies settings of the specified object to the current object.
+</para>
+            </summary>
+            <param name="options">
+		An <see cref="T:DevExpress.DashboardWeb.OptionsBase"/> descendant whose settings are copied to the current object. 
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.DashboardWeb.MapExportOptions.AutomaticPageLayout">
+            <summary>
+                <para>Gets or sets whether the page orientation used to export a map dashboard item is selected automatically.
+
+</para>
+            </summary>
+            <value><b>true</b>, to automatically select the page orientation used to export a map dashboard item; otherwise, <b>false</b>. 
+
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.DashboardWeb.MapExportOptions.SizeMode">
+            <summary>
+                <para>Gets or sets the export size mode for the map dashboard item.
+
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.DashboardWeb.MapExportSizeMode"/> enumeration member that specifies the export size mode for the map dashboard item. 
+
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.DashboardWeb.DashboardExportImageFormat">
+
+            <summary>
+                <para>List values that specify the export format for images.
+
+</para>
+            </summary>
+
+        </member>
+        <member name="F:DevExpress.DashboardWeb.DashboardExportImageFormat.Gif">
+            <summary>
+                <para>The GIF image format.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.DashboardWeb.DashboardExportImageFormat.Jpg">
+            <summary>
+                <para>The JPG image format.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.DashboardWeb.DashboardExportImageFormat.Png">
+            <summary>
+                <para>The PNG image format.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="T:DevExpress.DashboardWeb.DataLoadingWebEventArgs">
+
+            <summary>
+                <para>Provides data for the <see cref="E:DevExpress.DashboardWeb.ASPxDashboardViewer.DataLoading"/> event.
+</para>
+            </summary>
+
+        </member>
+        <member name="P:DevExpress.DashboardWeb.DataLoadingWebEventArgs.DashboardId">
+            <summary>
+                <para>Gets the identifier of the current dashboard. 
+</para>
+            </summary>
+            <value>A <see cref="T:System.String"/> that identifies the current dashboard.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.DashboardWeb.CustomFilterExpressionWebEventHandler">
+
+            <summary>
+                <para>References a method that will handle the <see cref="E:DevExpress.DashboardWeb.ASPxDashboardViewer.CustomFilterExpression"/> event.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.DashboardWeb.CustomFilterExpressionWebEventHandler.Invoke(System.Object,DevExpress.DashboardWeb.CustomFilterExpressionWebEventArgs)">
+            <summary>
+                <para>References a method that will handle the <see cref="E:DevExpress.DashboardWeb.ASPxDashboardViewer.CustomFilterExpression"/> event.
+</para>
+            </summary>
+            <param name="sender">
+		The event source.
+
+            </param>
+            <param name="e">
+		The <see cref="T:DevExpress.DashboardWeb.CustomFilterExpressionWebEventArgs"/> object that contains event data.
+
+            </param>
+
+
+        </member>
+        <member name="T:DevExpress.DashboardWeb.CustomFilterExpressionWebEventArgs">
+
+            <summary>
+                <para>Provides data for the <see cref="E:DevExpress.DashboardWeb.ASPxDashboardViewer.CustomFilterExpression"/> event.
+</para>
+            </summary>
+
+        </member>
+        <member name="P:DevExpress.DashboardWeb.CustomFilterExpressionWebEventArgs.DashboardId">
+            <summary>
+                <para>Gets the identifier of the current dashboard. 
+</para>
+            </summary>
+            <value>A <see cref="T:System.String"/> that identifies the current dashboard.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.DashboardWeb.ConfigureDataConnectionWebEventHandler">
+
+            <summary>
+                <para>References a method that will handle the <see cref="E:DevExpress.DashboardWeb.ASPxDashboardViewer.ConfigureDataConnection"/> event.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.DashboardWeb.ConfigureDataConnectionWebEventHandler.Invoke(System.Object,DevExpress.DashboardWeb.ConfigureDataConnectionWebEventArgs)">
+            <summary>
+                <para>References a method that will handle the <see cref="E:DevExpress.DashboardWeb.ASPxDashboardViewer.ConfigureDataConnection"/> event.
+</para>
+            </summary>
+            <param name="sender">
+		The event source.
+
+            </param>
+            <param name="e">
+		A <see cref="T:DevExpress.DashboardWeb.ConfigureDataConnectionWebEventArgs"/> object that contains event data.
+
+            </param>
+
+
+        </member>
+        <member name="T:DevExpress.DashboardWeb.ConfigureDataConnectionWebEventArgs">
+
+            <summary>
+                <para>Provides data for the <see cref="E:DevExpress.DashboardWeb.ASPxDashboardViewer.ConfigureDataConnection"/> event.
+</para>
+            </summary>
+
+        </member>
+        <member name="P:DevExpress.DashboardWeb.ConfigureDataConnectionWebEventArgs.DashboardId">
+            <summary>
+                <para>Gets the identifier of the current dashboard. 
+</para>
+            </summary>
+            <value>A <see cref="T:System.String"/> that identifies the current dashboard.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.DashboardWeb.CustomParametersWebEventArgs">
+
+            <summary>
+                <para>Provides data for the <see cref="E:DevExpress.DashboardWeb.ASPxDashboardViewer.CustomParameters"/> event.
+</para>
+            </summary>
+
+        </member>
+        <member name="P:DevExpress.DashboardWeb.CustomParametersWebEventArgs.DashboardId">
+            <summary>
+                <para>Gets the identifier of the required dashboard.
+</para>
+            </summary>
+            <value>A <see cref="T:System.String"/> that identifies a dashboard.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.DashboardWeb.DashboardExportOptions">
+
+            <summary>
+                <para>Contains settings that specify default parameters affecting how the dashboard (dashboard item) is exported.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.DashboardWeb.DashboardExportOptions.#ctor">
+            <summary>
+                <para>Initializes a new instance of the DashboardExportOptions class.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.DashboardWeb.DashboardExportOptions.Assign(DevExpress.DashboardWeb.OptionsBase)">
+            <summary>
+                <para>Copies settings of the specified object to the current object.
+</para>
+            </summary>
+            <param name="options">
+		An <see cref="T:DevExpress.DashboardWeb.OptionsBase"/> descendant whose settings are copied to the current object. 
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.DashboardWeb.DashboardExportOptions.AutoFitPageCount">
+            <summary>
+                <para>Gets or sets the number of horizontal/vertical pages spanning the total width/height of a dashboard (dashboard item).
+
+
+
+</para>
+            </summary>
+            <value>An integer value that specifies the number of horizontal/vertical pages spanning the total width/height of a dashboard (dashboard item).
+
+
+ 
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.DashboardWeb.DashboardExportOptions.CardOptions">
+            <summary>
+                <para>Provides access to options for exporting a card dashboard item.
+
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.DashboardWeb.CardExportOptions"/> object containing settings that specify parameters affecting how the card dashboard item is exported. 
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.DashboardWeb.DashboardExportOptions.ChartOptions">
+            <summary>
+                <para>Provides access to options for exporting a chart dashboard item.
+
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.DashboardWeb.ChartExportOptions"/> object containing settings that specify parameters affecting how a chart dashboard item is exported. 
+
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.DashboardWeb.DashboardExportOptions.DashboardItemOptions">
+            <summary>
+                <para>Provides access to dashboard options specific to export individual dashboard items.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.DashboardWeb.DashboardItemExportOptions"/> object that contains settings specific to export individual dashboard items.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.DashboardWeb.DashboardExportOptions.DocumentContentOptions">
+            <summary>
+                <para>Provides access to options specific to exporting additional content. 
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.DashboardWeb.DocumentContentExportOptions"/> object containing options specific to exporting additional content.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.DashboardWeb.DashboardExportOptions.FontInfo">
+            <summary>
+                <para>Provides access to the font settings of the exported document. 
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.DashboardWeb.ExportFontInfo"/> object containing the font settings of the exported document.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.DashboardWeb.DashboardExportOptions.GaugeOptions">
+            <summary>
+                <para>Provides access to options for exporting a gauge dashboard item.
+
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.DashboardWeb.GaugeExportOptions"/> object containing settings that specify parameters affecting how a gauge dashboard item is exported. 
+
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.DashboardWeb.DashboardExportOptions.GridOptions">
+            <summary>
+                <para>Provides access to options for exporting a grid dashboard item.
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.DashboardWeb.GridExportOptions"/> object containing settings that specify parameters affecting how a grid dashboard item is exported. 
+
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.DashboardWeb.DashboardExportOptions.ImageFormatOptions">
+            <summary>
+                <para>Provides access to options affecting how the dashboard or dashboard item is exported in Image format. 
+</para>
+            </summary>
+            <value>An <see cref="T:DevExpress.DashboardWeb.ImageFormatExportOptions"/> containing options affecting how the dashboard or dashboard item is exported in Image format. 
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.DashboardWeb.DashboardExportOptions.MapOptions">
+            <summary>
+                <para>Provides access to options for exporting a map dashboard item.
+
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.DashboardWeb.MapExportOptions"/> object containing settings that specify parameters affecting how the map dashboard item is exported. 
+
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.DashboardWeb.DashboardExportOptions.PageLayout">
+            <summary>
+                <para>Gets or sets the page orientation used to export a dashboard (dashboard item).
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.DashboardWeb.DashboardExportPageLayout"/> enumeration value that specifies the page orientation used to print a dashboard (dashboard item).
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.DashboardWeb.DashboardExportOptions.PaperKind">
+            <summary>
+                <para>Gets or sets the standard paper size.
+</para>
+            </summary>
+            <value>A <see cref="T:System.Drawing.Printing.PaperKind"/> enumeration value that specifies the standard paper size.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.DashboardWeb.DashboardExportOptions.PieOptions">
+            <summary>
+                <para>Provides access to options for exporting a pie dashboard item.
+
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.DashboardWeb.PieExportOptions"/> object containing settings that specify parameters that affect how pie dashboard items are exported. 
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.DashboardWeb.DashboardExportOptions.PivotOptions">
+            <summary>
+                <para>Provides access to options for exporting a pivot dashboard item.
+
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.DashboardWeb.PivotExportOptions"/> object containing settings that specify parameters that affect how pivot dashboard items are exported. 
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.DashboardWeb.DashboardExportOptions.RangeFilterOptions">
+            <summary>
+                <para>Provides access to options for exporting a Range Filter dashboard item.
+
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.DashboardWeb.RangeFilterExportOptions"/> object containing settings that specify parameters affecting how the Range Filter dashboard item is exported. 
+
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.DashboardWeb.DashboardExportOptions.ScaleFactor">
+            <summary>
+                <para>Gets or sets the scale factor (in fractions of <b>1</b>), by which a dashboard (dashboard item) is scaled.
+</para>
+            </summary>
+            <value>A <see cref="T:System.Single"/> value that specifies the scale factor, by which a dashboard (dashboard item) is scaled.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.DashboardWeb.DashboardExportOptions.ScaleMode">
+            <summary>
+                <para>Gets or sets the mode for scaling when exporting a dashboard (dashboard item).
+</para>
+            </summary>
+            <value>A <see cref="T:DevExpress.DashboardWeb.DashboardExportScaleMode"/> enumeration value that specifies the mode for scaling when exporting a dashboard (dashboard item).
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.DashboardWeb.DashboardExportScaleMode">
+
+            <summary>
+                <para>Lists values that specify dashboard (dashboard item) scale mode.
+</para>
+            </summary>
+
+        </member>
+        <member name="F:DevExpress.DashboardWeb.DashboardExportScaleMode.AutoFitToPageWidth">
+            <summary>
+                <para>The size of the dashboard(dashboard item) is changed according to the width of the exported page.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.DashboardWeb.DashboardExportScaleMode.AutoFitWithinOnePage">
+            <summary>
+                <para>The size of the dashboard(dashboard item) is changed to fit its content on a single page.
+
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.DashboardWeb.DashboardExportScaleMode.None">
+            <summary>
+                <para>The dashboard (dashboard item) on the exported page retains its original size. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.DashboardWeb.DashboardExportScaleMode.UseScaleFactor">
+            <summary>
+                <para>The size of the dashboard (dashboard item) on the exported page is changed according to the scale factor value.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="T:DevExpress.DashboardWeb.DashboardExportPageLayout">
+
+            <summary>
+                <para>Lists values that specify the page orientation used to export a dashboard (dashboard item).
+</para>
+            </summary>
+
+        </member>
+        <member name="F:DevExpress.DashboardWeb.DashboardExportPageLayout.Landscape">
+            <summary>
+                <para>The page orientation used to export a dashboard (dashboard item) is landscape.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.DashboardWeb.DashboardExportPageLayout.Portrait">
+            <summary>
+                <para>The page orientation used to export a dashboard (dashboard item) is portrait.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="T:DevExpress.DashboardWeb.CustomParametersWebEventHandler">
+
+            <summary>
+                <para>References a method that will handle the <see cref="E:DevExpress.DashboardWeb.ASPxDashboardViewer.CustomParameters"/> event.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.DashboardWeb.CustomParametersWebEventHandler.Invoke(System.Object,DevExpress.DashboardWeb.CustomParametersWebEventArgs)">
+            <summary>
+                <para>References a method that will handle the <see cref="E:DevExpress.DashboardWeb.ASPxDashboardViewer.CustomParameters"/> event.
+</para>
+            </summary>
+            <param name="sender">
+		The event source.
+
+            </param>
+            <param name="e">
+		A <see cref="T:DevExpress.DashboardWeb.CustomParametersWebEventArgs"/> object that contains event data.
+
+            </param>
+
+
+        </member>
+    </members>
+</doc>

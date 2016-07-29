@@ -1,0 +1,112 @@
+﻿@model IEnumerable<WebApplication5.Models.UserManager>
+
+<!-- Content Wrapper. Contains page content -->
+<div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+   
+    <!-- Main content -->
+
+    <table class="pretty" id="dt">
+        <thead>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.Email)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.CurrentStorage)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.MaxStorage)
+                </th>
+                <th>Notify</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            @foreach (var item in Model)
+            {
+
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Email)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.CurrentStorage)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.MaxStorage)
+                    </td>
+
+                    <td>
+
+                        <a href="@Url.Action("ComposeEmail", "Admin", new { area = "Admin",em= item.Email })"><input type="button" value="Notify" /></a>
+
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+    <!-- Left col -->
+
+</div><!-- /.content-wrapper -->
+
+@section scripts{
+
+    <link href="~/Content/datatables/css/jquery.dataTables.css" rel="stylesheet" />
+    <link href="~/Content/datatables/css/dt.css" rel="stylesheet" />
+    <script src="~/Content/datatables/js/jquery.dataTables.js"></script>
+    <script type="text/javascript">
+
+        $(document).ready(function () {
+           $('#operation').hide();
+
+
+            $('.chk').change(function () {
+
+
+
+                if (this.checked) {
+
+
+                    $('#operation').show();
+
+                }
+
+                return;
+
+
+            });
+
+
+            $('#dt thead .files').each(function () {
+                var title = $(this).text();
+                $(this).html('<input type="text" placeholder="Search ' + title + '" />');
+            });
+
+            // DataTable
+            var table = $('#dt').DataTable();
+
+            // Apply the search
+            table.columns().every(function () {
+                var that = this;
+
+                $('input', this.header()).on('keyup change', function () {
+                    if (that.search() !== this.value) {
+                        that
+                            .search(this.value)
+                            .draw();
+                    }
+                });
+            });
+
+
+        });
+
+
+
+    </script>
+
+
+
+}
+

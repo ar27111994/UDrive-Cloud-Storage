@@ -1,0 +1,468 @@
+﻿
+    <!-- Content Wrapper. Contains page content -->
+    <div class="content-wrapper">
+        <!-- Content Header (Page header) -->
+        <section class="content-header">
+            <h1>
+                Dashboard
+                <small>Cloud</small>
+            </h1>
+           
+        </section>
+        <!-- Main content -->
+        <section class="content">
+            <!-- Small boxes (Stat box) -->
+            <div class="row">
+                <div class="col-lg-3 col-xs-6">
+                    <!-- small box -->
+                    <div class="small-box bg-aqua">
+                        <div class="inner">
+
+                            <h3>@ViewData["directorySizeinmb"]  @ViewData["unit"] </h3>
+                            <p> Total Files Size</p>
+                        </div>
+                        <div class="icon">
+                            <i class="icon ion-bag"></i>
+                        </div>
+                        <a href="@Url.Action("ManageUser","Admin",new { area = "Admin" })" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
+                    </div>
+                </div><!-- ./col -->
+                <div class="col-lg-3 col-xs-6">
+                    <!-- small box -->
+                    <div class="small-box bg-green">
+                        <div class="inner">
+                            <h3> @ViewData["numFiles"]<sup style="font-size: 20px"></sup></h3>
+                            <p>Total Files</p>
+                        </div>
+                        <div class="icon">
+                            <i class="ion ion-stats-bars"></i>
+                        </div>
+                        <a href="@Url.Action("FileManager","Admin",new { area = "Admin" })" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
+                    </div>
+                </div><!-- ./col -->
+                <div class="col-lg-3 col-xs-6">
+                    <!-- small box -->
+                    <div class="small-box bg-yellow">
+                        <div class="inner">
+                            <h3>@ViewData["user"]</h3>
+                            <p> Total User </p>
+                        </div>
+                        <div class="icon">
+                            <i class="ion ion-person-add"></i>
+                        </div>
+                        <a href="@Url.Action("ManageUser","Admin",new { area = "Admin" })" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
+                    </div>
+                </div><!-- ./col -->
+                <div class="col-lg-3 col-xs-6">
+                    <!-- small box -->
+                    <div class="small-box bg-red">
+                        <div class="inner">
+                           <h3 id="Counter"></h3>
+                            <p>Online Visitors</p>
+                        </div>
+                        <div class="icon">
+                            <i class="ion ion-pie-graph"></i>
+                        </div>
+                        <a href="#" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
+                    </div>
+                </div><!-- ./col -->
+            </div><!-- /.row -->
+            <!-- Main row -->
+            <div class="row">
+                <!-- Left col -->
+                <section class="col-lg-7 connectedSortable">
+                    <!-- Custom tabs (Charts with tabs)-->
+                    <div class="nav-tabs-custom">
+                        <!-- Tabs within a box -->
+                        <ul class="nav nav-tabs pull-right">
+                            <li class="active"><a href="#revenue-chart" data-toggle="tab">UDrive</a></li>
+                           
+                            <li class="pull-left header"><i class="fa fa-inbox"></i> Storage</li>
+                        </ul>
+                        <div id="pChart" class="tab-content no-padding bg-aqua-gradient" style="color:white">
+
+
+                        </div>
+                    </div><!-- /.nav-tabs-custom -->
+                    <!-- Chat box -->
+                    
+                    <div id="package">
+
+                    </div>
+                      
+                    <!-- TO DO List -->
+                   
+                       
+                    <!-- quick email widget -->
+                    <div class="box box-info">
+                        <div class="box-header">
+                            <i class="fa fa-envelope"></i>
+                            <h3 class="box-title">Quick Email</h3>
+                            <!-- tools box -->
+                            <div class="pull-right box-tools">
+                                <button class="btn btn-info btn-sm" data-widget="remove" data-toggle="tooltip" title="Remove"><i class="fa fa-times"></i></button>
+                            </div><!-- /. tools -->
+                        </div>
+                        <div class="box-body">
+                            <form action="@Url.Action("QuickMail","Admin",new { area = "Admin" })" method="post">
+                                <div class="form-group">
+                                    <input type="email" class="form-control" name="emailto" placeholder="Email to:">
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" name="subject" placeholder="Subject">
+                                </div>
+                                <div>
+                                    <textarea class="textarea" name="Message" placeholder="Message" style="width: 100%; height: 125px; font-size: 14px; line-height: 18px; border: 1px solid #dddddd; padding: 10px;"></textarea>
+
+                                    <div class="box-footer clearfix">
+                                        <button class="pull-right btn btn-default" id="sendEmail">Send <i class="fa fa-arrow-circle-right"></i></button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </section><!-- /.Left col -->
+                <!-- right col (We are only adding the ID to make the widgets sortable)-->
+                <section class="col-lg-5 connectedSortable">
+                    <!-- Map box -->
+                    <div class="box box-solid bg-blue-gradient">
+                        <!-- /.box-footer -->
+                        <div id="Circular">
+
+                        </div>
+
+
+
+                    </div><!-- /.box -->
+                    
+                    <!-- /.box -->
+                    <!-- solid sales graph -->
+                    <div class="box box-solid bg-light-blue-gradient">
+
+                        @Html.Action("ChartPartial1")
+                    </div>
+                    <!-- Calendar -->
+                  <div id="doughnut" class="bg-aqua-gradient"></div>
+                </section><!-- right col -->
+            </div><!-- /.row (main row) -->
+        </section><!-- /.content -->
+    </div><!-- /.content-wrapper -->
+   
+    <!-- Control Sidebar -->
+    <aside class="control-sidebar control-sidebar-dark">
+        <!-- Create the tabs -->
+        <ul class="nav nav-tabs nav-justified control-sidebar-tabs">
+            <li><a href="#control-sidebar-home-tab" data-toggle="tab"><i class="fa fa-home"></i></a></li>
+            <li><a href="#control-sidebar-settings-tab" data-toggle="tab"><i class="fa fa-gears"></i></a></li>
+        </ul>
+        <!-- Tab panes -->
+        <div class="tab-content">
+            <!-- Home tab content -->
+            <div class="tab-pane" id="control-sidebar-home-tab">
+                <h3 class="control-sidebar-heading">Recent Activity</h3>
+                <ul class="control-sidebar-menu">
+                    <li>
+                        <a href="javascript::;">
+                            <i class="menu-icon fa fa-birthday-cake bg-red"></i>
+                            <div class="menu-info">
+                                <h4 class="control-sidebar-subheading">Langdon's Birthday</h4>
+                                <p>Will be 23 on April 24th</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript::;">
+                            <i class="menu-icon fa fa-user bg-yellow"></i>
+                            <div class="menu-info">
+                                <h4 class="control-sidebar-subheading">Frodo Updated His Profile</h4>
+                                <p>New phone +1(800)555-1234</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript::;">
+                            <i class="menu-icon fa fa-envelope-o bg-light-blue"></i>
+                            <div class="menu-info">
+                                <h4 class="control-sidebar-subheading">Nora Joined Mailing List</h4>
+                                <p>nora@example.com</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript::;">
+                            <i class="menu-icon fa fa-file-code-o bg-green"></i>
+                            <div class="menu-info">
+                                <h4 class="control-sidebar-subheading">Cron Job 254 Executed</h4>
+                                <p>Execution time 5 seconds</p>
+                            </div>
+                        </a>
+                    </li>
+                </ul><!-- /.control-sidebar-menu -->
+                <h3 class="control-sidebar-heading">Tasks Progress</h3>
+                <ul class="control-sidebar-menu">
+                    <li>
+                        <a href="javascript::;">
+                            <h4 class="control-sidebar-subheading">
+                                Custom Template Design
+                                <span class="label label-danger pull-right">70%</span>
+                            </h4>
+                            <div class="progress progress-xxs">
+                                <div class="progress-bar progress-bar-danger" style="width: 70%"></div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript::;">
+                            <h4 class="control-sidebar-subheading">
+                                Update Resume
+                                <span class="label label-success pull-right">95%</span>
+                            </h4>
+                            <div class="progress progress-xxs">
+                                <div class="progress-bar progress-bar-success" style="width: 95%"></div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript::;">
+                            <h4 class="control-sidebar-subheading">
+                                Laravel Integration
+                                <span class="label label-warning pull-right">50%</span>
+                            </h4>
+                            <div class="progress progress-xxs">
+                                <div class="progress-bar progress-bar-warning" style="width: 50%"></div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript::;">
+                            <h4 class="control-sidebar-subheading">
+                                Back End Framework
+                                <span class="label label-primary pull-right">68%</span>
+                            </h4>
+                            <div class="progress progress-xxs">
+                                <div class="progress-bar progress-bar-primary" style="width: 68%"></div>
+                            </div>
+                        </a>
+                    </li>
+                </ul><!-- /.control-sidebar-menu -->
+            </div><!-- /.tab-pane -->
+            <!-- Stats tab content -->
+            <div class="tab-pane" id="control-sidebar-stats-tab">Stats Tab Content</div><!-- /.tab-pane -->
+            <!-- Settings tab content -->
+            <div class="tab-pane" id="control-sidebar-settings-tab">
+                <form method="post">
+                    <h3 class="control-sidebar-heading">General Settings</h3>
+                    <div class="form-group">
+                        <label class="control-sidebar-subheading">
+                            Report panel usage
+                            <input type="checkbox" class="pull-right" checked>
+                        </label>
+                        <p>
+                            Some information about this general settings option
+                        </p>
+                    </div><!-- /.form-group -->
+                    <div class="form-group">
+                        <label class="control-sidebar-subheading">
+                            Allow mail redirect
+                            <input type="checkbox" class="pull-right" checked>
+                        </label>
+                        <p>
+                            Other sets of options are available
+                        </p>
+                    </div><!-- /.form-group -->
+                    <div class="form-group">
+                        <label class="control-sidebar-subheading">
+                            Expose author name in posts
+                            <input type="checkbox" class="pull-right" checked>
+                        </label>
+                        <p>
+                            Allow the user to show his name in blog posts
+                        </p>
+                    </div><!-- /.form-group -->
+                    <h3 class="control-sidebar-heading">Chat Settings</h3>
+                    <div class="form-group">
+                        <label class="control-sidebar-subheading">
+                            Show me as online
+                            <input type="checkbox" class="pull-right" checked>
+                        </label>
+                    </div><!-- /.form-group -->
+                    <div class="form-group">
+                        <label class="control-sidebar-subheading">
+                            Turn off notifications
+                            <input type="checkbox" class="pull-right">
+                        </label>
+                    </div><!-- /.form-group -->
+                    <div class="form-group">
+                        <label class="control-sidebar-subheading">
+                            Delete chat history
+                            <a href="javascript::;" class="text-red pull-right"><i class="fa fa-trash-o"></i></a>
+                        </label>
+                    </div><!-- /.form-group -->
+                </form>
+            </div><!-- /.tab-pane -->
+        </div>
+    </aside><!-- /.control-sidebar -->
+    <!-- Add the sidebar's background. This div must be placed
+         immediately after the control sidebar -->
+    <div class="control-sidebar-bg"></div>
+
+<script type="text/javascript" language="javascript">
+   
+
+      
+
+    $(document).ready(function () {
+      
+    });
+      var pieChartDataSource = [
+          { category: 'Word', value:@ViewData["DocxInMb"] },
+          { category: 'Excel',value:@ViewData["ExcelInMb"] },
+          { category: 'Jpg',value:@ViewData["JpgInMb"] },
+          { category: 'Jpeg', value:@ViewData["JpegInMb"] },
+           { category: 'mp4', value:@ViewData["mp4InMb"] }
+
+
+      ];
+
+      $(function () {
+        $("#pChart").dxPieChart({
+          dataSource: pieChartDataSource,
+          series: {
+            argumentField: 'category',
+            valueField: 'value',
+            label: {
+                visible: true,
+
+              connector: {
+                visible: true
+              }
+            }
+          },
+          pathModified: true,
+          tooltip: {
+            enabled: true,
+            percentPrecision: 2,
+            customizeTooltip: function (value) {
+              return {
+                text: value.percentText
+              };
+            }
+          },
+          title: {
+            text: 'Storage by Extention'
+          },
+          legend: {
+              horizontalAlignment: 'center',
+
+            verticalAlignment: 'bottom'
+          }
+        });
+      });
+
+    //online user
+    
+
+
+     // $(function(){
+     //     var counterHub=$.connection.counterHub;
+     //     $.connection.hub.start().done(function(){
+            
+            
+     //     });
+     //     counterHub.client.UpdateCount=function(count){
+     //         $("#Counter").text(count);
+     //     }
+     // });
+
+     $("#package").dxChart({
+              dataSource: @Html.Raw(ViewBag.json.ToString()),
+            series: [
+            { argumentField: "PackageName"}],
+            commonSeriesSettings: {
+            argumentField: "PackageName",
+            type: "bar",
+            hoverMode: "allArgumentPoints",
+            selectionMode: "allArgumentPoints",
+            label: {
+            visible: true,
+            format: "fixedPoint",
+            precision: 0
+            }
+            },
+            series: [
+            { valueField: "Price", name: "Price(PKR)" },
+            { valueField: "OnlineStorage", name: "Storage(GB)" },
+            { valueField: "MoneyBack", name: "MoneyBack(Days)" }
+
+
+
+           ],
+            title: "UDrive Storage Package With Max Limit",
+            legend: {
+            verticalAlignment: "bottom",
+            horizontalAlignment: "center"
+            },
+            onPointClick: function (e) {
+            e.target.select();
+            }
+            });
+
+
+      $("#doughnut").dxPieChart({
+          dataSource: pieChartDataSource,
+          title: "The Population of Continents and Regions",
+          tooltip: {
+              enabled: true,
+              format:"millions",
+              percentPrecision: 2,
+              customizeTooltip: function (value) {
+                  return {
+                      text: value.percentText
+                  };
+              }
+          },
+          legend: {
+              horizontalAlignment: "right",
+              verticalAlignment: "top",
+              margin: 0
+          },
+          series: [{
+              argumentField: 'category',
+              valueField: 'value',   
+              label: {
+                  visible: true,
+                  format: "millions",
+                  connector: {
+                      visible: true
+                  }
+              }
+          }]
+      });
+      $('#Circular').dxCircularGauge({
+          scale: {
+              startValue: 0,
+              endValue: 150,
+              tickInterval: 20,
+              label: {
+                  useRangeColors: true
+              }
+          },
+          rangeContainer: {
+              palette: 'pastel',
+              ranges: [
+                  { startValue: 0, endValue: 50 },
+                  { startValue: 50, endValue: 100 },
+                  { startValue: 100, endValue: 150 },
+              ]
+          },
+
+          title: {
+              text: 'UDrive Server Storage',
+              font: { size: 28 }
+          },
+          value: @ViewData["RootInGB"]
+        
+        
+      });
+    
+</script>

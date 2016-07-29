@@ -1,0 +1,20 @@
+@{ FileManagerDetailsViewModeDemoOptions options = (FileManagerDetailsViewModeDemoOptions)Session["Options"]; }
+
+@Html.DevExpress().FileManager(
+    settings =>
+    {
+        settings.Name = "fileManager";
+        settings.CallbackRouteValues = new { Controller = "FileManager", Action = "DetailsViewModePartial" };
+        settings.Width = Unit.Percentage(100);
+
+        settings.Settings.AllowedFileExtensions = FileManagerDemoHelper.AllowedFileExtensions;
+        settings.Settings.InitialFolder = "~/App_Data/uploads";
+        settings.Settings.ThumbnailFolder = Url.Content("~/App_Data/uploads");
+
+        settings.SettingsFileList.View = FileListView.Details;
+        settings.SettingsFileList.DetailsViewSettings.AllowColumnDragDrop = options.AllowColumnDragDrop;
+        settings.SettingsFileList.DetailsViewSettings.AllowColumnResize = options.AllowColumnResize;
+        settings.SettingsFileList.DetailsViewSettings.AllowColumnSort = options.AllowColumnSort;
+        settings.SettingsFileList.DetailsViewSettings.ShowHeaderFilterButton = options.ShowHeaderFilterButton;
+    }
+).BindToFileSystemProvider(Model).GetHtml()

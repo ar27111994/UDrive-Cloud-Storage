@@ -1,0 +1,7 @@
+﻿
+<div class="container">
+    @using (Html.BeginForm())
+    {
+        @Html.Action("EditExcelPartial", new { File = ViewData["File"] })
+    }
+    </div>

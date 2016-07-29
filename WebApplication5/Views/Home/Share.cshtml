@@ -1,0 +1,25 @@
+﻿
+
+
+
+@{
+
+    Layout = null;
+}
+<div class="modal-body" style="color:black">
+    <form action="@Url.Action("FileShare","Collabration")" method="POST" name="form">
+        <label style="color:black">Email</label>
+        <input type="email" name="email" />
+        <div class="Selection">
+
+        </div>
+
+        <div class="modal-footer">
+            <button type="button" class="btn btn-warning" data-dismiss="modal">Close</button>
+
+            <input type="submit" class="btn btn-primary" value="Share">
+        </div>
+    </form>
+
+</div>
+

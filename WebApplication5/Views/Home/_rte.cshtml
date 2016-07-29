@@ -1,0 +1,9 @@
+@Html.DevExpress().RichEdit(settings => {
+    settings.Name = "RichEdit";
+    settings.CallbackRouteValues = new { Controller = "Home", Action = "rte" };
+    settings.Width = System.Web.UI.WebControls.Unit.Percentage(100);
+	settings.Height = 500;
+	settings.ReadOnly = false;
+        settings.WorkDirectory = "~/App_Data/uploads";
+    	settings.RibbonMode = RichEditRibbonMode.Ribbon;
+}).GetHtml()

@@ -1,0 +1,347 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - UDrive</title>
+   
+
+       
+
+    @Styles.Render("~/Content/css")
+    @*@Styles.Render("~/Content/themes/base/css")*@
+
+    <link href="~/Content/cardio.css" rel="stylesheet" />
+
+
+    
+
+    @Html.DevExpress().GetScripts(
+    new Script { ExtensionSuite = ExtensionSuite.NavigationAndLayout },
+    new Script { ExtensionSuite = ExtensionSuite.HtmlEditor },
+    new Script { ExtensionSuite = ExtensionSuite.GridView },
+    new Script { ExtensionSuite = ExtensionSuite.PivotGrid },
+    new Script { ExtensionSuite = ExtensionSuite.Editors },
+    new Script { ExtensionSuite = ExtensionSuite.Chart },
+    new Script { ExtensionSuite = ExtensionSuite.Report },
+    new Script { ExtensionSuite = ExtensionSuite.Scheduler },
+    new Script { ExtensionSuite = ExtensionSuite.TreeList },
+    new Script { ExtensionSuite = ExtensionSuite.RichEdit },
+    new Script { ExtensionSuite = ExtensionSuite.Spreadsheet },
+    new Script { ExtensionSuite = ExtensionSuite.SpellChecker }
+)
+
+
+
+
+
+    @Scripts.Render("~/bundles/bootstrap")
+    @Scripts.Render("~/bundles/jquery")
+
+    @RenderSection("scripts", required: false)
+
+
+    @Html.DevExpress().GetStyleSheets(
+    new StyleSheet { ExtensionSuite = ExtensionSuite.NavigationAndLayout },
+    new StyleSheet { ExtensionSuite = ExtensionSuite.Editors },
+    new StyleSheet { ExtensionSuite = ExtensionSuite.HtmlEditor },
+    new StyleSheet { ExtensionSuite = ExtensionSuite.GridView },
+    new StyleSheet { ExtensionSuite = ExtensionSuite.PivotGrid },
+    new StyleSheet { ExtensionSuite = ExtensionSuite.Chart },
+    new StyleSheet { ExtensionSuite = ExtensionSuite.Report },
+    new StyleSheet { ExtensionSuite = ExtensionSuite.Scheduler },
+    new StyleSheet { ExtensionSuite = ExtensionSuite.TreeList },
+    new StyleSheet { ExtensionSuite = ExtensionSuite.RichEdit },
+    new StyleSheet { ExtensionSuite = ExtensionSuite.Spreadsheet },
+    new StyleSheet { ExtensionSuite = ExtensionSuite.SpellChecker }
+)
+
+</head>
+<body background="~/img/sky.jpg">
+
+    <div class="container-fluid">
+        <nav class="navbar navbar-default" style="background-color: lightblue; position:relative; top:0px;">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="home" style="color:#000000;">UDrive</a>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+                    <form action="@Url.Action("LogOff", "Account")" method="POST">
+                        @Html.AntiForgeryToken()
+                        <ul class="nav navbar-nav navbar-right">
+                            @{if (!User.Identity.IsAuthenticated)
+                                {
+                                    <text>
+                                        <li><a style="margin-top:5px; color:white;" onclick="location.href='@Url.Action("Login", "Account")'" class="btn btn-primary">SIGNIN</a></li></text>
+                                }
+
+                                else {
+                                    <text>
+
+                                        @*<li><button type="submit" style="margin-top:5px;" class="btn btn-primary">Logout</button></li>*@
+                            <li class="dropdown user user-menu" >
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                    <b> @User.Identity.Name</b>
+                                </a>
+                                <ul class="dropdown-menu" style="background-color:lightblue">
+                                    <!-- User image -->
+                                   
+                                    <!-- Menu Body -->
+                                    <li class="user-body">
+                                        <div class="col-xs-4 text-center">
+                                           
+                                        </div>
+                                        <div class="col-xs-4 text-center">
+                                            <small>Member since Apr. 2016</small>
+                                        </div>
+                                       
+                                    </li>
+                                    <!-- Menu Footer-->
+                                    <li class="user-footer">
+                                        <div class="pull-left">
+                                            <a href="@Url.Action("UserProfile","home")" class="btn btn-info btn-flat">Profile</a>
+                                        </div>
+                                        <div class="pull-right">
+                                            <button type="submit" style="margin-top:5px;" class="btn btn-primary">Logout</button>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+
+                                    </text>
+
+                                }
+
+
+
+                            }
+                           
+                        </ul>
+                    </form>
+                </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+        </nav>
+        <div class="container">
+
+        <div class="row" style="margin-top: 3%;">
+            <div class="col-md-6"></div>
+            <div class="col-md-2" style="color: white"><a style="color: white" href="@Url.Action("UpgradeAccount","Home")"><i class="fa fa-star-o"></i>  Upgrade Account</a></div>
+
+            <div class="col-md-1">
+                <div class="dropdown">
+                    <button class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                        <i class="fa fa-bell-o belcount "></i><small  class="badge belcount"> @Html.Partial("~/Views/Home/notificationCounter.cshtml") </small>
+
+
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li>
+                            
+                            <div id="messagesTable"><br /></div>
+                           
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-md-3 " style="color: white; font-family:cursive">
+                <i class="fa fa-smile-o"> Welcome</i><br />
+                <strong style="color:white;font-family:'Times New Roman'" class="text-primary"><a style="color:white;" href="@Url.Action("Index", "Manage")"> @User.Identity.Name</a></strong>
+            </div>
+
+
+        </div>
+        <div class="row" style="color: white;margin-left:4px;margin-top:4%;">
+            <div class="col-md-2">
+                <i class="fa fa-cloud fa-4x"></i>
+
+            </div>
+            <div class="col-md-6" style="margin-left: 1%;"><h3>UDrive</h3></div>
+
+            <div class="col-md-3">
+                <i title="New Folder" class="fa fa-folder-o fa-2x ho" data-toggle="modal" data-target="#foldername">
+
+                </i>
+                <div class="modal fade" - id="foldername" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            s
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                <h4 class="modal-title" id="myModalLabel" style="color:black">create new folder</h4>
+                            </div>
+                            <div class="modal-body">
+                                <form action="foldermaking" method="POST" name="form">
+
+                                    <label style="color:black">Folder Name</label>
+
+                                    <input type="text" name="path" style="color:black">
+                                    <input type="hidden" name="folderName" value="@ViewData["directories"]" />
+
+
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-warning" data-dismiss="modal">Close</button>
+                                        <input type="submit" class="btn btn-primary" value="Create">
+                                    </div>
+                                </form>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <i title="Upload..." style="margin-left:20px;" class="fa fa-cloud-upload fa-2x" data-toggle="modal" data-target="#upload"></i>
+
+                <div class="modal fade" id="upload" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                <h4 class="modal-title" id="myModalLabel" style="color:black">File Uploading</h4>
+                            </div>
+                            <div class="modal-body">
+                                <form action="do_upload" method="POST" enctype="multipart/form-data">
+
+                                    <input type="file" name="file" id="file" />
+
+
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-warning" data-dismiss="modal">Close</button>
+                                        <input type="hidden" name="folderName" value="@ViewData["directories"]" />
+                                        <input type="submit" class="btn btn-primary" value="Upload">
+                                    </div>
+                                </form>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <i title="Share a folder" style="margin-left:20px;" class="fa fa-share-alt-square fa-2x"></i><a style="color:white;" href="@Url.Action("RecycleBin","Home")"><i title="Show deleted files" style="margin-left:20px;" data-toggle="modal" data-target="#share" class="fa fa-trash-o fa-2x"></i></a>
+
+
+            </div>
+        </div>
+
+
+        <div class="row" style="margin-top: 6%;">
+            <div class="progress">
+
+              
+
+                <div class="progress-bar-striped progress-bar-success" role="progressbar" aria-valuenow='@ViewData["CurrentStorage"]' aria-valuemin="0" aria-valuemax="@ViewData["MaxStorage"] " style="width:@ViewData["per"]%">
+                    <span class="text-center" style="color:black;padding-left:500px;">@ViewData["per"]%Full</span>
+                </div>
+            </div>
+            <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuemin="70" aria-valuemax="100">
+            </div>
+            <div class="col-md-2">
+
+                <h4 style="margin-left:20px;color: white;margin-top: 10%;"><i class="fa fa-file-text-o" style=""></i> <a style="color:white;" href="home"> Files</a></h4> <br>
+                <h4 style="margin-left:20px;color: white;"><i class="fa fa-file-video-o" aria-hidden="true"></i> <a style="color:white;" href="Videos">Videos</a></h4> <br>
+                <h4 style="margin-left:20px;color: white;"><i class="fa fa-file-image-o"></i> <a style="color:white;" href="ImageGallery">  Gallery</a></h4> <br>
+                <hr />
+                <h4 style="margin-left:20px; color: white;"><i class="fa fa-envelope"></i> <a style="color:white;" href="Feedback">      Feedback</a></h4> <br>
+                <h4 style="margin-left:20px;color: white;"><i class="fa fa-share"></i>      Sharing</h4> <br>
+                <h4 style="margin-left:20px;color: white;"><i class="fa fa-external-link-square"></i>  Links</h4> <br><hr />
+               
+                <h4 style="margin-left:20px; color: white;"><i class="fa fa-trash-o"></i> <a style="color:white;" href="@Url.Action("RecycleBin", "Home")">      Deleted Files</a></h4> <br>
+               
+                <form action="@Url.Action("LogOff", "Account")" method="POST">
+                    @Html.AntiForgeryToken()
+                    @*<h4  onclick="s" style="margin-left:20px; color: white;"><i class="fa fa-trash-o"></i>  <a style="color:white;">     Logout</a></h4> <br>*@
+                  <h4>  <a href="javascript:void(0)"  style="margin-left:20px;color:white" class="login-button"><i class="fa fa-trash-o"></i> Logout</a> </h4>     
+                              </form>
+
+
+
+
+
+</div>
+         
+            @RenderBody()
+            </div>
+            <hr />
+        </div>
+        </div>
+    <footer class="text-center danger" style="background-color:rgba(62, 21, 121,0.6)">
+        <div class="footer-above">
+
+            <div class="row">
+                <div class="footer-col col-md-4">
+                    <h3 style="color:white;">Location</h3>
+                    <p style="color:white;">PMAS UAAR<br>Shamsabad, Rawalpindi<br />0305-5742260</p>
+                </div>
+                <div class="footer-col col-md-4">
+                    <h3 style="color:white;">Around the Web</h3>
+                    <ul class="list-inline">
+                        <li>
+                            <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-facebook"></i></a>
+                        </li>
+                        <li>
+                            <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-google-plus"></i></a>
+                        </li>
+                        <li>
+                            <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-twitter"></i></a>
+                        </li>
+                        <li>
+                            <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-linkedin"></i></a>
+                        </li>
+                        <li>
+                            <a href="#" class="btn-social btn-outline"><i class="fa fa-fw fa-dribbble"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-col col-md-4" style="color:white;">
+                    <h3 style="color:white;">About UDrive</h3>
+                    <p style="color:white;">
+                        UDrive is an online storage ,where every one can <br />
+                        store necessary file.<br />By<a href="https://www.facebook.com/sajid.ishaq.90"><br />Sajid Ishaq</a>.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="footer-below ">
+
+            <div class="row" style="color:white;">
+                <div class="col-lg-12">
+                    <p style="color:white;">&copy; @DateTime.Now.Year - UDrive</p>
+                </div>
+
+            </div>
+        </div>
+        <script src="~/Scripts/notiny.min.js"></script>
+        <!--Reference the autogenerated SignalR hub script. -->
+        <script>
+            $(document).ready(function () {
+                $(document).on("click", ".login-button", function () {
+                    var form = $(this).closest("form");
+                    //console.log(form);
+                    form.submit();
+                });
+               
+               
+            });
+        </script>
+        
+    </footer>
+
+
+
+
+
+
+</body>
+</html>
+    

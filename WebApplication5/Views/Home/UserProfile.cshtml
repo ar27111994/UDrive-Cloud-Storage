@@ -1,0 +1,35 @@
+﻿@model IEnumerable<WebApplication5.Models.UserManager>
+
+@{
+    ViewBag.Title = "UserProfile";
+    Layout = "~/Views/Home/_Layout.cshtml";
+}
+
+    <div class="jumbotron">
+        <h3 style="text-align:center">@User.Identity.Name</h3>
+        <div style="margin-left:38%;margin-top:4%;">
+
+           
+           
+                @foreach (var item in Model)
+                {
+
+                    <h4>Email: @User.Identity.Name</h4>
+                    item.CurrentStorage = Math.Round(item.CurrentStorage, 2);
+                    item.MaxStorage = Math.Round(item.MaxStorage, 2);
+                    item.CurrentStorage = item.CurrentStorage / item.MaxStorage;
+                    item.CurrentStorage = item.CurrentStorage * 100;
+
+                    <h4>Current Storage: @item.CurrentStorage%</h4>
+                    <h4>Max Storage:  @item.MaxStorage GB</h4>
+
+                }
+            <br />
+            <a  href="@Url.Action("Index","Manage")" class="btn btn-info" value="Manage Account" >Manage Account</a>
+            </div>
+
+            
+        </div>
+
+           
+      

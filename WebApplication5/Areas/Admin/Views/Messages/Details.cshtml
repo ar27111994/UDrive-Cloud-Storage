@@ -1,0 +1,44 @@
+﻿@model WebApplication5.Models.Messages
+<div class="content-wrapper">
+    <div class="row">
+        <div style="margin:50px;">
+
+
+            <div>
+                <h4>Messages</h4>
+                <hr />
+                <dl class="dl-horizontal">
+                    <dt>
+                        @Html.DisplayNameFor(model => model.Message)
+                    </dt>
+
+                    <dd>
+                        @Html.DisplayFor(model => model.Message)
+                    </dd>
+
+                    <dt>
+                        @Html.DisplayNameFor(model => model.EmptyMessage)
+                    </dt>
+
+                    <dd>
+                        @Html.DisplayFor(model => model.EmptyMessage)
+                    </dd>
+
+                    <dt>
+                        @Html.DisplayNameFor(model => model.MessageDate)
+                    </dt>
+
+                    <dd>
+                        @Html.DisplayFor(model => model.MessageDate)
+                    </dd>
+
+                </dl>
+            </div>
+            <p>
+                @Html.ActionLink("Edit", "Edit", new { id = Model.MessageID }) |
+                @Html.ActionLink("Back to List", "Index")
+            </p>
+</div>
+
+</div>
+</div>

@@ -1,0 +1,205 @@
+﻿
+@{
+    ViewBag.Title = "Signin";
+}
+
+
+
+
+
+<html>
+<head>
+    <script>
+function validateForm() {
+    var x=document.forms["myForm"]["firstname"].value;
+        var y=document.forms["myForm"]["lastname"].value;
+            var w=document.forms["myForm"]["email"].value;
+                var z=document.forms["myForm"]["password"].value;
+                                var c=document.forms["myForm"]["terms"].checked;
+
+    if(x=="")
+    {
+        alert('first name must be filed');
+       return false;
+    }
+  else if(x.match(/^[0-9]+$/))
+    {
+        alert('only letters');
+       return false;
+    }
+
+   else if(y.match(/^[0-9]+$/))
+    {
+        alert('only letters');
+       return false;
+    }
+
+     else if(y=="")
+    {
+        alert('last name must be filed');
+       return false;
+    }
+    else if(w=="")
+    {
+        alert('email must be filed');
+       return false;
+    }
+
+    else if(z=="")
+    {
+        alert('password name must be filed');
+        return false;
+    }
+    else if(z.length<5)
+    {
+        alert('password too short');
+        return false;
+    }
+     else if(c==false)
+    {
+        alert('accept terms and conditions');
+        return false;
+    }
+   return true;
+
+}
+function checklogin()
+{
+    var w=document.forms["form_login"]["email"].value;
+                var z=document.forms["form_login"]["pass"].value;
+    if(w=="")
+    {
+        alert('email must be filed');
+       return false;
+    }
+
+    else if(z=="")
+    {
+        alert('password must be filed');
+        return false;
+    }
+    return true;
+}
+    </script>
+
+
+</head>
+<body>
+
+
+    <div class="container">
+        <div class="signup" style="margin-left: 50%">
+
+            <form name="form_login" action="Login" method="POST" onsubmit="return checklogin();">
+                <label style=" margin-top:30px; color:white;">Email:</label>
+
+                <input type="text" name="email" id="email" class="input"><label style="padding-left:16px; margin-top: 30px;color: white;">Password:</label>
+
+                <input type="password" name="pass" id="pass" class="input">
+
+                <input type="submit" name="sub" value="signin" id="sub" class="btn btn-success">
+            </form>
+        </div>
+        <div id="result" style="color: white;margin-left: 50%;"></div>
+        <div id="resultpass" style="color: white;margin-left: 80%;"></div>
+        <hr>
+
+        <div class="row" style="margin-top: 6%;">
+
+            <div class="col-md-3">
+
+
+            </div>
+            <div class="col-md-6">
+
+                <h1 class="text-box-dark text-center" style="color: white;">Signup</h1><hr>
+                <form name="myForm" action="signup" onsubmit="return validateForm()" method="POST">
+                    <table class="tbl table-condensed btn-hover text-box-dark">
+                        <tr class="info">
+                            <td>
+                                <label style="padding-left:120px; margin-top: 80px; color: white;">First Name:</label>
+                            </td>
+
+                            <td style="padding-left:60px; padding-top:80px;color: white;"><input type="text" id="fname" name="firstname" placeholder="First Name" class="text-info"></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label style="padding-left:120px; margin-top: 30px;color: white;">Last Name:</label>
+                            </td>
+
+                            <td style="padding-left:60px; padding-top:30px;"><input type="text" name="lastname" placeholder="Last Name" class="text-info"></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label style="padding-left:120px;  margin-top: 30px;color: white;">Email:</label>
+                            </td>
+
+                            <td style="padding-left:60px; padding-top:30px;"><input type="email" name="email" placeholder="Email" class="text-info"></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label style="padding-left:120px; margin-top: 30px;color: white;">Password:</label>
+                            </td>
+
+                            <td style="padding-left:60px; padding-top:30px;"><input type="password" name="password" placeholder="Password" class="text-info"></td>
+                        </tr>
+                        <tr class="text-center ">
+                            <td colspan="2" style="padding-left:140px; padding-top:30px;">
+                                <input type="checkbox" name="terms" value="1">
+                                <label><span style="margin-left: 20px;color: white;">  I agreed to <a style="color:#00cccc;" href="http://localhost/ci/index.php/cloud/terms">UDrive Terms</a></span></label><br>
+                                <input type="submit" value="signup" class="btn btn-success">
+                            </td>
+                        </tr>
+
+                    </table>
+                </form>
+            </div>
+            <div class="col-md-3">
+
+
+
+            </div>
+
+
+        </div>
+    </div>
+    <footer class="footer">
+
+        <script>
+$(document).ready(function(){
+
+
+   $(".input").keyup(function(){
+      var email=$("#email").val();
+      var pass=$("#pass").val();
+    $.ajax({
+        url: "http://localhost/ci/index.php/cloud/ajax_email",
+        type:"POST",
+        data:{email:email,pass:pass},
+        success: function(result){
+            if(result==-1)
+        $("#result").html("email does not exist");
+    else if(result==1)
+
+
+        {
+          $("#result").html("");
+    $.ajax({
+        url: "http://localhost/ci/index.php/cloud/ajax_pass",
+        type:"POST",
+        data:{email:email,pass:pass},
+        success: function(result){
+
+        $("#resultpass").html(result);
+
+    }
+    });
+
+        }
+    }});
+});
+});
+        </script>
+    </footer>
+</body>
+</html>

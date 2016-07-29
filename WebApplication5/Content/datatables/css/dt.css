@@ -1,0 +1,84 @@
+/*
+Copyright (c) 2010, Yahoo! Inc. All rights reserved.
+Code licensed under the BSD License:
+http://developer.yahoo.com/yui/license.html
+version: 3.3.0
+build: 3167
+*/
+ 
+div.dataTables_filter {
+    float: right;
+    background-color: lightblue;
+}
+ 
+div.dataTables_info {
+    float: left;
+    background-color: lightblue;
+}
+ 
+div.dataTables_paginate {
+    float: right;
+    background-color: lightblue;
+}
+ 
+div.dataTables_length,
+div.dataTables_filter,
+div.dataTables_paginate,
+div.dataTables_info {
+    padding: 6px;
+}
+table.pretty {
+    clear: both;
+}
+ 
+/* Self clearing - */
+div.dataTables_wrapper:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+html[xmlns] .dataTables_wrapper { display: block; }
+* html .dataTables_wrapper { height: 1%; }
+table.pretty {
+    width: 100%;
+    clear: both;
+}
+ 
+table.pretty td,
+table.pretty th {
+    padding: 5px;
+    border: 1px solid #fff;
+}
+table.pretty thead th {
+    text-align: center;
+    background: #66a9bd;
+}
+table.pretty tbody th {
+    text-align: left;
+    background: #91c5d4;
+}
+ 
+table.pretty tbody td {
+    text-align: center;
+    background: #d5eaf0;
+}
+ 
+table.pretty tbody tr.odd td {
+    background: #bcd9e1;
+}
+table.pretty tfoot th {
+    background: #b0cc7f;
+    text-align: left;
+}
+ 
+table.pretty tfoot td {
+    background: #d7e1c5;
+    text-align: center;
+    font-weight: bold;
+}
+div.dataTables_wrapper {
+    background-color: #719ba7;
+}

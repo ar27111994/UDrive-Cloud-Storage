@@ -1,0 +1,18 @@
+﻿
+@using (Html.BeginForm("UploadControlUpload", "FileManager", FormMethod.Post))
+{
+    @Html.DevExpress().UploadControl(settings =>
+{
+    settings.Name = "UploadControl";
+    settings.CallbackRouteValues = new { Controller = "FileManager", Action = "UploadControlUpload" };
+
+    settings.AdvancedModeSettings.EnableMultiSelect = true;
+    settings.AdvancedModeSettings.EnableFileList = true;
+    settings.AdvancedModeSettings.EnableDragAndDrop = true;
+
+    settings.ShowUploadButton = true;
+    settings.ShowProgressPanel = true;
+
+    settings.ValidationSettings.Assign(WebApplication5.Controllers.FileManagerControllerUploadControlSettings.UploadValidationSettings);
+}).GetHtml()
+}

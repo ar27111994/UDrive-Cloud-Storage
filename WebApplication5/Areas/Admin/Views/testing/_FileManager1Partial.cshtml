@@ -1,0 +1,91 @@
+@model IEnumerable<WebApplication5.Models.WorkerBookingDetail>
+
+@{
+    ViewBag.Title = "Check";
+    Layout = "~/Views/Shared/_LayoutUser.cshtml";
+}
+
+<div id="page-wrapper">
+    <div id="page-inner">
+        <h2>Check</h2>
+
+        @using (Html.BeginForm("CheckStore","CDashboard"))
+        {
+            @Html.AntiForgeryToken()
+
+            <div class="form-horizontal">
+                <h4>WorkerBookingDetail</h4>
+                <hr />
+                <table class="table">
+                    <tr>
+
+                        <th>@Html.DisplayNameFor(model => model.Workers.Worker_Name)</th>
+                        <th>@Html.DisplayNameFor(model => model.Slot1)</th>
+                        <th>@Html.DisplayNameFor(model => model.Slot2)</th>
+                        <th>@Html.DisplayNameFor(model => model.Slot3)</th>
+                        <th>@Html.DisplayNameFor(model => model.Slot4)</th>
+                        <th>Action</th>
+
+                    </tr>
+                    @{var resultantQuery = ViewBag.workers;}
+                    @foreach (var item in resultantQuery)
+                    {
+                        <tbody>
+                            <tr>
+                                <td>@item.Worker_Name.ToString()</td>
+                                @*<td>@Html.DisplayFor(modelItem => item.Workers.Worker_Name)</td>*@
+                                @*@Html.CheckBox("statecheck", (IEnumerable<SelectListItem>)ViewData["y"])*@
+                                @*@Html.CheckBox("Slot1", bool, htmlAttributes: new { @id = "Wo" })*@
+
+
+                                @*<td>
+                                        @Html.CheckBoxFor(modelItem => item.Slot1,
+                                                  new { @id = item.WorkerID, @class = "chks" });
+                                    </td>*@
+
+                                <td><input type="checkbox" name="slot1" value="chk1" class="chk" /> </td>
+                                <td><input type="checkbox" name="slot2" value="chk2" class="chk" /></td>
+                                <td><input type="checkbox" name="slot3" value="chk3" class="chk" /></td>
+                                <td><input type="checkbox" name="slot4" value="chk4" class="chk" /></td>
+                                <td><input type="submit" value="Book" id="buttonClass" class="btn btn-success" /></td>
+                            </tr>
+                        </tbody>
+                    }
+                </table>
+            </div>
+                        }
+
+        <div>
+            @Html.ActionLink("Back to List", "BookService")
+        </div>
+
+    </div>
+</div>
+
+<script type="text/javascript">
+    $(document).ready(function (e) {
+        /* Get the checkboxes values based on the class attached to each check box */
+        $("#buttonClass").click(function() {
+            getValueUsingClass();
+        });
+    });
+    function getValueUsingClass() {
+
+        var chkArray = [];
+
+        $(".chk").check(function () {
+            chkArray.push($(this).val());
+        });
+
+        var selected;
+        selected = chkArray.join(',') + ",";
+
+        if (selected.length > 1) {
+            alert("You have selected " + selected);
+        } else {
+            alert("Please select at least one of the checkbox");
+        }
+        return (false);
+    }
+
+</script>

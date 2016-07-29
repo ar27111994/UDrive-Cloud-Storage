@@ -1,0 +1,114 @@
+﻿@model IEnumerable<WebApplication5.Models.Package>
+<div class="content-wrapper">
+    <div class="row">
+        <div  style="margin:50px;">
+
+            <p>
+                @Html.ActionLink("Create New", "CreatePackage")
+            </p>
+            <table class="pretty" id="dt">
+                <thead>
+                    <tr>
+                       <th>
+                            @Html.DisplayNameFor(model => model.PackageName)
+                        </th>     
+                        <th>
+                            @Html.DisplayNameFor(model => model.OnlineStorage)
+                        </th>     
+                        <th>
+                            @Html.DisplayNameFor(model => model.MoneyBack)
+                        </th>                        
+                        <th>
+                            @Html.DisplayNameFor(model => model.Price)
+                        </th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.PackageName)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.OnlineStorage)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.MoneyBack)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Price)
+                            </td>
+                            <td>
+                                @Html.ActionLink("Edit", "PackageEdit", new { id = item.PackageId }) |
+                                @Html.ActionLink("Details", "PackageDetails", new { id = item.PackageId }) |
+                                @Html.ActionLink("Delete", "PackageDelete", new { id = item.PackageId })
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+</div>
+</div>
+
+    @section scripts{
+
+        <link href="~/Content/datatables/css/jquery.dataTables.css" rel="stylesheet" />
+        <link href="~/Content/datatables/css/dt.css" rel="stylesheet" />
+        <script src="~/Content/datatables/js/jquery.dataTables.js"></script>
+        <script type="text/javascript">
+
+        $(document).ready(function () {
+           $('#operation').hide();
+
+
+            $('.chk').change(function () {
+
+                $(this).each(function () {
+
+                if (this.checked) {
+
+
+                    $('#operation').show();
+
+                }
+
+                return;
+
+                });
+            });
+
+
+            $('#dt thead .files').each(function () {
+                var title = $(this).text();
+                $(this).html('<input type="text" placeholder="Search ' + title + '" />');
+            });
+
+            // DataTable
+            var table = $('#dt').DataTable();
+
+            // Apply the search
+            table.columns().every(function () {
+                var that = this;
+
+                $('input', this.header()).on('keyup change', function () {
+                    if (that.search() !== this.value) {
+                        that
+                            .search(this.value)
+                            .draw();
+                    }
+                });
+            });
+
+
+        });
+
+
+
+        </script>
+
+
+
+    }
+

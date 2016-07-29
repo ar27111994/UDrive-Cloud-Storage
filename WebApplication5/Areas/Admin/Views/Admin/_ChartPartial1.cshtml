@@ -1,0 +1,62 @@
+
+@Html.DevExpress().Chart(settings =>
+{
+    // Specify obligatory properties of the chart control.
+    settings.Name = "chart";
+
+
+    // Customize the chart appearance.
+    settings.Width = 440;
+    settings.Height = 460;
+    settings.AppearanceName = "Gray";
+    settings.PaletteName = "Office 2013";
+   
+    // Create a series.
+    Series series1998 = new Series() { Name = "1998" };
+    // Customize the series view.
+    SideBySideBarSeriesView view = series1998.View as SideBySideBarSeriesView;
+    if (view != null)
+    {
+        view.FillStyle.FillMode = FillMode.Solid;
+    }
+    // Populate the series with data.
+    series1998.Points.Add(new SeriesPoint("pakistan", 423.721));
+    series1998.Points.Add(new SeriesPoint("Australia", 178.719));
+    series1998.Points.Add(new SeriesPoint("Japan", 308.845));
+    series1998.Points.Add(new SeriesPoint("London", 348.555));
+    series1998.Points.Add(new SeriesPoint("UAE", 160.274));
+    // Add series to the series collection.
+    settings.Series.Add(series1998);
+
+
+    Series series2001 = new Series() { Name = "2001" };
+    view = series2001.View as SideBySideBarSeriesView;
+    view.FillStyle.FillMode = FillMode.Solid;
+    series2001.Points.Add(new SeriesPoint("pakistan", 476.851));
+    series2001.Points.Add(new SeriesPoint("Australia", 195.769));
+    series2001.Points.Add(new SeriesPoint("Japan", 335.793));
+    series2001.Points.Add(new SeriesPoint("London", 374.771));
+    series2001.Points.Add(new SeriesPoint("UAE", 182.373));
+    settings.Series.Add(series2001);
+
+    Series series2004 = new Series() { Name = "2004" };
+    view = series2004.View as SideBySideBarSeriesView;
+    view.FillStyle.FillMode = FillMode.Solid;
+    series2004.Points.Add(new SeriesPoint("pakistan", 528.904));
+    series2004.Points.Add(new SeriesPoint("Australia", 227.271));
+    series2004.Points.Add(new SeriesPoint("Japan", 372.576));
+    series2004.Points.Add(new SeriesPoint("London", 418.258));
+    series2004.Points.Add(new SeriesPoint("UAE", 211.727));
+    settings.Series.Add(series2004);
+
+    // Add title to the chart.
+    settings.Titles.Add(new ChartTitle() { Text = "Cloud storage VS countries" });
+   
+    // Customize the chart diagram.
+    XYDiagram diagram = settings.Diagram as XYDiagram;
+    if (diagram != null)
+    {
+        diagram.AxisY.Title.Text = "Millions of USD";
+        diagram.AxisY.Title.Visibility = DefaultBoolean.True;
+    }
+}).GetHtml()

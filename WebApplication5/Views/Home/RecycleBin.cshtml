@@ -1,0 +1,196 @@
+﻿@{   Layout = "~/Views/Shared/_Layout.cshtml";}
+@model List<WebApplication5.Models.fileViewModel>
+
+<div class="container">
+@using (Html.BeginForm())
+{
+    <div class="col-md-8" style="border-left:dotted white">
+
+
+    <div id="operation" class="btn btn-group btn-group-sm">
+
+        <input type="submit" class="btn btn-default" formmethod="post" formaction="@Url.Action("Restore", "Home")" style="color:black" value="Restore">
+        <input type="submit" class="btn btn-default" formmethod="post" formaction="@Url.Action("Delete", "Home")" style="color:black" value="Delete">
+
+    </div>
+        <table class="pretty" id="dt">
+            <thead>
+                <tr>
+                    <th class="files">
+                        Files
+                    </th>
+                    <th>Select for operations</th>
+                    @*<th style="color:black;">
+                        Preview
+                    </th>
+                    <th style="color:black;">
+                        Download
+                    </th>*@
+                </tr>
+
+            </thead>
+            <tbody>
+
+
+                @for (var i = 0; i < Model.Count(); i++)
+                {
+                    if (Directory.Exists(Model[i].path))
+                    {
+
+                        <text>
+
+                            <tr>
+                            @{string path = Model[i].path;
+                            }
+                                <td>
+
+                                    <a href="@Url.Action("home", "Home", new { folderPath = Model[i].path })"><i class="fa fa-folder-open fa-4x" style="color:white;" aria-hidden="true"></i> <h5 style="color:black">@{string ff = new DirectoryInfo(Model[i].name).Name;}@ff</h5></a>
+                                    @{ViewData["FolderPath"] = Model[i].path;}
+                                </td>
+                                 <td>
+                                    @Html.HiddenFor(f => Model[i].path)
+                                    @Html.CheckBoxFor(f => Model[i].isCheck, new { @class = "chk" })
+
+
+                                </td>
+                                
+
+                               
+
+
+
+                            </tr>
+                        </text>
+                                        }
+                                        else {
+                                            <text>
+
+                                                <tr>
+
+                                                    @{string path = Model[i].path;
+                                                        ViewData["OldName"] = path;}
+                                                    @{
+                                                        var allowedExtensions = new[] { ".doc", ".txt", ".docx" };
+                                                        var images = new[] { ".jpg", ".jpeg", ".png", ".JPG" };
+                                                        var Excel = new[] { ".xlsx" };
+                                                        var Pdf = new[] { ".pdf" };
+                                                        var ppt = new[] { ".pptx", ".ppt" };
+                                                        var video = new[] { ".mp4", ".avi", ".flv", ".mkv", ".vob", ".wmv" };
+                                                        var extension = @Path.GetExtension(Model[i].name);
+                                                        string ext = @Path.GetExtension(Model[i].name);
+                                                    }
+                                                    @{
+
+                                                        <td>
+                                                            @{
+                                                                if (allowedExtensions.Contains(extension))
+                                                                {
+                                                                    <i class="fa fa-file-word-o fa-4x" style="color:white" aria-hidden="true"></i><h5>@Model[i].name</h5>
+                                                                }
+                                                                else if (Excel.Contains(extension))
+                                                                {
+                                                                    <i class="fa fa-file-excel-o fa-4x" style="color:white" aria-hidden="true"></i> <h5> @Model[i].name</h5>  }
+                                                                else if (images.Contains(extension))
+                                                                {
+                                                                    <i class="fa fa-file-image-o fa-4x" style="color:white" aria-hidden="true"></i> <h5> @Model[i].name</h5>}
+                                                                else if (Pdf.Contains(extension))
+                                                                {
+                                                                    <i class="fa fa-file-pdf-o fa-4x" style="color:white" aria-hidden="true"></i><h5> @Model[i].name</h5>  }
+                                                                else if (ppt.Contains(extension))
+                                                                {
+                                                                    <i class="fa fa-file-powerpoint-o fa-4x" style="color:white" aria-hidden="true"></i><h5>  @Model[i].name</h5>
+                                                                }
+                                                                else if (video.Contains(extension))
+                                                                {
+                                                                    @Model[i].name    }
+
+                                                            }
+                                                        </td>
+                                                        <td>
+                                                           @Html.HiddenFor(f => Model[i].path)
+                                                            @Html.CheckBoxFor(f => Model[i].isCheck, new { @class = "chk" })
+
+
+                                                        </td>
+                                                       
+
+                                                    }
+
+                                                    <!---<td><a class="btn btn-default modal-title" data-toggle="modal" data-target="#rename" id="myModalLabel" href="@Url.Action("rename", "Home", new { path = path })" style="color:black">Rename</a></td>
+                                                    -->
+
+                                                </tr>
+                                                </text>
+                                                                    }
+
+                                                                }
+                                            </tbody>
+                                        </table>
+
+                                                                
+                                    </div>
+                                                                }
+                                </div>
+
+
+
+
+                                @section scripts{
+
+                                    <link href="~/Content/datatables/css/jquery.dataTables.css" rel="stylesheet" />
+                                    <link href="~/Content/datatables/css/dt.css" rel="stylesheet" />
+                                    <script src="~/Content/datatables/js/jquery.dataTables.js"></script>
+                                    <script type="text/javascript">
+
+                                        $(document).ready(function () {
+                                            $('#operation').hide();
+
+
+                                            $('.chk').change(function () {
+
+
+
+                                                if (this.checked) {
+
+
+                                                    $('#operation').show();
+
+                                                }
+
+                                                return;
+
+
+                                            });
+
+
+                                            $('#dt thead .files').each(function () {
+                                                var title = $(this).text();
+                                                $(this).html('<input type="text" placeholder="Search ' + title + '" />');
+                                            });
+
+                                            // DataTable
+                                            var table = $('#dt').DataTable();
+
+                                            // Apply the search
+                                            table.columns().every(function () {
+                                                var that = this;
+
+                                                $('input', this.header()).on('keyup change', function () {
+                                                    if (that.search() !== this.value) {
+                                                        that
+                                                            .search(this.value)
+                                                            .draw();
+                                                    }
+                                                });
+                                            });
+
+
+                                        });
+
+
+
+                                    </script>
+
+
+
+                                }

@@ -1,0 +1,461 @@
+﻿@{
+    ViewBag.Title = "home";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+
+}
+@model List<WebApplication5.Models.fileViewModel>
+
+
+
+<div class="container">
+   
+       
+          
+       
+        @using (Html.BeginForm())
+        {
+
+            <div class="col-md-8" style="border-left:2px dotted white">
+
+                <div id="operation" class="btn btn-group btn-group-sm">
+
+                    <input type="button" title="Rename"   data-toggle="modal" data-target="#cut" class="btn btn-default"  style="color:black" value="Cut">
+                    <input  type="button" title="Copy"   data-toggle="modal" data-target="#Copy" class="btn btn-default" style="color:black" value="Copy">
+                    <input type="submit" class="btn btn-default" formmethod="post" formaction="@Url.Action("Delete","Home")" style="color:black" value="Delete">
+                    <input type="submit" class="btn btn-default" formmethod="post" formaction="@Url.Action("Download","Home")" style="color:black" value="Download">
+                    <input type="button" title="Rename" data-toggle="modal" data-target="#Share" class="btn btn-default" style="color:black" value="Share">
+
+                </div>
+                <div class="btn-group-justified">
+                    <table class="pretty" id="dt">
+                        <thead>
+                            <tr>
+                                <th class="files">Files/Folder</th>
+                                <th class="files">Created Date</th>
+                                <th style="color:black; font-family:'Times New Roman';">Modified Date</th>
+                                <th style="color:black;font-family:'Times New Roman';">Last Access Date</th>
+                                <th style="color:black;font-family:'Times New Roman';">Select For Operations</th>
+                                <th style="color:black;font-family:'Times New Roman';">Edit/Open</th>
+                                <th style="color:black;font-family:'Times New Roman';">Rename</th>
+
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                           
+                            @for (var i = 0; i < Model.Count(); i++)
+                            {
+                                if (Directory.Exists(Model[i].path))
+                                {
+
+                                    <text>
+
+                            <tr>
+                                <td>
+
+                                    <a href="@Url.Action("home", "Home", new { folderPath = Model[i].path })"><i class="fa fa-folder-open fa-4x" style="color:white;" aria-hidden="true"></i> <h5 style="color:black">@{string ff = new DirectoryInfo(Model[i].name).Name;}@ff</h5></a>
+                                    @{ViewData["FolderPath"] = Model[i].path;}
+                                </td>
+                                <td>
+
+                                    @Directory.GetCreationTime(Model[i].path)
+                                </td>
+                                <td>@Directory.GetLastWriteTime(Model[i].path)</td>
+                                <td>@Directory.GetLastAccessTime(Model[i].path)</td>
+                                <td>
+                                    @Html.HiddenFor(f => Model[i].path)
+                                    @Html.CheckBoxFor(f => Model[i].isCheck, new { @class = "chk" })
+                                   
+                                <input type="hidden" value="dummmy" />
+                                </td>
+                                <td>
+                                    <a type="button" class="btn btn-success btn-sm " href="@Url.Action("home", "Home", new { folderPath = Model[i].path })" style="color:white">Open</a>
+                                </td>
+
+                                <td>
+                                    <input type="button" data-path="@Model[i].path" title="Rename" class="btn btn-success btn-sm rename" data-toggle="modal" data-target="#Folderrename" style="color:white" value="Rename">
+
+                                </td>
+
+
+
+
+                            </tr>
+                            </text>
+                                        }
+                                        else {
+                                <text>
+
+                                    <tr>
+                                       
+                                        @{string path = Model[i].path;
+                                            ViewData["OldName"] = path;}
+                                        @{
+                                            var allowedExtensions = new[] { ".doc", ".docx", ".rtf", ".txt", ".docx" };
+                                            var images = new[] { ".jpg", ".jpeg", ".png", ".JPG" };
+                                            var Excel = new[] { ".xlsx",".xls", ".csv", };
+                                            var Pdf = new[] { ".pdf" };
+                                            var ppt = new[] { ".pptx",".ppt" };
+                                            var video = new[] { ".mp4", ".avi", ".flv", ".mkv", ".vob", ".wmv" };
+                                            var extension = @Path.GetExtension(Model[i].name);
+                                            string ext = @Path.GetExtension(Model[i].name);
+                                        }
+                                        @{
+
+                                            <td>
+                                                @{
+                                                    if (allowedExtensions.Contains(extension))
+                                                    {
+                                                        <i class="fa fa-file-word-o fa-4x" style="color:white" aria-hidden="true"></i><h5>@Model[i].name</h5>
+                                                    }
+                                                    else if (Excel.Contains(extension))
+                                                    {
+                                                        <i class="fa fa-file-excel-o fa-4x" style="color:white" aria-hidden="true"></i> <h5> @Model[i].name</h5>  }
+                                                    else if (images.Contains(extension))
+                                                    {
+                                                        <i class="fa fa-file-image-o fa-4x"  style="color:white"aria-hidden="true"></i> <h5> @Model[i].name</h5>}
+                                                    else if (Pdf.Contains(extension))
+                                                    {
+                                                        <i class="fa fa-file-pdf-o fa-4x" style="color:white" aria-hidden="true"></i><h5> @Model[i].name</h5>  }
+                                                    else if (ppt.Contains(extension))
+                                                    {
+                                                        <i class="fa fa-file-powerpoint-o fa-4x" style="color:white" aria-hidden="true"></i><h5>  @Model[i].name</h5>
+                                                    }
+                                                    else if (video.Contains(extension))
+                                                    {
+                                                        @Model[i].name    }
+
+                                                }
+                                            </td>
+                                            <td>
+                                                @File.GetCreationTime(Model[i].path)
+                                            </td>
+                                            <td>@File.GetLastWriteTime(Model[i].path)</td>
+                                            <td>@File.GetLastAccessTime(Model[i].path)</td>
+                                            <td>
+                                                @Html.HiddenFor(f => Model[i].path)
+                                                @Html.CheckBoxFor(f => Model[i].isCheck, new { @class = "chk" })
+                                               @Html.HiddenFor(f => Model[i].folderName)
+
+                                            </td>
+
+                                                    if (allowedExtensions.Contains(extension))
+                                                    {
+
+                                                <td><a class="btn btn-success btn-sm " href="@Url.Action("EditDoc", "Home", new { path = path })" style="color:white">Edit</a></td>
+                                                    }
+                                                    else if (Excel.Contains(extension))
+                                                    {
+                                                <td><a class="btn btn-success btn-sm" href="@Url.Action("EditExcel", "Home", new { path = path })" style="color:white">Edit</a></td>
+                                                    }
+                                                    else if (images.Contains(extension))
+                                                    {
+                                                <td><a class="btn btn-success btn-sm" href="@Url.Action("picture", "Home", new { path = path })" style="color:white">Preview</a></td>
+                                                    }
+                                                    else if (Pdf.Contains(extension))
+                                                    {
+                                                <td><a class="btn btn-success btn-sm" href="@Url.Action("Pdf", "Home", new { path = path })" style="color:white">Preview</a></td>
+                                                    }
+                                                    else if (ppt.Contains(extension))
+                                                    {
+                                                <td><a class="btn btn-success btn-sm disabled" href="@Url.Action("#", "Home", new { path = path })" style="color:white">Edit</a></td>
+                                                    }
+                                                    else if (video.Contains(extension))
+                                                    {
+                                                <td><a class="btn btn-success btn-sm disabled" href="@Url.Action("picture", "Home", new { path = path })" style="color:white">Edit</a></td>
+                                                    } }
+
+                                        <!---<td><a class="btn btn-default modal-title" data-toggle="modal" data-target="#rename" id="myModalLabel" href="@Url.Action("rename", "Home", new { path = path })" style="color:black">Rename</a></td>
+                    -->
+                                        <td>
+                                            <input type="button" title="Rename" data-path="@Model[i].path" class="btn btn-success btn-sm Filerename" data-toggle="modal" data-target="#rename" style="color:white" value="Rename">
+                                        </td>
+                                    </tr>
+
+                                </text>
+
+
+                                                        }
+
+
+
+
+                                                    }
+
+
+                        </tbody>
+
+                    </table>
+
+
+                </div>
+            </div>
+                                            } 
+        <div class="modal fade" - id="rename" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+
+                    <div class="modal-header bg-aqua-gradient">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="myModalLabel" style="color:black">Rename Files</h4>
+                    </div>
+                    <div class="modal-body">
+                        <form action="Rename" method="POST" name="form">
+
+                            <label style="color:black">ReName</label>
+                            <input type="text" name="NewName" style="color:black">
+                            <input type="hidden" id="OldFilePath" name="OldName" style="color:black">
+
+
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-warning" data-dismiss="modal">Close</button>
+                                <input type="submit" class="btn btn-primary" value="Rename">
+                            </div>
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+<div class="modal fade" - id="Folderrename" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+
+            <div class="modal-header bg-aqua-gradient">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel" style="color:black">Rename Folder</h4>
+            </div>
+            <div class="modal-body">
+                <form action="FolderRename" method="POST" name="form">
+
+                    <label style="color:black">ReName</label>
+                    <input type="text" name="NewName" style="color:black">
+                    <input type="hidden" id="OldName" name="OldName"  style="color:black">
+                   
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-warning" data-dismiss="modal">Close</button>
+                        <input type="submit" class="btn btn-primary" value="Rename">
+                    </div> 
+                </form>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="modal fade" - id="Copy" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+
+       <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                @Html.Action("Copy")
+                <div class="modal-header bg-aqua-gradient">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel" style="color:black">Copy Files/Folder</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+<div class="modal fade" - id="Copy" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            @Html.Action("Copy")
+            <div class="modal-header bg-aqua-gradient">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel" style="color:black">Copy Files/Folder</h4>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="modal fade" - id="Share" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            @Html.Action("Share")
+            <div class="modal-header bg-aqua-gradient">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel" style="color:black">Share Files</h4>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="modal fade" - id="cut" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            @Html.Action("Cut")
+            <div class="modal-header bg-aqua-gradient">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel" style="color:black">Copy Files/Folder</h4>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+    @section scripts{
+
+        <link href="~/Content/datatables/css/jquery.dataTables.css" rel="stylesheet" />
+        <link href="~/Content/datatables/css/dt.css" rel="stylesheet" />
+        <script src="~/Content/datatables/js/jquery.dataTables.js"></script>
+
+<script src="~/Scripts/jquery.signalR-2.2.0.min.js"></script>
+<script src="/signalr/hubs"></script>
+<link href="~/Content/notiny.min.css" rel="stylesheet" />
+
+             <script type="text/javascript">
+
+           $(document).ready(function () {
+
+               $(function () {
+                   // Declare a proxy to reference the hub.
+                   var notifications = $.connection.messagesHub;
+
+                   //debugger;
+                   // Create a function that the hub can call to broadcast messages.
+                   notifications.client.updateMessages = function () {
+                       getAllMessages()
+
+                   };
+                   // Start the connection.
+                   $.connection.hub.start().done(function () {
+                       
+                       getAllMessages();
+                   }).fail(function (e) {
+                       alert(e);
+                   });
+               });
+
+
+               function getAllMessages()
+               {
+                   var tbl = $('#messagesTable');
+                   $.ajax({
+                       url: '/Home/GetMessages',
+                       contentType: 'application/html ; charset:utf-8',
+                       type: 'GET',
+                       cache:'false',
+                       dataType: 'html'
+                   }).success(function (result) {
+
+                      
+                       tbl.empty().append(result);
+                      
+                      
+                   }).error(function () {
+
+                   });
+
+              
+               }
+                $('#operation').hide();
+
+
+                var MyCheckboxes = $(".chk");
+
+                MyCheckboxes.change(function () {
+                    $("#operation").toggle(MyCheckboxes.is(":checked"));
+
+                });
+                $(".rename").click(function () {
+
+                    var path = $(this).data("path");
+                    $("#OldName").val(path);
+                });
+
+                $(".Filerename").click(function () {
+
+                    var path = $(this).data("path");
+                    $("#OldFilePath").val(path);
+                });
+
+                $('#dt thead .files').each(function () {
+                    var title = $(this).text();
+                    $(this).html('<input type="text" placeholder="Search ' + title + '" />');
+                });
+
+                // DataTable
+
+                var table = $('#dt').DataTable();
+
+                // Apply the search
+                table.columns().every(function () {
+                    var that = this;
+
+                    //if this include ppt file link creat problem
+
+                //     $('#dt').dataTable({
+                //    "iDisplayLength": 5
+                //});
+                    $('input', this.header()).on('keyup change', function () {
+                        if (that.search() !== this.value) {
+                            that
+                                .search(this.value)
+                                .draw();
+                        }
+                    });
+                });
+
+                var i = 0;
+                var path = [];
+                $(".chk").click(function () {
+
+
+
+                    if (this.checked) {
+                        $(".Selection").append("<input type='hidden' name='selections[" + i + "]' value='" + $(this).prev().val() + "'>");
+                        $(".Selection").append("<input type='hidden' name='selectionsFolder[" + i + "]' value='" + $(this).next().next().val() + "'>");
+
+                 //  $(".Selection").append("<input type='hidden' name='selectionsFolder[" + i + "]' value='" + $(this).next().next().val() + "'>");
+
+                        i++;
+                      //  $("#cutform select").remove("option['value='" + $(this).prev().val() + "']");
+
+                    }
+
+                    else
+                    {
+                        $(".Selection").remove("input[value='" + $(this).prev().val() + "']");
+                        $(".Selection").remove("input[value='" + $(this).next().next().val("input") + "']");
+
+                        i--;
+                    }
+
+
+
+
+
+                })
+
+
+
+
+            });
+
+
+
+
+</script>
+
+
+
+    }
+

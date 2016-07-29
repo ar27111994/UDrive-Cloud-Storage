@@ -1,0 +1,10 @@
+@Html.DevExpress().Spreadsheet(settings => {
+    settings.Name = "EditExcel";
+    settings.CallbackRouteValues = new { Controller = "Home", Action = "EditExcelPartial" };
+    settings.Width = System.Web.UI.WebControls.Unit.Percentage(100);
+    settings.Height = 500;
+    settings.ReadOnly = false;
+    settings.WorkDirectory = "~/App_Data/uploads/" + User.Identity.Name + "/";
+    settings.RibbonMode = SpreadsheetRibbonMode.Ribbon;
+    
+}).Open((string)ViewData["filename"]).GetHtml()

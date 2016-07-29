@@ -1,0 +1,14 @@
+@Html.DevExpress().RichEdit(settings =>
+{
+    settings.Name = "EditDoc";
+    settings.CallbackRouteValues = new { Controller = "Home", Action = "EditDocPartial",File=ViewData["filename"] };
+    settings.Width = System.Web.UI.WebControls.Unit.Percentage(100);
+    settings.Height = 500;
+    settings.ReadOnly = false;
+    DirectoryInfo path= Directory.GetParent((string)ViewData["filename"]);
+    settings.WorkDirectory = path.FullName;
+
+
+    settings.RibbonMode = RichEditRibbonMode.Ribbon;
+}).Open(Path.GetFullPath((string)ViewData["filename"])).GetHtml()
+

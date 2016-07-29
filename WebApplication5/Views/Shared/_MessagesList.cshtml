@@ -1,0 +1,28 @@
+﻿
+@model IEnumerable<WebApplication5.Models.Messages>
+
+@{
+    Layout = null;
+}
+
+<table class="table table-hover table-bordered">
+    @foreach (var item in Model)
+    {
+        <tr >
+            <td>
+                @Html.DisplayFor(modelItem => item.Message)
+                <br />
+                @Html.DisplayFor(modelItem => item.MessageDate)
+              
+               
+
+            </td>
+         
+        </tr>
+
+      
+
+
+    }
+
+</table>

@@ -1,0 +1,4471 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>DevExpress.Web.ASPxRichEdit.v15.1</name>
+    </assembly>
+    <members>
+        <member name="T:DevExpress.Web.ASPxRichEdit.RichEditInsertLinkDialogSettings">
+
+            <summary>
+                <para>Contains customization settings for the Insert Link dialog's form elements.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.Web.ASPxRichEdit.RichEditInsertLinkDialogSettings.#ctor(DevExpress.Web.IPropertiesOwner)">
+            <summary>
+                <para>Initializes a new instance of the RichEditInsertLinkDialogSettings class with the specified owner.
+</para>
+            </summary>
+            <param name="owner">
+		An object that implements the <see cref="T:DevExpress.Web.IPropertiesOwner"/> interface.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.Web.ASPxRichEdit.RichEditInsertLinkDialogSettings.Assign(DevExpress.Web.PropertiesBase)">
+            <summary>
+                <para>Copies the settings from the specified object to the current one.
+</para>
+            </summary>
+            <param name="source">
+		A <see cref="T:DevExpress.Web.PropertiesBase"/> object whose settings are assigned to the current object.
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxRichEdit.RichEditInsertLinkDialogSettings.ShowEmailAddressSection">
+            <summary>
+                <para> </para>
+            </summary>
+            <value> </value>
+
+
+        </member>
+        <member name="T:DevExpress.Web.ASPxRichEdit.RichEditPopupMenuItem">
+
+            <summary>
+                <para>A class that implements the functionality of a popup menu item in the RichEdit.
+For internal use only.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.Web.ASPxRichEdit.RichEditPopupMenuItem.#ctor">
+            <summary>
+                <para>Initializes a new instance of the RichEditPopupMenuItem class.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.Web.ASPxRichEdit.RichEditPopupMenuItem.#ctor(System.String)">
+            <summary>
+                <para>Initializes a new instance of the RichEditPopupMenuItem class with the specified text.
+</para>
+            </summary>
+            <param name="text">
+		A <see cref="T:System.String"/> value that specifies the created item's text. This value is assigned to the <see cref="P:DevExpress.Web.ASPxRichEdit.RichEditPopupMenuItem.Text"/> property.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.Web.ASPxRichEdit.RichEditPopupMenuItem.#ctor(System.String,System.String)">
+            <summary>
+                <para>Initializes a new instance of the RichEditPopupMenuItem class with the specified command name and text.
+</para>
+            </summary>
+            <param name="text">
+		A <see cref="T:System.String"/> value that specifies the created item's command name. This value is assigned to the <see cref="P:DevExpress.Web.ASPxRichEdit.RichEditPopupMenuItem.CommandName"/> property.
+
+            </param>
+            <param name="commandName">
+		A <see cref="T:System.String"/> value that specifies the created item's text. This value is assigned to the <see cref="P:DevExpress.Web.ASPxRichEdit.RichEditPopupMenuItem.Text"/> property.
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxRichEdit.RichEditPopupMenuItem.BeginGroup">
+            <summary>
+                <para> </para>
+            </summary>
+            <value> </value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxRichEdit.RichEditPopupMenuItem.CommandName">
+            <summary>
+                <para> </para>
+            </summary>
+            <value> </value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxRichEdit.RichEditPopupMenuItem.ImageName">
+            <summary>
+                <para> </para>
+            </summary>
+            <value> </value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxRichEdit.RichEditPopupMenuItem.Text">
+            <summary>
+                <para> </para>
+            </summary>
+            <value> </value>
+
+
+        </member>
+        <member name="M:DevExpress.Web.ASPxRichEdit.RichEditPopupMenuItem.ToString">
+            <summary>
+                <para> </para>
+            </summary>
+            <returns> </returns>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxRichEdit.RichEditPopupMenuItem.Visible">
+            <summary>
+                <para> </para>
+            </summary>
+            <value> </value>
+
+
+        </member>
+        <member name="T:DevExpress.Web.ASPxRichEdit.Localization.ASPxRichEditStringId">
+
+            <summary>
+                <para>Contains values corresponding to strings that can be localized for the <see cref="T:DevExpress.Web.ASPxRichEdit.ASPxRichEdit"/>.
+</para>
+            </summary>
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxRichEdit.Localization.ASPxRichEditStringId.After">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxRichEdit.Localization.ASPxRichEditStringId.Alignment">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxRichEdit.Localization.ASPxRichEditStringId.AllCaps">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxRichEdit.Localization.ASPxRichEditStringId.ApplyTo">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxRichEdit.Localization.ASPxRichEditStringId.At">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxRichEdit.Localization.ASPxRichEditStringId.AtLeast">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxRichEdit.Localization.ASPxRichEditStringId.AuthExceptionsError">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxRichEdit.Localization.ASPxRichEditStringId.Before">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxRichEdit.Localization.ASPxRichEditStringId.BodyText">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxRichEdit.Localization.ASPxRichEditStringId.Bold">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxRichEdit.Localization.ASPxRichEditStringId.BoldItalic">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxRichEdit.Localization.ASPxRichEditStringId.Bottom">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxRichEdit.Localization.ASPxRichEditStringId.BulletedAndNumberingTitle">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxRichEdit.Localization.ASPxRichEditStringId.By">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxRichEdit.Localization.ASPxRichEditStringId.CancelButton">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxRichEdit.Localization.ASPxRichEditStringId.CantOpenDocumentError">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxRichEdit.Localization.ASPxRichEditStringId.CantSaveDocumentError">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxRichEdit.Localization.ASPxRichEditStringId.Centered">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxRichEdit.Localization.ASPxRichEditStringId.ChangeButton">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxRichEdit.Localization.ASPxRichEditStringId.CharacterStyles">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxRichEdit.Localization.ASPxRichEditStringId.ChooseType">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxRichEdit.Localization.ASPxRichEditStringId.ClipboardAccessDeniedError">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxRichEdit.Localization.ASPxRichEditStringId.ClipboardAccessDeniedErrorTouch">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxRichEdit.Localization.ASPxRichEditStringId.Columns_Col">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxRichEdit.Localization.ASPxRichEditStringId.Columns_EqualWidth">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxRichEdit.Localization.ASPxRichEditStringId.Columns_NumberOfColumns">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxRichEdit.Localization.ASPxRichEditStringId.Columns_Presets">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxRichEdit.Localization.ASPxRichEditStringId.Columns_Spacing">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxRichEdit.Localization.ASPxRichEditStringId.Columns_Width">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxRichEdit.Localization.ASPxRichEditStringId.Columns_WidthAndSpacing">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxRichEdit.Localization.ASPxRichEditStringId.ColumnsTitle">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxRichEdit.Localization.ASPxRichEditStringId.ConfirmOnLosingChanges">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxRichEdit.Localization.ASPxRichEditStringId.ContinueNumbering">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxRichEdit.Localization.ASPxRichEditStringId.Continuous">
+            <summary>
+                <para> </para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxRichEdit.Localization.ASPxRichEditStringId.CurrentSection">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxRichEdit.Localization.ASPxRichEditStringId.CustomizeBulletedListTitle">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxRichEdit.Localization.ASPxRichEditStringId.CustomizeNumberedListTitle">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxRichEdit.Localization.ASPxRichEditStringId.CustomizeOutlineNumberedTitle">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxRichEdit.Localization.ASPxRichEditStringId.DifferentFirstPage">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxRichEdit.Localization.ASPxRichEditStringId.DifferentOddAndEven">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxRichEdit.Localization.ASPxRichEditStringId.DocVariableExceptionError">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxRichEdit.Localization.ASPxRichEditStringId.Dotted">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxRichEdit.Localization.ASPxRichEditStringId.Double">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxRichEdit.Localization.ASPxRichEditStringId.DoubleStrikeout">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxRichEdit.Localization.ASPxRichEditStringId.DownloadButton">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxRichEdit.Localization.ASPxRichEditStringId.DownloadCopy">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxRichEdit.Localization.ASPxRichEditStringId.EditHyperlink">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxRichEdit.Localization.ASPxRichEditStringId.Effects">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxRichEdit.Localization.ASPxRichEditStringId.ErrorTitle">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxRichEdit.Localization.ASPxRichEditStringId.EvenPage">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxRichEdit.Localization.ASPxRichEditStringId.Exactly">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxRichEdit.Localization.ASPxRichEditStringId.FileName">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxRichEdit.Localization.ASPxRichEditStringId.FileType">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxRichEdit.Localization.ASPxRichEditStringId.FirstLine">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxRichEdit.Localization.ASPxRichEditStringId.FolderPath">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxRichEdit.Localization.ASPxRichEditStringId.Font">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxRichEdit.Localization.ASPxRichEditStringId.FontColor">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxRichEdit.Localization.ASPxRichEditStringId.FontSize">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxRichEdit.Localization.ASPxRichEditStringId.FontStyle">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxRichEdit.Localization.ASPxRichEditStringId.FontTitle">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxRichEdit.Localization.ASPxRichEditStringId.General">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxRichEdit.Localization.ASPxRichEditStringId.GroupCaptions">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxRichEdit.Localization.ASPxRichEditStringId.GroupClipboard">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxRichEdit.Localization.ASPxRichEditStringId.GroupCommon">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxRichEdit.Localization.ASPxRichEditStringId.GroupDocumentComment">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxRichEdit.Localization.ASPxRichEditStringId.GroupDocumentLanguage">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxRichEdit.Localization.ASPxRichEditStringId.GroupDocumentProofing">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxRichEdit.Localization.ASPxRichEditStringId.GroupDocumentProtection">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxRichEdit.Localization.ASPxRichEditStringId.GroupDocumentTracking">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxRichEdit.Localization.ASPxRichEditStringId.GroupDocumentViews">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxRichEdit.Localization.ASPxRichEditStringId.GroupEditing">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxRichEdit.Localization.ASPxRichEditStringId.GroupFloatingPictureToolsArrange">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxRichEdit.Localization.ASPxRichEditStringId.GroupFloatingPictureToolsShapeStyles">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxRichEdit.Localization.ASPxRichEditStringId.GroupFont">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxRichEdit.Localization.ASPxRichEditStringId.GroupHeaderFooter">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxRichEdit.Localization.ASPxRichEditStringId.GroupHeaderFooterToolsDesignClose">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxRichEdit.Localization.ASPxRichEditStringId.GroupHeaderFooterToolsDesignNavigation">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxRichEdit.Localization.ASPxRichEditStringId.GroupHeaderFooterToolsDesignOptions">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxRichEdit.Localization.ASPxRichEditStringId.GroupIllustrations">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxRichEdit.Localization.ASPxRichEditStringId.GroupLinks">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxRichEdit.Localization.ASPxRichEditStringId.GroupMailMerge">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxRichEdit.Localization.ASPxRichEditStringId.GroupPageBackground">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxRichEdit.Localization.ASPxRichEditStringId.GroupPages">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxRichEdit.Localization.ASPxRichEditStringId.GroupPageSetup">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxRichEdit.Localization.ASPxRichEditStringId.GroupParagraph">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxRichEdit.Localization.ASPxRichEditStringId.GroupShow">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxRichEdit.Localization.ASPxRichEditStringId.GroupStyles">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxRichEdit.Localization.ASPxRichEditStringId.GroupSymbols">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxRichEdit.Localization.ASPxRichEditStringId.GroupTableOfContents">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxRichEdit.Localization.ASPxRichEditStringId.GroupTables">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxRichEdit.Localization.ASPxRichEditStringId.GroupTableToolsDesignBordersAndShadings">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxRichEdit.Localization.ASPxRichEditStringId.GroupTableToolsDesignTableStyleOptions">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxRichEdit.Localization.ASPxRichEditStringId.GroupTableToolsDesignTableStyles">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxRichEdit.Localization.ASPxRichEditStringId.GroupTableToolsLayoutAlignment">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxRichEdit.Localization.ASPxRichEditStringId.GroupTableToolsLayoutCellSize">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxRichEdit.Localization.ASPxRichEditStringId.GroupTableToolsLayoutMerge">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxRichEdit.Localization.ASPxRichEditStringId.GroupTableToolsLayoutRowsAndColumns">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxRichEdit.Localization.ASPxRichEditStringId.GroupTableToolsLayoutTable">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxRichEdit.Localization.ASPxRichEditStringId.GroupText">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxRichEdit.Localization.ASPxRichEditStringId.GroupUndo">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxRichEdit.Localization.ASPxRichEditStringId.GroupView">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxRichEdit.Localization.ASPxRichEditStringId.GroupZoom">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxRichEdit.Localization.ASPxRichEditStringId.Hanging">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxRichEdit.Localization.ASPxRichEditStringId.HeadersAndFooters">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxRichEdit.Localization.ASPxRichEditStringId.Height">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxRichEdit.Localization.ASPxRichEditStringId.Hidden">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxRichEdit.Localization.ASPxRichEditStringId.Hyperlink_DisplayProperties">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxRichEdit.Localization.ASPxRichEditStringId.Hyperlink_EmailAddress">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxRichEdit.Localization.ASPxRichEditStringId.Hyperlink_EmailTo">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxRichEdit.Localization.ASPxRichEditStringId.Hyperlink_InvalidEmail">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxRichEdit.Localization.ASPxRichEditStringId.Hyperlink_Subject">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxRichEdit.Localization.ASPxRichEditStringId.Hyperlink_Text">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxRichEdit.Localization.ASPxRichEditStringId.Hyperlink_ToolTip">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxRichEdit.Localization.ASPxRichEditStringId.Hyperlink_Url">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxRichEdit.Localization.ASPxRichEditStringId.HyperlinkTitle">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxRichEdit.Localization.ASPxRichEditStringId.Indentation">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxRichEdit.Localization.ASPxRichEditStringId.InnerExceptionsError">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxRichEdit.Localization.ASPxRichEditStringId.InsertButton">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxRichEdit.Localization.ASPxRichEditStringId.InsertImage_EnterUrl">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxRichEdit.Localization.ASPxRichEditStringId.InsertImage_FromLocal">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxRichEdit.Localization.ASPxRichEditStringId.InsertImage_FromWeb">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxRichEdit.Localization.ASPxRichEditStringId.InsertImage_ImagePreview">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxRichEdit.Localization.ASPxRichEditStringId.InsertImage_UploadInstructions">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxRichEdit.Localization.ASPxRichEditStringId.InsertImageTitle">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxRichEdit.Localization.ASPxRichEditStringId.Invalid_FileName">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxRichEdit.Localization.ASPxRichEditStringId.Italic">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxRichEdit.Localization.ASPxRichEditStringId.Justified">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxRichEdit.Localization.ASPxRichEditStringId.KLT">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxRichEdit.Localization.ASPxRichEditStringId.Landscape">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxRichEdit.Localization.ASPxRichEditStringId.Layout">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxRichEdit.Localization.ASPxRichEditStringId.Left">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxRichEdit.Localization.ASPxRichEditStringId.Level">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxRichEdit.Localization.ASPxRichEditStringId.LineSpacing">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxRichEdit.Localization.ASPxRichEditStringId.Margins">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxRichEdit.Localization.ASPxRichEditStringId.MarginsModerate">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxRichEdit.Localization.ASPxRichEditStringId.MarginsNarrow">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxRichEdit.Localization.ASPxRichEditStringId.MarginsNormal">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxRichEdit.Localization.ASPxRichEditStringId.MarginsWide">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxRichEdit.Localization.ASPxRichEditStringId.MenuCmd_CreateField">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxRichEdit.Localization.ASPxRichEditStringId.MenuCmd_CreateFieldDescription">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxRichEdit.Localization.ASPxRichEditStringId.MenuCmd_MakeTextSentenceCase">
+            <summary>
+                <para> </para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxRichEdit.Localization.ASPxRichEditStringId.MenuCmd_MakeTextSentenceCaseDescription">
+            <summary>
+                <para> </para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxRichEdit.Localization.ASPxRichEditStringId.MenuCmd_ToggleFullScreen">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxRichEdit.Localization.ASPxRichEditStringId.MenuCmd_ToggleFullScreenDescription">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxRichEdit.Localization.ASPxRichEditStringId.MenuCmd_UpdateAllFields">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxRichEdit.Localization.ASPxRichEditStringId.MenuCmd_UpdateAllFieldsDescription">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxRichEdit.Localization.ASPxRichEditStringId.ModelIsChangedError">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxRichEdit.Localization.ASPxRichEditStringId.Multiple">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxRichEdit.Localization.ASPxRichEditStringId.NewPage">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxRichEdit.Localization.ASPxRichEditStringId.none">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxRichEdit.Localization.ASPxRichEditStringId.Normal">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxRichEdit.Localization.ASPxRichEditStringId.NoSpace">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxRichEdit.Localization.ASPxRichEditStringId.Numbering_AlignedAt">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxRichEdit.Localization.ASPxRichEditStringId.Numbering_BulletCharacter">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxRichEdit.Localization.ASPxRichEditStringId.Numbering_BulletPosition">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxRichEdit.Localization.ASPxRichEditStringId.Numbering_Center">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxRichEdit.Localization.ASPxRichEditStringId.Numbering_Character">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxRichEdit.Localization.ASPxRichEditStringId.Numbering_FollowNumberWith">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxRichEdit.Localization.ASPxRichEditStringId.Numbering_IndentAt">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxRichEdit.Localization.ASPxRichEditStringId.Numbering_Left">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxRichEdit.Localization.ASPxRichEditStringId.Numbering_Level">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxRichEdit.Localization.ASPxRichEditStringId.Numbering_Nothing">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxRichEdit.Localization.ASPxRichEditStringId.Numbering_NumberFormat">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxRichEdit.Localization.ASPxRichEditStringId.Numbering_NumberPosition">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxRichEdit.Localization.ASPxRichEditStringId.Numbering_NumberStyle">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxRichEdit.Localization.ASPxRichEditStringId.Numbering_Right">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxRichEdit.Localization.ASPxRichEditStringId.Numbering_Space">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxRichEdit.Localization.ASPxRichEditStringId.Numbering_StartAt">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxRichEdit.Localization.ASPxRichEditStringId.Numbering_TabCharacter">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxRichEdit.Localization.ASPxRichEditStringId.Numbering_TextPosition">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxRichEdit.Localization.ASPxRichEditStringId.OddPage">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxRichEdit.Localization.ASPxRichEditStringId.OkButton">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxRichEdit.Localization.ASPxRichEditStringId.OpenButton">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxRichEdit.Localization.ASPxRichEditStringId.OpenFileTitle">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxRichEdit.Localization.ASPxRichEditStringId.OpenHyperlink">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxRichEdit.Localization.ASPxRichEditStringId.OpeningAndOverstoreImpossibleError">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxRichEdit.Localization.ASPxRichEditStringId.Orientation">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxRichEdit.Localization.ASPxRichEditStringId.OtherLabels_All">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxRichEdit.Localization.ASPxRichEditStringId.OtherLabels_None">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxRichEdit.Localization.ASPxRichEditStringId.OutlineLevel">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxRichEdit.Localization.ASPxRichEditStringId.PageFile">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxRichEdit.Localization.ASPxRichEditStringId.PageHeaderAndFooter">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxRichEdit.Localization.ASPxRichEditStringId.PageHome">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxRichEdit.Localization.ASPxRichEditStringId.PageInsert">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxRichEdit.Localization.ASPxRichEditStringId.PageMailings">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxRichEdit.Localization.ASPxRichEditStringId.PagePageLayout">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxRichEdit.Localization.ASPxRichEditStringId.PagePicture">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxRichEdit.Localization.ASPxRichEditStringId.PageReferences">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxRichEdit.Localization.ASPxRichEditStringId.PageReview">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxRichEdit.Localization.ASPxRichEditStringId.PageSetupTitle">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxRichEdit.Localization.ASPxRichEditStringId.PageTable">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxRichEdit.Localization.ASPxRichEditStringId.PageView">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxRichEdit.Localization.ASPxRichEditStringId.Pagination">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxRichEdit.Localization.ASPxRichEditStringId.Paper">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxRichEdit.Localization.ASPxRichEditStringId.PaperSize">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxRichEdit.Localization.ASPxRichEditStringId.ParagraphStyles">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxRichEdit.Localization.ASPxRichEditStringId.ParagraphTab0">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxRichEdit.Localization.ASPxRichEditStringId.ParagraphTab1">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxRichEdit.Localization.ASPxRichEditStringId.ParagraphTitle">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxRichEdit.Localization.ASPxRichEditStringId.PBB">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxRichEdit.Localization.ASPxRichEditStringId.Portrait">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxRichEdit.Localization.ASPxRichEditStringId.RemoveHyperlink">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxRichEdit.Localization.ASPxRichEditStringId.RequiredFieldError">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxRichEdit.Localization.ASPxRichEditStringId.RestartNumbering">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxRichEdit.Localization.ASPxRichEditStringId.Right">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxRichEdit.Localization.ASPxRichEditStringId.RulerCenterTabTitle">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxRichEdit.Localization.ASPxRichEditStringId.RulerDecimalTabTitle">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxRichEdit.Localization.ASPxRichEditStringId.RulerFirstLineIdentTitle">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxRichEdit.Localization.ASPxRichEditStringId.RulerHangingIdentTitle">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxRichEdit.Localization.ASPxRichEditStringId.RulerLeftIdentTitle">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxRichEdit.Localization.ASPxRichEditStringId.RulerLeftTabTitle">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxRichEdit.Localization.ASPxRichEditStringId.RulerMarginLeftTitle">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxRichEdit.Localization.ASPxRichEditStringId.RulerMarginRightTitle">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxRichEdit.Localization.ASPxRichEditStringId.RulerRightIdentTitle">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxRichEdit.Localization.ASPxRichEditStringId.RulerRightTabTitle">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxRichEdit.Localization.ASPxRichEditStringId.SaveAsButton">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxRichEdit.Localization.ASPxRichEditStringId.SaveAsFileTitle">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxRichEdit.Localization.ASPxRichEditStringId.SaveFileAs">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxRichEdit.Localization.ASPxRichEditStringId.SaveToServer">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxRichEdit.Localization.ASPxRichEditStringId.Section">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxRichEdit.Localization.ASPxRichEditStringId.SectionStart">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxRichEdit.Localization.ASPxRichEditStringId.SelectButton">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxRichEdit.Localization.ASPxRichEditStringId.SelectedSections">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxRichEdit.Localization.ASPxRichEditStringId.SessionHasExpiredError">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxRichEdit.Localization.ASPxRichEditStringId.Single">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxRichEdit.Localization.ASPxRichEditStringId.Spacing">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxRichEdit.Localization.ASPxRichEditStringId.spacing_1_5_lines">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxRichEdit.Localization.ASPxRichEditStringId.Special">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxRichEdit.Localization.ASPxRichEditStringId.Strikeout">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxRichEdit.Localization.ASPxRichEditStringId.Subscript">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxRichEdit.Localization.ASPxRichEditStringId.Superscript">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxRichEdit.Localization.ASPxRichEditStringId.SymbolsTitle">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxRichEdit.Localization.ASPxRichEditStringId.Tabs_Alignment">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxRichEdit.Localization.ASPxRichEditStringId.Tabs_Clear">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxRichEdit.Localization.ASPxRichEditStringId.Tabs_ClearAll">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxRichEdit.Localization.ASPxRichEditStringId.Tabs_DefaultTabStops">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxRichEdit.Localization.ASPxRichEditStringId.Tabs_Leader">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxRichEdit.Localization.ASPxRichEditStringId.Tabs_Set">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxRichEdit.Localization.ASPxRichEditStringId.Tabs_TabStopPosition">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxRichEdit.Localization.ASPxRichEditStringId.Tabs_TabStopsToBeCleared">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxRichEdit.Localization.ASPxRichEditStringId.TabsTitle">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxRichEdit.Localization.ASPxRichEditStringId.ThisPointForward">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxRichEdit.Localization.ASPxRichEditStringId.ToggleFieldCodes">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxRichEdit.Localization.ASPxRichEditStringId.Top">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxRichEdit.Localization.ASPxRichEditStringId.UnderlineColor">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxRichEdit.Localization.ASPxRichEditStringId.UnderlineStyle">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxRichEdit.Localization.ASPxRichEditStringId.UnderlineWordsOnly">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxRichEdit.Localization.ASPxRichEditStringId.UpdateField">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxRichEdit.Localization.ASPxRichEditStringId.WholeDocument">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxRichEdit.Localization.ASPxRichEditStringId.Width">
+            <summary>
+                <para>Contains localizable text of the corresponding UI element. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="T:DevExpress.Web.ASPxRichEdit.RichEditImages">
+
+            <summary>
+                <para>Contains settings that define images displayed within the <see cref="T:DevExpress.Web.ASPxRichEdit.ASPxRichEdit"/>.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.Web.ASPxRichEdit.RichEditImages.#ctor(DevExpress.Web.Internal.ISkinOwner)">
+            <summary>
+                <para>Initializes a new instance of the RichEditImages class with the specified owner.
+</para>
+            </summary>
+            <param name="owner">
+		An object that implements the <see cref="T:DevExpress.Web.Internal.ISkinOwner"/> interface.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.Web.ASPxRichEdit.RichEditImages.CopyFrom(DevExpress.Web.ImagesBase)">
+            <summary>
+                <para> </para>
+            </summary>
+            <param name="source">
+		 
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.Web.ASPxRichEdit.RichEditImages.GetImageProperties(System.Web.UI.Page,System.String,System.Boolean)">
+            <summary>
+                <para> </para>
+            </summary>
+            <param name="page">
+		 
+            </param>
+            <param name="imageName">
+		 
+            </param>
+            <param name="encode">
+		 
+            </param>
+            <returns> </returns>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxRichEdit.RichEditImages.LoadingPanelOnStatusBar">
+            <summary>
+                <para> 
+</para>
+            </summary>
+            <value> 
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxRichEdit.RichEditImages.MenuIconSet">
+            <summary>
+                <para> </para>
+            </summary>
+            <value> </value>
+
+
+        </member>
+        <member name="M:DevExpress.Web.ASPxRichEdit.RichEditImages.Reset">
+            <summary>
+                <para> </para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.Web.ASPxRichEdit.RichEditImages.ToString">
+            <summary>
+                <para> 
+</para>
+            </summary>
+            <returns> 
+</returns>
+
+
+        </member>
+        <member name="T:DevExpress.Web.ASPxRichEdit.Localization.ASPxRichEditResourcesLocalizer">
+
+            <summary>
+                <para>An object providing a means to localize the <see cref="T:DevExpress.Web.ASPxRichEdit.ASPxRichEdit"/>'s user interface elements at runtime.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.Web.ASPxRichEdit.Localization.ASPxRichEditResourcesLocalizer.#ctor">
+            <summary>
+                <para> </para>
+            </summary>
+
+
+        </member>
+        <member name="T:DevExpress.Web.ASPxRichEdit.SaveFileDialogDisplaySectionMode">
+
+            <summary>
+                <para>Lists values that specify the visibility of a section within the file dialogs.
+</para>
+            </summary>
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxRichEdit.SaveFileDialogDisplaySectionMode.ShowAllSections">
+            <summary>
+                <para>All dialog sections should be displayed. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxRichEdit.SaveFileDialogDisplaySectionMode.ShowDownloadSection">
+            <summary>
+                <para>Only the 'Download a copy' section should be displayed in the dialog. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxRichEdit.SaveFileDialogDisplaySectionMode.ShowServerSection">
+            <summary>
+                <para>Only the 'Save file to the server' section should be displayed within the dialog. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="T:DevExpress.Web.ASPxRichEdit.RichEditFileManagerCommonSettings">
+
+            <summary>
+                <para>Serves as a base for classes that contains common settings related to the RichEdit's built-in FileManager functionality. 
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.Web.ASPxRichEdit.RichEditFileManagerCommonSettings.#ctor(DevExpress.Web.IPropertiesOwner)">
+            <summary>
+                <para>Initializes a new instance of the RichEditFileManagerCommonSettings class with the specified owner.
+</para>
+            </summary>
+            <param name="owner">
+		An object that implements the <see cref="T:DevExpress.Web.IPropertiesOwner"/> interface.
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxRichEdit.RichEditFileManagerCommonSettings.AllowedFileExtensions">
+            <summary>
+                <para> </para>
+            </summary>
+            <value> </value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxRichEdit.RichEditFileManagerCommonSettings.EnableMultiSelect">
+            <summary>
+                <para> </para>
+            </summary>
+            <value> </value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxRichEdit.RichEditFileManagerCommonSettings.RootFolder">
+            <summary>
+                <para> </para>
+            </summary>
+            <value> </value>
+
+
+        </member>
+        <member name="T:DevExpress.Web.ASPxRichEdit.RichEditFileManager">
+
+            <summary>
+                <para>For internal use only.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.Web.ASPxRichEdit.RichEditFileManager.#ctor">
+            <summary>
+                <para>Initializes a new instance of the RichEditFileManager class.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="T:DevExpress.Web.ASPxRichEdit.RichEditInsertPictureDialogSettings">
+
+            <summary>
+                <para>Contains customization settings for the Insert Image dialog's form elements.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.Web.ASPxRichEdit.RichEditInsertPictureDialogSettings.#ctor(DevExpress.Web.IPropertiesOwner)">
+            <summary>
+                <para>Initializes a new instance of the RichEditInsertPictureDialogSettings class with the specified owner.
+</para>
+            </summary>
+            <param name="owner">
+		An object that implements the <see cref="T:DevExpress.Web.IPropertiesOwner"/> interface.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.Web.ASPxRichEdit.RichEditInsertPictureDialogSettings.Assign(DevExpress.Web.PropertiesBase)">
+            <summary>
+                <para>Copies the settings from the specified object to the current one.
+</para>
+            </summary>
+            <param name="source">
+		A <see cref="T:DevExpress.Web.PropertiesBase"/> object whose settings are assigned to the current object.
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxRichEdit.RichEditInsertPictureDialogSettings.ShowFileUploadSection">
+            <summary>
+                <para> </para>
+            </summary>
+            <value> </value>
+
+
+        </member>
+        <member name="T:DevExpress.Web.ASPxRichEdit.RichEditSaveFileDialogSettings">
+
+            <summary>
+                <para>Contains customization settings for the Save File dialog's form elements.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.Web.ASPxRichEdit.RichEditSaveFileDialogSettings.#ctor(DevExpress.Web.IPropertiesOwner)">
+            <summary>
+                <para>Initializes a new instance of the RichEditSaveFileDialogSettings class with the specified owner.
+</para>
+            </summary>
+            <param name="owner">
+		An object that implements the <see cref="T:DevExpress.Web.IPropertiesOwner"/> interface.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.Web.ASPxRichEdit.RichEditSaveFileDialogSettings.Assign(DevExpress.Web.PropertiesBase)">
+            <summary>
+                <para>Copies the settings from the specified object to the current one.
+</para>
+            </summary>
+            <param name="source">
+		A <see cref="T:DevExpress.Web.PropertiesBase"/> object whose settings are assigned to the current object.
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxRichEdit.RichEditSaveFileDialogSettings.DisplaySectionMode">
+            <summary>
+                <para> </para>
+            </summary>
+            <value> </value>
+
+
+        </member>
+        <member name="T:DevExpress.Web.ASPxRichEdit.RichEditDocumentSelectorUploadSettings">
+
+            <summary>
+                <para>Contains settings that relate to the built-in Document Selector's file upload functionality.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.Web.ASPxRichEdit.RichEditDocumentSelectorUploadSettings.#ctor(DevExpress.Web.IPropertiesOwner)">
+            <summary>
+                <para>Initializes a new instance of the RichEditDocumentSelectorUploadSettings class with the specified owner.
+</para>
+            </summary>
+            <param name="owner">
+		An object that implements the <see cref="T:DevExpress.Web.IPropertiesOwner"/> interface.
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxRichEdit.RichEditDocumentSelectorUploadSettings.Enabled">
+            <summary>
+                <para> </para>
+            </summary>
+            <value> </value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxRichEdit.RichEditDocumentSelectorUploadSettings.ValidationSettings">
+            <summary>
+                <para> </para>
+            </summary>
+            <value> </value>
+
+
+        </member>
+        <member name="T:DevExpress.Web.ASPxRichEdit.RichEditDocumentSelectorSettings">
+
+            <summary>
+                <para>Contains settings that are related to the Document Selector used within the file dialogs. 
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.Web.ASPxRichEdit.RichEditDocumentSelectorSettings.#ctor(DevExpress.Web.IPropertiesOwner)">
+            <summary>
+                <para>Initializes a new instance of the RichEditDocumentSelectorSettings class with the specified owner.
+</para>
+            </summary>
+            <param name="owner">
+		An object that implements the <see cref="T:DevExpress.Web.IPropertiesOwner"/> interface.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.Web.ASPxRichEdit.RichEditDocumentSelectorSettings.Assign(DevExpress.Web.PropertiesBase)">
+            <summary>
+                <para>Copies the settings from the specified object to the current one.
+</para>
+            </summary>
+            <param name="source">
+		A <see cref="T:DevExpress.Web.PropertiesBase"/> object whose settings are assigned to the current object.
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxRichEdit.RichEditDocumentSelectorSettings.CommonSettings">
+            <summary>
+                <para> </para>
+            </summary>
+            <value> </value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxRichEdit.RichEditDocumentSelectorSettings.CustomCommand">
+            <summary>
+                <para> </para>
+            </summary>
+            <value> </value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxRichEdit.RichEditDocumentSelectorSettings.EditingSettings">
+            <summary>
+                <para> </para>
+            </summary>
+            <value> </value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxRichEdit.RichEditDocumentSelectorSettings.FileListSettings">
+            <summary>
+                <para> </para>
+            </summary>
+            <value> </value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxRichEdit.RichEditDocumentSelectorSettings.FoldersSettings">
+            <summary>
+                <para> </para>
+            </summary>
+            <value> </value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxRichEdit.RichEditDocumentSelectorSettings.PermissionSettings">
+            <summary>
+                <para> </para>
+            </summary>
+            <value> </value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxRichEdit.RichEditDocumentSelectorSettings.RootFolderUrlPath">
+            <summary>
+                <para> </para>
+            </summary>
+            <value> </value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxRichEdit.RichEditDocumentSelectorSettings.ToolbarSettings">
+            <summary>
+                <para> </para>
+            </summary>
+            <value> </value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxRichEdit.RichEditDocumentSelectorSettings.UploadSettings">
+            <summary>
+                <para> </para>
+            </summary>
+            <value> </value>
+
+
+        </member>
+        <member name="T:DevExpress.Web.ASPxRichEdit.RichEditDocumentSelectorCommonSettings">
+
+            <summary>
+                <para>Contains common settings that relate to the built-in document selector's functionality. 
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.Web.ASPxRichEdit.RichEditDocumentSelectorCommonSettings.#ctor(DevExpress.Web.IPropertiesOwner)">
+            <summary>
+                <para>Initializes a new instance of the RichEditDocumentSelectorCommonSettings class with the specified owner.
+</para>
+            </summary>
+            <param name="owner">
+		An object that implements the <see cref="T:DevExpress.Web.IPropertiesOwner"/> interface.
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxRichEdit.RichEditDocumentSelectorCommonSettings.AllowedFileExtensions">
+            <summary>
+                <para> </para>
+            </summary>
+            <value> </value>
+
+
+        </member>
+        <member name="T:DevExpress.Web.ASPxRichEdit.RichEditDialogSettings">
+
+            <summary>
+                <para>Contains settings concerning customization of dialog form elements. 
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.Web.ASPxRichEdit.RichEditDialogSettings.#ctor(DevExpress.Web.IPropertiesOwner)">
+            <summary>
+                <para>Initializes a new instance of the RichEditDialogSettings class with the specified owner.
+</para>
+            </summary>
+            <param name="owner">
+		An object that implements the <see cref="T:DevExpress.Web.IPropertiesOwner"/> interface.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.Web.ASPxRichEdit.RichEditDialogSettings.Assign(DevExpress.Web.PropertiesBase)">
+            <summary>
+                <para>Copies the settings from the specified object to the current one.
+</para>
+            </summary>
+            <param name="source">
+		A <see cref="T:DevExpress.Web.PropertiesBase"/> object whose settings are assigned to the current object.
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxRichEdit.RichEditDialogSettings.InsertLinkDialog">
+            <summary>
+                <para> </para>
+            </summary>
+            <value> </value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxRichEdit.RichEditDialogSettings.InsertPictureDialog">
+            <summary>
+                <para> </para>
+            </summary>
+            <value> </value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxRichEdit.RichEditDialogSettings.SaveFileDialog">
+            <summary>
+                <para> </para>
+            </summary>
+            <value> </value>
+
+
+        </member>
+        <member name="T:DevExpress.Web.ASPxRichEdit.ASPxRichEditCharacterFormattingDetailedSettings">
+
+            <summary>
+                <para>Contains the RichEdit's Character Formatting dialog's settings.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.Web.ASPxRichEdit.ASPxRichEditCharacterFormattingDetailedSettings.#ctor">
+            <summary>
+                <para>Initializes a new instance of the ASPxRichEditCharacterFormattingDetailedSettings class.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="T:DevExpress.Web.ASPxRichEdit.ASPxRichEdit">
+
+            <summary>
+                <para>A rich text editor control.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.Web.ASPxRichEdit.ASPxRichEdit.#ctor">
+            <summary>
+                <para>Initializes a new instance of the ASPxRichEdit class. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxRichEdit.ASPxRichEdit.ActiveTabIndex">
+            <summary>
+                <para>Gets or sets the index of the active ribbon tab within the ASPxRichEdit control.
+</para>
+            </summary>
+            <value>An integer value specifying the index of the active ribbon tab.
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.Web.ASPxRichEdit.ASPxRichEdit.AddImageToCache(System.IO.Stream)">
+            <summary>
+                <para> </para>
+            </summary>
+            <param name="stream">
+		 
+            </param>
+            <returns> </returns>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxRichEdit.ASPxRichEdit.AssociatedRibbonID">
+            <summary>
+                <para>Specifies the ID of an <see cref="T:DevExpress.Web.ASPxRibbon"/> control, used as an external toolbar.
+</para>
+            </summary>
+            <value>A string value specifying the ribbon ID.
+</value>
+
+
+        </member>
+        <member name="E:DevExpress.Web.ASPxRichEdit.ASPxRichEdit.CalculateDocumentVariable">
+            <summary>
+                <para>Fires when the DOCVARIABLE field field is updated.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="E:DevExpress.Web.ASPxRichEdit.ASPxRichEdit.Callback">
+            <summary>
+                <para>Fires when a round trip to the server has been initiated either manually (by a call to the client <see cref="M:DevExpress.Web.ASPxRichEdit.Scripts.ASPxClientRichEdit.PerformCallback"/> method) or automatically by the ASPxRichEdit (an internal service callback).
+
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxRichEdit.ASPxRichEdit.ClientInstanceName">
+            <summary>
+                <para>Gets or sets the ASPxRichEdit's client programmatic identifier.
+</para>
+            </summary>
+            <value>A string value that specifies the ASPxRichEdit's client identifier.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxRichEdit.ASPxRichEdit.ClientSideEvents">
+            <summary>
+                <para>Gets an object that lists the client-side events specific to the ASPxRichEdit.
+</para>
+            </summary>
+            <value>A <a href="ms-xhelp:///?Id=T%3aDevExpress.Web.ASPxRichEdit.RichEditClientSideEvents">RichEditClientSideEvents</a> object which allows assigning handlers to the client-side events available to the ASPxRichEdit.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxRichEdit.ASPxRichEdit.ConfirmOnLosingChanges">
+            <summary>
+                <para>Gets or sets the text of the confirmation message that is displayed when any unsaved data changes are going to be lost.
+</para>
+            </summary>
+            <value>A string specifying the confirmation message text.
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.Web.ASPxRichEdit.ASPxRichEdit.CreateDefaultRibbonTabs(System.Boolean)">
+            <summary>
+                <para>Creates a collection of default ribbon tabs, specifying what to do with tabs that already exist within the <see cref="P:DevExpress.Web.ASPxRichEdit.ASPxRichEdit.RibbonTabs"/> collection.
+</para>
+            </summary>
+            <param name="clearExistingTabs">
+		<b>true</b> to delete existing tabs; <b>false</b> to add the default tabs to the collection.
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxRichEdit.ASPxRichEdit.DocumentId">
+            <summary>
+                <para>Gets or sets the document's unique identifier.
+</para>
+            </summary>
+            <value>A string value that uniquely identifies the document.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxRichEdit.ASPxRichEdit.EnableClientSideAPI">
+            <summary>
+                <para>Gets or sets a value that specifies whether the ASPxRichEdit can be manipulated on the client side in code.
+</para>
+            </summary>
+            <value><b>true</b>, if the control's client object model is fully available; <b>false</b>, if no programmatic interface is available for the ASPxRichEdit on the client side.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxRichEdit.ASPxRichEdit.Enabled">
+            <summary>
+                <para> </para>
+            </summary>
+            <value> </value>
+
+
+        </member>
+        <member name="M:DevExpress.Web.ASPxRichEdit.ASPxRichEdit.ExportToPdf(System.IO.Stream,DevExpress.XtraPrinting.PdfExportOptions)">
+            <summary>
+                <para>Exports the current document to the specified stream in PDF format using the specified options. 
+</para>
+            </summary>
+            <param name="stream">
+		A <see cref="T:System.IO.Stream"/> object, to which the document is exported. 
+
+            </param>
+            <param name="pdfExportOptions">
+		A <see cref="T:DevExpress.XtraPrinting.PdfExportOptions"/> object which specifies the export options to be applied when the control's document is exported. 
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.Web.ASPxRichEdit.ASPxRichEdit.ExportToPdf(System.IO.Stream)">
+            <summary>
+                <para>Exports the current document to a stream in PDF format. 
+</para>
+            </summary>
+            <param name="stream">
+		A <see cref="T:System.IO.Stream"/> object, to which the document is exported. 
+
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.Web.ASPxRichEdit.ASPxRichEdit.GetWorkDirectory">
+            <summary>
+                <para>Returns the path to the working directory.
+</para>
+            </summary>
+            <returns>A string representing the working directory path.
+</returns>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxRichEdit.ASPxRichEdit.Images">
+            <summary>
+                <para>Provides access to the settings that define images displayed within the ASPxRichEdit.
+</para>
+            </summary>
+            <value>An <a href="ms-xhelp:///?Id=T%3aDevExpress.Web.ASPxRichEdit.RichEditImages">RichEditImages</a> object that contains image settings.
+ 
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxRichEdit.ASPxRichEdit.ImagesRuler">
+            <summary>
+                <para>Provides access to the settings that define images displayed within the RichEdit's ruler. 
+ 
+</para>
+            </summary>
+            <value>A <a href="ms-xhelp:///?Id=T%3aDevExpress.Web.ASPxRichEdit.RichEditRulerImages">RichEditRulerImages</a> object that contains image settings. 
+ 
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.Web.ASPxRichEdit.ASPxRichEdit.IsInternalServiceCallback">
+            <summary>
+                <para>Gets a value indicating whether an internal service callback is being currently processed. 
+</para>
+            </summary>
+            <returns><b>true</b>, if the processed callback is an internal service callback of the ASPxRichEdit; otherwise, <b>false</b>.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.Web.ASPxRichEdit.ASPxRichEdit.Open(System.String)">
+            <summary>
+                <para>Opens a document by the specified path. 
+</para>
+            </summary>
+            <param name="pathToDocument">
+		A string representing the path to the document to be opened. 
+
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.Web.ASPxRichEdit.ASPxRichEdit.Open(System.String,DevExpress.XtraRichEdit.DocumentFormat)">
+            <summary>
+                <para>Opens the specified document.
+</para>
+            </summary>
+            <param name="pathToDocument">
+		A string value specifying the path to the document to open.
+
+            </param>
+            <param name="format">
+		A DocumentFormat object specifying the document format.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.Web.ASPxRichEdit.ASPxRichEdit.Open(DevExpress.Web.Office.RichEditDocumentInfo)">
+            <summary>
+                <para>Opens the specified document.
+</para>
+            </summary>
+            <param name="documentInfo">
+		A <see cref="T:DevExpress.Web.Office.RichEditDocumentInfo"/> object identifying the document to open.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.Web.ASPxRichEdit.ASPxRichEdit.Open(System.String,DevExpress.XtraRichEdit.DocumentFormat,System.Func`1)">
+            <summary>
+                <para>Opens the specified document.
+</para>
+            </summary>
+            <param name="documentId">
+		A string value that uniquely identifies the document to open.
+
+            </param>
+            <param name="format">
+		A DocumentFormat object specifying the document format. 
+
+            </param>
+            <param name="contentAccessor">
+		A method delegate to obtain a stream from which to open the document.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.Web.ASPxRichEdit.ASPxRichEdit.Open(System.String,DevExpress.XtraRichEdit.DocumentFormat,System.Func`1)">
+            <summary>
+                <para>Opens the specified document. 
+</para>
+            </summary>
+            <param name="documentId">
+		A string value that uniquely identifies the document to open.
+
+            </param>
+            <param name="format">
+		A DocumentFormat object specifying the document format. 
+
+            </param>
+            <param name="contentAccessor">
+		A method delegate to obtain a stream from which to open the document.
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxRichEdit.ASPxRichEdit.ReadOnly">
+            <summary>
+                <para> </para>
+            </summary>
+            <value> </value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxRichEdit.ASPxRichEdit.RibbonMode">
+            <summary>
+                <para>Specifies the type of the ASPxRichEdit toolbar.
+</para>
+            </summary>
+            <value>One of the <a href="ms-xhelp:///?Id=T%3aDevExpress.Web.ASPxRichEdit.RichEditRibbonMode">RichEditRibbonMode</a> enumeration values.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxRichEdit.ASPxRichEdit.RibbonTabs">
+            <summary>
+                <para>Provides access to the collection of ribbon tabs.
+</para>
+            </summary>
+            <value>A <a href="ms-xhelp:///?Id=T%3aDevExpress.Web.ASPxRichEdit.RichEditRibbonTabCollection">RichEditRibbonTabCollection</a> object that is the collection of the ribbon's tabs. 
+</value>
+
+
+        </member>
+        <member name="M:DevExpress.Web.ASPxRichEdit.ASPxRichEdit.Save">
+            <summary>
+                <para>Saves a document in its original format at its original location. 
+
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.Web.ASPxRichEdit.ASPxRichEdit.SaveCopy(DevExpress.XtraRichEdit.DocumentFormat)">
+            <summary>
+                <para>Saves a document copy using the specified settings.
+</para>
+            </summary>
+            <param name="format">
+		A DocumentFormat object specifying the document's format.
+
+            </param>
+            <returns>An array of bytes where the document is saved to.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.Web.ASPxRichEdit.ASPxRichEdit.SaveCopy(System.IO.Stream,DevExpress.XtraRichEdit.DocumentFormat)">
+            <summary>
+                <para>Saves a document copy using the specified settings. 
+</para>
+            </summary>
+            <param name="stream">
+		A stream object where to save the document. 
+
+            </param>
+            <param name="format">
+		A DocumentFormat object specifying the document's format. 
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.Web.ASPxRichEdit.ASPxRichEdit.SaveCopy(System.String)">
+            <summary>
+                <para>Saves a document copy using the specified settings
+</para>
+            </summary>
+            <param name="documentPath">
+		A string value specifying the document path to save to. 
+
+            </param>
+
+
+        </member>
+        <member name="E:DevExpress.Web.ASPxRichEdit.ASPxRichEdit.Saving">
+            <summary>
+                <para>Allows the current rich text document to be processed before it is saved to the server.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxRichEdit.ASPxRichEdit.Settings">
+            <summary>
+                <para>Provides access to the ASPxRichEdit's main settings.
+</para>
+            </summary>
+            <value>An <a href="ms-xhelp:///?Id=T%3aDevExpress.Web.ASPxRichEdit.ASPxRichEditSettings">ASPxRichEditSettings</a> object that contains the control's options.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxRichEdit.ASPxRichEdit.SettingsDialogs">
+            <summary>
+                <para>Provides access to the built-in dialogs' settings.
+</para>
+            </summary>
+            <value>A <a href="ms-xhelp:///?Id=T%3aDevExpress.Web.ASPxRichEdit.RichEditDialogSettings">RichEditDialogSettings</a> object that contains settings of the built-in dialogs.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxRichEdit.ASPxRichEdit.SettingsDocumentSelector">
+            <summary>
+                <para>Provides access to settings that are related to the FileManager used in some built-in File Dialogs.
+
+</para>
+            </summary>
+            <value>An <a href="ms-xhelp:///?Id=T%3aDevExpress.Web.ASPxRichEdit.RichEditDocumentSelectorSettings">RichEditDocumentSelectorSettings</a> object that contains the Document Selector dialog's settings.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxRichEdit.ASPxRichEdit.ShowConfirmOnLosingChanges">
+            <summary>
+                <para>Gets or sets a value that specifies whether a confirmation alert should be displayed when any unsaved changes are going to be lost due to an end-user action.
+</para>
+            </summary>
+            <value><b>true</b> to display the confirmation alert; otherwise, <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxRichEdit.ASPxRichEdit.ShowStatusBar">
+            <summary>
+                <para>Gets or sets a value that specifies whether the ASPxRichEdit's status bar is displayed.
+</para>
+            </summary>
+            <value><b>true</b>, if the status bar is displayed; otherwise, <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxRichEdit.ASPxRichEdit.Styles">
+            <summary>
+                <para>Provides access to the style settings that control the appearance of the ASPxRichEdit elements.
+</para>
+            </summary>
+            <value>A RichEditStyles object that provides style settings for view elements.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxRichEdit.ASPxRichEdit.StylesButton">
+            <summary>
+                <para>Provides access to the style settings that define the appearance of button elements used by the ASPxRichEdit control (within built-in dialogs, for instance). 
+</para>
+            </summary>
+            <value>A RichEditButtonStyles object that contains style settings.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxRichEdit.ASPxRichEdit.StylesEditors">
+            <summary>
+                <para>Provides access to the style settings that define the appearance of editor elements used by the ASPxRichEdit control (for instance, within built-in dialogs). 
+</para>
+            </summary>
+            <value>A RichEditEditorsStyles object that contains style settings.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxRichEdit.ASPxRichEdit.StylesFileManager">
+            <summary>
+                <para>Provides access to the style settings that define the appearance of File Manager elements used by the ASPxRichEdit control (for instance, within the built-in file dialogs). 
+</para>
+            </summary>
+            <value>A RichEditFileManagerStyles object that provides style settings. 
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxRichEdit.ASPxRichEdit.StylesPopupMenu">
+            <summary>
+                <para>Provides access to the style settings that define the appearance of the ASPxRichEdit's context menus. 
+</para>
+            </summary>
+            <value>A RichEditMenuStyles object that contains style settings.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxRichEdit.ASPxRichEdit.StylesRibbon">
+            <summary>
+                <para>Provides access to the style settings that define the appearance of the ASPxRichEdit's ribbon toolbar elements. 
+</para>
+            </summary>
+            <value>A RichEditRibbonStyles object that contains style settings.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxRichEdit.ASPxRichEdit.StylesRuler">
+            <summary>
+                <para>Provides access to the style settings that define the appearance of the ASPxRichEdit's horizontal ruler. 
+</para>
+            </summary>
+            <value>A RichEditRulerStyles object that contains style settings.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxRichEdit.ASPxRichEdit.StylesStatusBar">
+            <summary>
+                <para>Provides access to the style settings that define the appearance of the ASPxRichEdit's status bar. 
+</para>
+            </summary>
+            <value>A RichEditStatusBarStyles object that contains style settings.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxRichEdit.ASPxRichEdit.WorkDirectory">
+            <summary>
+                <para>Gets or sets the working directory path.
+</para>
+            </summary>
+            <value>A string specifying the working directory path.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.Web.ASPxRichEdit.ASPxRichEditNumberingSettings">
+
+            <summary>
+                <para>Represents the class containing options for the availability of numbered and bulleted lists in the document. 
+
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.Web.ASPxRichEdit.ASPxRichEditNumberingSettings.#ctor">
+            <summary>
+                <para>Initializes a new instance of the ASPxRichEditNumberingSettings class.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxRichEdit.ASPxRichEditNumberingSettings.Bulleted">
+            <summary>
+                <para>Gets or sets the availability of operations with bulleted lists in the document.
+</para>
+            </summary>
+            <value>One of the <a href="ms-xhelp:///?Id=T%3aDevExpress.XtraRichEdit.DocumentCapability">DocumentCapability</a> enumeration values.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxRichEdit.ASPxRichEditNumberingSettings.MultiLevel">
+            <summary>
+                <para>Gets or sets the availability of operations with multilevel lists in the document.
+</para>
+            </summary>
+            <value>One of the <a href="ms-xhelp:///?Id=T%3aDevExpress.XtraRichEdit.DocumentCapability">DocumentCapability</a> enumeration values.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxRichEdit.ASPxRichEditNumberingSettings.Simple">
+            <summary>
+                <para>Gets or sets the availability of operations with simple numbered lists in the document.
+</para>
+            </summary>
+            <value>One of the <a href="ms-xhelp:///?Id=T%3aDevExpress.XtraRichEdit.DocumentCapability">DocumentCapability</a> enumeration values.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.Web.ASPxRichEdit.ASPxRichEditHorizontalRulerSettings">
+
+            <summary>
+                <para>Represents the class containing options for the horizontal ruler.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.Web.ASPxRichEdit.ASPxRichEditHorizontalRulerSettings.#ctor">
+            <summary>
+                <para>Initializes a new instance of the ASPxRichEditHorizontalRulerSettings class.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.Web.ASPxRichEdit.ASPxRichEditHorizontalRulerSettings.Assign(DevExpress.Utils.Controls.BaseOptions)">
+            <summary>
+                <para>Copies the settings from the specified object to the current one.
+</para>
+            </summary>
+            <param name="options">
+		A <see cref="T:DevExpress.Web.PropertiesBase"/> object whose settings are assigned to the current object.
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxRichEdit.ASPxRichEditHorizontalRulerSettings.ShowLeftIndent">
+            <summary>
+                <para>Gets or sets whether the left indent marker is visible.
+</para>
+            </summary>
+            <value><b>true</b> to display left indent marker; otherwise, <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxRichEdit.ASPxRichEditHorizontalRulerSettings.ShowRightIndent">
+            <summary>
+                <para>Gets or sets whether the right indent marker is visible.
+</para>
+            </summary>
+            <value><b>true</b> to display right indent marker; otherwise, <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxRichEdit.ASPxRichEditHorizontalRulerSettings.ShowTabs">
+            <summary>
+                <para>Gets or sets whether tab stops are displayed in the horizontal ruler.
+</para>
+            </summary>
+            <value><b>true</b> to display tab stops; otherwise, <b>false</b>.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxRichEdit.ASPxRichEditHorizontalRulerSettings.Visibility">
+            <summary>
+                <para>Gets or sets whether the ruler is shown. 
+</para>
+            </summary>
+            <value>One of the <a href="ms-xhelp:///?Id=T%3aDevExpress.XtraRichEdit.RichEditRulerVisibility">RichEditRulerVisibility</a> enumeration values.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.Web.ASPxRichEdit.ASPxRichEditDocumentCapabilitiesSettings">
+
+            <summary>
+                <para>Represents the storage of settings specific for the document restrictions implemented in the RichEdit. 
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.Web.ASPxRichEdit.ASPxRichEditDocumentCapabilitiesSettings.#ctor">
+            <summary>
+                <para>Initializes a new instance of the ASPxRichEditDocumentCapabilitiesSettings class.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxRichEdit.ASPxRichEditDocumentCapabilitiesSettings.Bookmarks">
+            <summary>
+                <para>This property is not currently in effect for this class. It is overridden only for the purpose of preventing it from appearing in Microsoft Visual Studio designer tools. 
+</para>
+            </summary>
+            <value> </value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxRichEdit.ASPxRichEditDocumentCapabilitiesSettings.CharacterFormatting">
+            <summary>
+                <para>Gets or sets the availability of the character formatting features.
+</para>
+            </summary>
+            <value>One of the <a href="ms-xhelp:///?Id=T%3aDevExpress.XtraRichEdit.DocumentCapability">DocumentCapability</a> enumeration values.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxRichEdit.ASPxRichEditDocumentCapabilitiesSettings.CharacterStyle">
+            <summary>
+                <para>Gets or sets the availability of the apply character style feature.
+</para>
+            </summary>
+            <value>One of the <a href="ms-xhelp:///?Id=T%3aDevExpress.XtraRichEdit.DocumentCapability">DocumentCapability</a> enumeration values.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxRichEdit.ASPxRichEditDocumentCapabilitiesSettings.Comments">
+            <summary>
+                <para>This property is not currently in effect for this class. It is overridden only for the purpose of preventing it from appearing in Microsoft Visual Studio designer tools. 
+</para>
+            </summary>
+            <value> </value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxRichEdit.ASPxRichEditDocumentCapabilitiesSettings.EndNotes">
+            <summary>
+                <para>This property is not currently in effect for this class. It is overridden only for the purpose of preventing it from appearing in Microsoft Visual Studio designer tools. 
+</para>
+            </summary>
+            <value> </value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxRichEdit.ASPxRichEditDocumentCapabilitiesSettings.Fields">
+            <summary>
+                <para>Gets or sets the document's capability to recognize and work with fields.
+</para>
+            </summary>
+            <value>One of the <a href="ms-xhelp:///?Id=T%3aDevExpress.XtraRichEdit.DocumentCapability">DocumentCapability</a> enumeration values.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxRichEdit.ASPxRichEditDocumentCapabilitiesSettings.FloatingObjects">
+            <summary>
+                <para>This property is not currently in effect for this class. It is overridden only for the purpose of preventing it from appearing in Microsoft Visual Studio designer tools. 
+</para>
+            </summary>
+            <value> </value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxRichEdit.ASPxRichEditDocumentCapabilitiesSettings.FootNotes">
+            <summary>
+                <para>This property is not currently in effect for this class. It is overridden only for the purpose of preventing it from appearing in Microsoft Visual Studio designer tools. 
+</para>
+            </summary>
+            <value> </value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxRichEdit.ASPxRichEditDocumentCapabilitiesSettings.HeadersFooters">
+            <summary>
+                <para>This property is not currently in effect for this class. It is overridden only for the purpose of preventing it from appearing in Microsoft Visual Studio designer tools. 
+</para>
+            </summary>
+            <value> </value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxRichEdit.ASPxRichEditDocumentCapabilitiesSettings.Hyperlinks">
+            <summary>
+                <para>Gets or sets the hyperlink feature availability.
+</para>
+            </summary>
+            <value>One of the <a href="ms-xhelp:///?Id=T%3aDevExpress.XtraRichEdit.DocumentCapability">DocumentCapability</a> enumeration values.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxRichEdit.ASPxRichEditDocumentCapabilitiesSettings.InlinePictures">
+            <summary>
+                <para>Gets or sets the document capability to handle inline pictures.
+</para>
+            </summary>
+            <value>One of the <a href="ms-xhelp:///?Id=T%3aDevExpress.XtraRichEdit.DocumentCapability">DocumentCapability</a> enumeration values.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxRichEdit.ASPxRichEditDocumentCapabilitiesSettings.ParagraphFormatting">
+            <summary>
+                <para>Gets or sets the availability of the paragraph formatting features. 
+</para>
+            </summary>
+            <value>One of the <a href="ms-xhelp:///?Id=T%3aDevExpress.XtraRichEdit.DocumentCapability">DocumentCapability</a> enumeration values.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxRichEdit.ASPxRichEditDocumentCapabilitiesSettings.ParagraphFrames">
+            <summary>
+                <para>This property is not currently in effect for this class. It is overridden only for the purpose of preventing it from appearing in Microsoft Visual Studio designer tools. 
+</para>
+            </summary>
+            <value> </value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxRichEdit.ASPxRichEditDocumentCapabilitiesSettings.Paragraphs">
+            <summary>
+                <para>Gets or sets the availability of the paragraph breaks.
+</para>
+            </summary>
+            <value>One of the <a href="ms-xhelp:///?Id=T%3aDevExpress.XtraRichEdit.DocumentCapability">DocumentCapability</a> enumeration values.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxRichEdit.ASPxRichEditDocumentCapabilitiesSettings.ParagraphStyle">
+            <summary>
+                <para>Gets or sets the availability of the apply paragraph style feature.
+</para>
+            </summary>
+            <value>One of the <a href="ms-xhelp:///?Id=T%3aDevExpress.XtraRichEdit.DocumentCapability">DocumentCapability</a> enumeration values.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxRichEdit.ASPxRichEditDocumentCapabilitiesSettings.ParagraphTabs">
+            <summary>
+                <para>Gets or sets the availability of paragraph tab stops.
+
+</para>
+            </summary>
+            <value>One of the <a href="ms-xhelp:///?Id=T%3aDevExpress.XtraRichEdit.DocumentCapability">DocumentCapability</a> enumeration values.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxRichEdit.ASPxRichEditDocumentCapabilitiesSettings.Sections">
+            <summary>
+                <para>Gets or sets the document's capability to handle document sections.
+
+</para>
+            </summary>
+            <value>One of the <a href="ms-xhelp:///?Id=T%3aDevExpress.XtraRichEdit.DocumentCapability">DocumentCapability</a> enumeration values.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxRichEdit.ASPxRichEditDocumentCapabilitiesSettings.Tables">
+            <summary>
+                <para>This property is not currently in effect for this class. It is overridden only for the purpose of preventing it from appearing in Microsoft Visual Studio designer tools. 
+</para>
+            </summary>
+            <value> </value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxRichEdit.ASPxRichEditDocumentCapabilitiesSettings.TableStyle">
+            <summary>
+                <para>This property is not currently in effect for this class. It is overridden only for the purpose of preventing it from appearing in Microsoft Visual Studio designer tools. 
+</para>
+            </summary>
+            <value> </value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxRichEdit.ASPxRichEditDocumentCapabilitiesSettings.TabSymbol">
+            <summary>
+                <para>Gets or sets the document's capability to insert tabs.
+</para>
+            </summary>
+            <value>One of the <a href="ms-xhelp:///?Id=T%3aDevExpress.XtraRichEdit.DocumentCapability">DocumentCapability</a> enumeration values.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxRichEdit.ASPxRichEditDocumentCapabilitiesSettings.Undo">
+            <summary>
+                <para>Gets or sets the availability of the Undo/Redo feature.
+</para>
+            </summary>
+            <value>One of the <a href="ms-xhelp:///?Id=T%3aDevExpress.XtraRichEdit.DocumentCapability">DocumentCapability</a> enumeration values.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.Web.ASPxRichEdit.ASPxRichEditBehaviorSettings">
+
+            <summary>
+                <para>Specifies the restricted operations that cannot be performed by end-users over the RichEdit's document. 
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.Web.ASPxRichEdit.ASPxRichEditBehaviorSettings.#ctor">
+            <summary>
+                <para>Initializes a new instance of the ASPxRichEditBehaviorSettings class.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.Web.ASPxRichEdit.ASPxRichEditBehaviorSettings.Assign(DevExpress.Utils.Controls.BaseOptions)">
+            <summary>
+                <para>Copies the settings from the specified object to the current one.
+</para>
+            </summary>
+            <param name="options">
+		A <see cref="T:DevExpress.Web.PropertiesBase"/> object whose settings are assigned to the current object.
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxRichEdit.ASPxRichEditBehaviorSettings.Copy">
+            <summary>
+                <para>Specifies whether or not the <b>Copy</b> operation is permitted.
+</para>
+            </summary>
+            <value>One of the <a href="ms-xhelp:///?Id=T%3aDevExpress.XtraRichEdit.DocumentCapability">DocumentCapability</a> enumeration values.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxRichEdit.ASPxRichEditBehaviorSettings.CreateNew">
+            <summary>
+                <para>Specifies whether or not the <b>Create New Document</b> operation is permitted.
+</para>
+            </summary>
+            <value>One of the <a href="ms-xhelp:///?Id=T%3aDevExpress.XtraRichEdit.DocumentCapability">DocumentCapability</a> enumeration values.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxRichEdit.ASPxRichEditBehaviorSettings.Cut">
+            <summary>
+                <para>Specifies whether or not the <b>Cut</b> operation is permitted.
+</para>
+            </summary>
+            <value>One of the <a href="ms-xhelp:///?Id=T%3aDevExpress.XtraRichEdit.DocumentCapability">DocumentCapability</a> enumeration values.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxRichEdit.ASPxRichEditBehaviorSettings.Drag">
+            <summary>
+                <para>Specifies whether or not the <b>Drag</b> operation is permitted.
+</para>
+            </summary>
+            <value>One of the <a href="ms-xhelp:///?Id=T%3aDevExpress.XtraRichEdit.DocumentCapability">DocumentCapability</a> enumeration values.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxRichEdit.ASPxRichEditBehaviorSettings.Drop">
+            <summary>
+                <para>Specifies whether or not the <b>Drop</b> operation is permitted.
+</para>
+            </summary>
+            <value>One of the <a href="ms-xhelp:///?Id=T%3aDevExpress.XtraRichEdit.DocumentCapability">DocumentCapability</a> enumeration values.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxRichEdit.ASPxRichEditBehaviorSettings.FontSource">
+            <summary>
+                <para>This property is not currently in effect for this class. It is overridden only for the purpose of preventing it from appearing in Microsoft Visual Studio designer tools. 
+</para>
+            </summary>
+            <value> </value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxRichEdit.ASPxRichEditBehaviorSettings.ForeColorSource">
+            <summary>
+                <para>This property is not currently in effect for this class. It is overridden only for the purpose of preventing it from appearing in Microsoft Visual Studio designer tools. 
+</para>
+            </summary>
+            <value> </value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxRichEdit.ASPxRichEditBehaviorSettings.FullScreen">
+            <summary>
+                <para>Specifies whether or not the <b>Full Screen</b> operation is permitted.
+</para>
+            </summary>
+            <value>One of the <a href="ms-xhelp:///?Id=T%3aDevExpress.XtraRichEdit.DocumentCapability">DocumentCapability</a> enumeration values.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxRichEdit.ASPxRichEditBehaviorSettings.MaxZoomFactor">
+            <summary>
+                <para>This property is not currently in effect for this class. It is overridden only for the purpose of preventing it from appearing in Microsoft Visual Studio designer tools. 
+</para>
+            </summary>
+            <value> </value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxRichEdit.ASPxRichEditBehaviorSettings.MinZoomFactor">
+            <summary>
+                <para>This property is not currently in effect for this class. It is overridden only for the purpose of preventing it from appearing in Microsoft Visual Studio designer tools. 
+</para>
+            </summary>
+            <value> </value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxRichEdit.ASPxRichEditBehaviorSettings.OfficeScrolling">
+            <summary>
+                <para>This property is not currently in effect for this class. It is overridden only for the purpose of preventing it from appearing in Microsoft Visual Studio designer tools. 
+</para>
+            </summary>
+            <value> </value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxRichEdit.ASPxRichEditBehaviorSettings.Open">
+            <summary>
+                <para>Specifies whether or not the <b>Open Document</b> operation is permitted.
+</para>
+            </summary>
+            <value>One of the <a href="ms-xhelp:///?Id=T%3aDevExpress.XtraRichEdit.DocumentCapability">DocumentCapability</a> enumeration values.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxRichEdit.ASPxRichEditBehaviorSettings.OvertypeAllowed">
+            <summary>
+                <para>This property is not currently in effect for this class. It is overridden only for the purpose of preventing it from appearing in Microsoft Visual Studio designer tools. 
+</para>
+            </summary>
+            <value> </value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxRichEdit.ASPxRichEditBehaviorSettings.PageBreakInsertMode">
+            <summary>
+                <para>Gets or sets whether a page break is inserted next to the specified position or in the new line.
+</para>
+            </summary>
+            <value>One of the <a href="ms-xhelp:///?Id=T%3aDevExpress.XtraRichEdit.PageBreakInsertMode">PageBreakInsertMode</a> enumeration values.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxRichEdit.ASPxRichEditBehaviorSettings.Paste">
+            <summary>
+                <para>Specifies whether or not the <b>Paste</b> operation is permitted.
+</para>
+            </summary>
+            <value>One of the <a href="ms-xhelp:///?Id=T%3aDevExpress.XtraRichEdit.DocumentCapability">DocumentCapability</a> enumeration values.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxRichEdit.ASPxRichEditBehaviorSettings.PasteLineBreakSubstitution">
+            <summary>
+                <para>This property is not currently in effect for this class. It is overridden only for the purpose of preventing it from appearing in Microsoft Visual Studio designer tools. 
+</para>
+            </summary>
+            <value> </value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxRichEdit.ASPxRichEditBehaviorSettings.PasteSingleCellAsText">
+            <summary>
+                <para>This property is not currently in effect for this class. It is overridden only for the purpose of preventing it from appearing in Microsoft Visual Studio designer tools. 
+</para>
+            </summary>
+            <value> </value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxRichEdit.ASPxRichEditBehaviorSettings.Printing">
+            <summary>
+                <para>Specifies whether or not the printing operations are permitted.
+</para>
+            </summary>
+            <value>One of the <a href="ms-xhelp:///?Id=T%3aDevExpress.XtraRichEdit.DocumentCapability">DocumentCapability</a> enumeration values.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxRichEdit.ASPxRichEditBehaviorSettings.Save">
+            <summary>
+                <para>Specifies whether or not the <b>Save Document</b> operation is permitted.
+</para>
+            </summary>
+            <value>One of the <a href="ms-xhelp:///?Id=T%3aDevExpress.XtraRichEdit.DocumentCapability">DocumentCapability</a> enumeration values.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxRichEdit.ASPxRichEditBehaviorSettings.SaveAs">
+            <summary>
+                <para>Specifies whether or not the <b>Save Document As...</b> operation is permitted.
+</para>
+            </summary>
+            <value>One of the <a href="ms-xhelp:///?Id=T%3aDevExpress.XtraRichEdit.DocumentCapability">DocumentCapability</a> enumeration values.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxRichEdit.ASPxRichEditBehaviorSettings.ShowPopupMenu">
+            <summary>
+                <para>This property is not currently in effect for this class. It is overridden only for the purpose of preventing it from appearing in Microsoft Visual Studio designer tools. 
+</para>
+            </summary>
+            <value> </value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxRichEdit.ASPxRichEditBehaviorSettings.TabMarker">
+            <summary>
+                <para>Specifies which character(s) to insert when pressing the <b>TAB</b> key.
+
+</para>
+            </summary>
+            <value>A <see cref="T:System.String"/> value, specifying the character(s) to insert when the <b>TAB</b> key has been pressed.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxRichEdit.ASPxRichEditBehaviorSettings.Touch">
+            <summary>
+                <para>This property is not currently in effect for this class. It is overridden only for the purpose of preventing it from appearing in Microsoft Visual Studio designer tools. 
+</para>
+            </summary>
+            <value> </value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxRichEdit.ASPxRichEditBehaviorSettings.UseFontSubstitution">
+            <summary>
+                <para>This property is not currently in effect for this class. It is overridden only for the purpose of preventing it from appearing in Microsoft Visual Studio designer tools. 
+</para>
+            </summary>
+            <value> </value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxRichEdit.ASPxRichEditBehaviorSettings.Zooming">
+            <summary>
+                <para>This property is not currently in effect for this class. It is overridden only for the purpose of preventing it from appearing in Microsoft Visual Studio designer tools. 
+</para>
+            </summary>
+            <value> </value>
+
+
+        </member>
+        <member name="T:DevExpress.Web.ASPxRichEdit.Localization.ASPxRichEditLocalizer">
+
+            <summary>
+                <para>An object providing a means to localize the <see cref="T:DevExpress.Web.ASPxRichEdit.ASPxRichEdit"/>'s user interface elements at runtime.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.Web.ASPxRichEdit.Localization.ASPxRichEditLocalizer.#ctor">
+            <summary>
+                <para>Initializes a new instance of the ASPxRichEditLocalizer class.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="M:DevExpress.Web.ASPxRichEdit.Localization.ASPxRichEditLocalizer.CreateResXLocalizer">
+            <summary>
+                <para>Returns an object comprising resources based on the thread's language and regional settings (culture).
+</para>
+            </summary>
+            <returns>A <see cref="T:DevExpress.Utils.Localization.XtraLocalizer`1"/> object comprising resources based on the thread's culture.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.Web.ASPxRichEdit.Localization.ASPxRichEditLocalizer.GetString(DevExpress.Web.ASPxRichEdit.Localization.ASPxRichEditStringId)">
+            <summary>
+                <para>Returns a localized string for the specified string identifier.
+</para>
+            </summary>
+            <param name="id">
+		A <see cref="T:DevExpress.Web.ASPxRichEdit.Localization.ASPxRichEditStringId"/> enumeration value identifying the string to localize.
+
+            </param>
+            <returns>A <a href="ms-xhelp:///?Id=T%3aSystem.String">String</a> corresponding to the specified identifier.
+</returns>
+
+
+        </member>
+        <member name="T:DevExpress.Web.ASPxRichEdit.RichEditFileManagerFoldersSettings">
+
+            <summary>
+                <para>Contains settings that relate to the folder functionality of the embedded FileManager used within certain built-in dialogs.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.Web.ASPxRichEdit.RichEditFileManagerFoldersSettings.#ctor(DevExpress.Web.IPropertiesOwner)">
+            <summary>
+                <para>Initializes a new instance of the RichEditFileManagerFoldersSettings class with the specified owner.
+</para>
+            </summary>
+            <param name="owner">
+		An object that implements the <see cref="T:DevExpress.Web.IPropertiesOwner"/> interface.
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxRichEdit.RichEditFileManagerFoldersSettings.ShowLockedFolderIcons">
+            <summary>
+                <para> </para>
+            </summary>
+            <value> </value>
+
+
+        </member>
+        <member name="T:DevExpress.Web.ASPxRichEdit.RichEditFileManagerEditingSettings">
+
+            <summary>
+                <para>Contains settings that relate to the editing functionality of the embedded FileManager which is used within certain built-in dialogs.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.Web.ASPxRichEdit.RichEditFileManagerEditingSettings.#ctor(DevExpress.Web.IPropertiesOwner)">
+            <summary>
+                <para>Initializes a new instance of the RichEditFileManagerEditingSettings class with the specified owner.
+</para>
+            </summary>
+            <param name="owner">
+		An object that implements the <see cref="T:DevExpress.Web.IPropertiesOwner"/> interface.
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxRichEdit.RichEditFileManagerEditingSettings.AllowDownload">
+            <summary>
+                <para> </para>
+            </summary>
+            <value> </value>
+
+
+        </member>
+        <member name="T:DevExpress.Web.ASPxRichEdit.RichEditClientSideEvents">
+
+            <summary>
+                <para>Contains a list of the client-side events available for the ASPxRichEdit.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.Web.ASPxRichEdit.RichEditClientSideEvents.#ctor">
+            <summary>
+                <para>Initializes a new instance of the RichEditClientSideEvents class. For internal use only.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxRichEdit.RichEditClientSideEvents.BeginSynchronization">
+            <summary>
+                <para>Gets or sets the name of the JavaScript function or the entire code which will handle the client <see cref="E:DevExpress.Web.ASPxRichEdit.Scripts.ASPxClientRichEdit.BeginSynchronization"/> event.
+</para>
+            </summary>
+            <value>A string that represents either the name of a JavaScript function or the entire JavaScript function code used to handle an event.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxRichEdit.RichEditClientSideEvents.CustomCommandExecuted">
+            <summary>
+                <para>Gets or sets the name of the JavaScript function or the entire code which will handle the client <see cref="E:DevExpress.Web.ASPxRichEdit.Scripts.ASPxClientRichEdit.CustomCommandExecuted"/> event.
+</para>
+            </summary>
+            <value>A string that represents either the name of a JavaScript function or the entire JavaScript function code used to handle an event.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxRichEdit.RichEditClientSideEvents.DocumentChanged">
+            <summary>
+                <para>Gets or sets the name of the JavaScript function or the entire code which will handle the client <see cref="E:DevExpress.Web.ASPxRichEdit.Scripts.ASPxClientRichEdit.DocumentChanged"/> event.
+</para>
+            </summary>
+            <value>A string that represents either the name of a JavaScript function or the entire JavaScript function code used to handle an event.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxRichEdit.RichEditClientSideEvents.EndSynchronization">
+            <summary>
+                <para>Gets or sets the name of the JavaScript function or the entire code which will handle the client <see cref="E:DevExpress.Web.ASPxRichEdit.Scripts.ASPxClientRichEdit.EndSynchronization"/> event.
+</para>
+            </summary>
+            <value>A string that represents either the name of a JavaScript function or the entire JavaScript function code used to handle an event.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.Web.ASPxRichEdit.ASPxRichEditSettingsBase">
+
+            <summary>
+                <para>Serves as a base for classes that contain different settings of the <see cref="T:DevExpress.Web.ASPxRichEdit.ASPxRichEdit"/> control.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.Web.ASPxRichEdit.ASPxRichEditSettingsBase.#ctor(DevExpress.Web.IPropertiesOwner)">
+            <summary>
+                <para>Initializes a new instance of the ASPxRichEditSettingsBase class with the specified owner.
+
+</para>
+            </summary>
+            <param name="owner">
+		An object that implements the <see cref="T:DevExpress.Web.IPropertiesOwner"/> interface.
+
+            </param>
+
+
+        </member>
+        <member name="T:DevExpress.Web.ASPxRichEdit.RichEditRibbonTabCollection">
+
+            <summary>
+                <para>A collection of Ribbon tabs related to the <see cref="T:DevExpress.Web.ASPxRichEdit.ASPxRichEdit"/>.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.Web.ASPxRichEdit.RichEditRibbonTabCollection.#ctor(DevExpress.Web.Internal.IWebControlObject)">
+            <summary>
+                <para>Initializes a new instance of the RichEditRibbonTabCollection class with the specified owner.
+</para>
+            </summary>
+            <param name="owner">
+		An object that implements the <b>IWebControlObject</b> interface.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.Web.ASPxRichEdit.RichEditRibbonTabCollection.Add(System.String)">
+            <summary>
+                <para>Adds a new tab with the specified text to the collection.
+</para>
+            </summary>
+            <param name="text">
+		A <see cref="T:System.String"/> value that specifies the created tab's display text. Initializes the tab's <see cref="P:DevExpress.Web.RibbonTab.Text"/> property.
+
+            </param>
+            <returns>An <a href="ms-xhelp:///?Id=T%3aDevExpress.Web.RibbonTab">RibbonTab</a> object that is the newly created tab.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.Web.ASPxRichEdit.RichEditRibbonTabCollection.CreateDefaultRibbonTabs">
+            <summary>
+                <para>Creates default ribbon tabs within the RichEditRibbonTabCollection collection.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxRichEdit.RichEditRibbonTabCollection.RichEdit">
+            <summary>
+                <para>Gets the <see cref="T:DevExpress.Web.ASPxRichEdit.ASPxRichEdit"/> object that owns the collection.
+</para>
+            </summary>
+            <value>An <a href="ms-xhelp:///?Id=T%3aDevExpress.Web.ASPxRichEdit.ASPxRichEdit">ASPxRichEdit</a> object that owns the collection.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.Web.ASPxRichEdit.RichEditRulerImages">
+
+            <summary>
+                <para>Contains settings for the Ruler images.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.Web.ASPxRichEdit.RichEditRulerImages.#ctor(DevExpress.Web.Internal.ISkinOwner)">
+            <summary>
+                <para>Initializes a new instance of the RichEditRulerImages class with the specified owner.
+</para>
+            </summary>
+            <param name="skinOwner">
+		An object that implements the <see cref="T:DevExpress.Web.Internal.ISkinOwner"/> interface.
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxRichEdit.RichEditRulerImages.CenterTabDragHandle">
+            <summary>
+                <para> </para>
+            </summary>
+            <value> </value>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxRichEdit.RichEditRulerImages.CenterTabDragHandleImageName">
+            <summary>
+                <para>Gets the image settings of the corresponding UI element.
+</para>
+            </summary>
+            <returns> 
+</returns>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxRichEdit.RichEditRulerImages.DecimalTabDragHandle">
+            <summary>
+                <para> </para>
+            </summary>
+            <value> </value>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxRichEdit.RichEditRulerImages.DecimalTabDragHandleImageName">
+            <summary>
+                <para>Gets the image settings of the corresponding UI element.
+</para>
+            </summary>
+            <returns> 
+</returns>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxRichEdit.RichEditRulerImages.FirstLineIdentDragHandle">
+            <summary>
+                <para> 
+</para>
+            </summary>
+            <value> 
+</value>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxRichEdit.RichEditRulerImages.FirstLineIdentDragHandleImageName">
+            <summary>
+                <para>Gets the image settings of the corresponding UI element.
+</para>
+            </summary>
+            <returns> 
+</returns>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxRichEdit.RichEditRulerImages.LeftIdentDragHandle">
+            <summary>
+                <para> 
+</para>
+            </summary>
+            <value> 
+</value>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxRichEdit.RichEditRulerImages.LeftIdentDragHandleImageName">
+            <summary>
+                <para> Gets the image settings of the corresponding UI element.
+</para>
+            </summary>
+            <returns> 
+</returns>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxRichEdit.RichEditRulerImages.LeftTabDragHandle">
+            <summary>
+                <para> </para>
+            </summary>
+            <value> </value>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxRichEdit.RichEditRulerImages.LeftTabDragHandleImageName">
+            <summary>
+                <para>Gets the image settings of the corresponding UI element.
+</para>
+            </summary>
+            <returns> 
+</returns>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxRichEdit.RichEditRulerImages.RightIdentDragHandle">
+            <summary>
+                <para> 
+</para>
+            </summary>
+            <value> 
+</value>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxRichEdit.RichEditRulerImages.RightIdentDragHandleImageName">
+            <summary>
+                <para> Gets the image settings of the corresponding UI element.
+</para>
+            </summary>
+            <returns> 
+ 
+</returns>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxRichEdit.RichEditRulerImages.RightTabDragHandle">
+            <summary>
+                <para> </para>
+            </summary>
+            <value> </value>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxRichEdit.RichEditRulerImages.RightTabDragHandleImageName">
+            <summary>
+                <para>Gets the image settings of the corresponding UI element.
+</para>
+            </summary>
+            <returns> 
+</returns>
+
+
+        </member>
+        <member name="T:DevExpress.Web.ASPxRichEdit.ASPxRichEditSettings">
+
+            <summary>
+                <para>Contains the main settings of the <see cref="T:DevExpress.Web.ASPxRichEdit.ASPxRichEdit"/> control.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.Web.ASPxRichEdit.ASPxRichEditSettings.#ctor(DevExpress.Web.ASPxRichEdit.ASPxRichEdit)">
+            <summary>
+                <para>Initializes a new instance of the ASPxRichEditSettings class with the specified owner.
+</para>
+            </summary>
+            <param name="owner">
+		An  <see cref="T:DevExpress.Web.ASPxRichEdit.ASPxRichEdit"/> object that represents the object's owner.
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.Web.ASPxRichEdit.ASPxRichEditSettings.Assign(DevExpress.Web.PropertiesBase)">
+            <summary>
+                <para>Copies the settings from the specified <see cref="T:DevExpress.Web.PropertiesBase"/> object to the current object.
+</para>
+            </summary>
+            <param name="source">
+		A <see cref="T:DevExpress.Web.PropertiesBase"/> object whose settings are assigned to the current object.
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxRichEdit.ASPxRichEditSettings.Behavior">
+            <summary>
+                <para>Provides access to an object that enables you to apply restrictions on different editor operations.
+</para>
+            </summary>
+            <value>A <a href="ms-xhelp:///?Id=T%3aDevExpress.Web.ASPxRichEdit.ASPxRichEditBehaviorSettings">ASPxRichEditBehaviorSettings</a> class instance containing restriction specifications.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxRichEdit.ASPxRichEditSettings.DocumentCapabilities">
+            <summary>
+                <para>Provides access to an object used to specify document restrictions.
+</para>
+            </summary>
+            <value>A <a href="ms-xhelp:///?Id=T%3aDevExpress.Web.ASPxRichEdit.ASPxRichEditDocumentCapabilitiesSettings">ASPxRichEditDocumentCapabilitiesSettings</a> class instance that provides access to various document restrictions.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxRichEdit.ASPxRichEditSettings.HorizontalRuler">
+            <summary>
+                <para>Provides access to options specific to the horizontal ruler element of the RichEdit.
+</para>
+            </summary>
+            <value>A <a href="ms-xhelp:///?Id=T%3aDevExpress.Web.ASPxRichEdit.ASPxRichEditHorizontalRulerSettings">ASPxRichEditHorizontalRulerSettings</a> class instance containing options specific to the horizontal ruler.
+</value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxRichEdit.ASPxRichEditSettings.Unit">
+            <summary>
+                <para>Gets or sets a unit of measure used in the ASPxRichEdit. 
+
+</para>
+            </summary>
+            <value>One of the <a href="ms-xhelp:///?Id=T%3aDevExpress.Web.ASPxRichEdit.RichEditUnit">RichEditUnit</a> enumeration values.
+</value>
+
+
+        </member>
+        <member name="T:DevExpress.Web.ASPxRichEdit.RichEditUnit">
+
+            <summary>
+                <para>Lists measurement units used in the document.
+</para>
+            </summary>
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxRichEdit.RichEditUnit.Centimeter">
+            <summary>
+                <para>Specifies centimeters as the measurement unit. 
+
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxRichEdit.RichEditUnit.Inch">
+            <summary>
+                <para>Specifies inches as the measurement unit. 
+
+</para>
+            </summary>
+
+
+        </member>
+        <member name="T:DevExpress.Web.ASPxRichEdit.RichEditRibbonMode">
+
+            <summary>
+                <para>Lists values that specify the type of the ribbon navigation element used by the <see cref="T:DevExpress.Web.ASPxRichEdit.ASPxRichEdit"/> control.
+</para>
+            </summary>
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxRichEdit.RichEditRibbonMode.ExternalRibbon">
+            <summary>
+                <para>An external ribbon is used by the Rich Text Editor as a toolbar. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxRichEdit.RichEditRibbonMode.None">
+            <summary>
+                <para>The Rich Text Editor has no toolbars. 
+</para>
+            </summary>
+
+
+        </member>
+        <member name="F:DevExpress.Web.ASPxRichEdit.RichEditRibbonMode.Ribbon">
+            <summary>
+                <para>The toolbar for the Rich Text Editor is rendered as a built-in ribbon.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="T:DevExpress.Web.ASPxRichEdit.RichEditPopupMenuItemCollection">
+
+            <summary>
+                <para>An internal collection that maintains popup menu items in the RichEdit.
+For internal use only.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.Web.ASPxRichEdit.RichEditPopupMenuItemCollection.Add">
+            <summary>
+                <para> </para>
+            </summary>
+            <returns> </returns>
+
+
+        </member>
+        <member name="M:DevExpress.Web.ASPxRichEdit.RichEditPopupMenuItemCollection.Add(System.String,System.String)">
+            <summary>
+                <para> </para>
+            </summary>
+            <param name="text">
+		 
+            </param>
+            <param name="commandName">
+		 
+            </param>
+            <returns> </returns>
+
+
+        </member>
+        <member name="M:DevExpress.Web.ASPxRichEdit.RichEditPopupMenuItemCollection.CreateDefaultItems">
+            <summary>
+                <para> </para>
+            </summary>
+
+
+        </member>
+        <member name="T:DevExpress.Web.Office.RichEditDocumentInfo">
+
+            <summary>
+                <para>Contains settings of a RichEdit document opened on the server and provides the means to operate the document (close or save a copy).
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.Web.Office.RichEditDocumentInfo.#ctor(DevExpress.Web.ASPxRichEdit.Internal.RichEditWorkSession)">
+            <summary>
+                <para>Initializes a new instance of the RichEditDocumentInfo class.
+</para>
+            </summary>
+            <param name="workSession">
+		A RichEditWorkSession object representing the session to which the created object belongs.
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.Web.Office.RichEditDocumentInfo.DocumentFormat">
+            <summary>
+                <para> </para>
+            </summary>
+            <value> </value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.Office.RichEditDocumentInfo.LastModifyTime">
+            <summary>
+                <para> </para>
+            </summary>
+            <value> </value>
+
+
+        </member>
+        <member name="P:DevExpress.Web.Office.RichEditDocumentInfo.Modified">
+            <summary>
+                <para> </para>
+            </summary>
+            <value> </value>
+
+
+        </member>
+        <member name="M:DevExpress.Web.Office.RichEditDocumentInfo.SaveCopy(System.String)">
+            <summary>
+                <para>Saves a document copy using the specified settings
+</para>
+            </summary>
+            <param name="filePath">
+		A string value specifying the document path to save to. 
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.Web.Office.RichEditDocumentInfo.SaveCopy">
+            <summary>
+                <para>Saves a document copy using the specified settings.
+</para>
+            </summary>
+            <returns>An array of bytes where the document is saved to.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.Web.Office.RichEditDocumentInfo.SaveCopy(DevExpress.XtraRichEdit.DocumentFormat)">
+            <summary>
+                <para>Saves a document copy using the specified settings.
+</para>
+            </summary>
+            <param name="documentFormat">
+		A DocumentFormat object specifying the document format.
+
+            </param>
+            <returns>An array of bytes where the document is saved to.
+</returns>
+
+
+        </member>
+        <member name="M:DevExpress.Web.Office.RichEditDocumentInfo.SaveCopy(System.IO.Stream)">
+            <summary>
+                <para>Saves a document copy using the specified settings. 
+</para>
+            </summary>
+            <param name="stream">
+		A stream object where to save the document. 
+
+            </param>
+
+
+        </member>
+        <member name="M:DevExpress.Web.Office.RichEditDocumentInfo.SaveCopy(System.IO.Stream,DevExpress.XtraRichEdit.DocumentFormat)">
+            <summary>
+                <para>Saves a document copy using the specified settings. 
+</para>
+            </summary>
+            <param name="stream">
+		A stream object where to save the document. 
+
+            </param>
+            <param name="documentFormat">
+		A DocumentFormat object specifying the document format. 
+
+            </param>
+
+
+        </member>
+        <member name="T:DevExpress.Web.ASPxRichEdit.RichEditFolderManager">
+
+            <summary>
+                <para>For internal use only.
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.Web.ASPxRichEdit.RichEditFolderManager.#ctor">
+            <summary>
+                <para>Initializes a new instance of the RichEditFolderManager class.
+</para>
+            </summary>
+
+
+        </member>
+        <member name="T:DevExpress.Web.ASPxRichEdit.RichEditFileManagerValidationSettings">
+
+            <summary>
+                <para>Contains settings that relate to the validation of document files, uploaded using the FileNamager embedded into the RIchEdit's file dialogs (Document Selector). 
+
+</para>
+            </summary>
+
+        </member>
+        <member name="M:DevExpress.Web.ASPxRichEdit.RichEditFileManagerValidationSettings.#ctor(DevExpress.Web.IPropertiesOwner)">
+            <summary>
+                <para>Initializes a new instance of the RichEditFileManagerValidationSettings class with the specified owner.
+</para>
+            </summary>
+            <param name="owner">
+		An object that implements the <see cref="T:DevExpress.Web.IPropertiesOwner"/> interface.
+
+            </param>
+
+
+        </member>
+        <member name="P:DevExpress.Web.ASPxRichEdit.RichEditFileManagerValidationSettings.MaxFileSize">
+            <summary>
+                <para> </para>
+            </summary>
+            <value> </value>
+
+
+        </member>
+    </members>
+</doc>

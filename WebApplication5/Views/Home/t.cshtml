@@ -1,0 +1,41 @@
+﻿@model IEnumerable<WebApplication5.Models.Notification>
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>t</title>
+</head>
+<body>
+    <p>
+        @Html.ActionLink("Create New", "Create")
+    </p>
+    <table class="table">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Notify)
+            </th>
+            <th></th>
+        </tr>
+    
+    @foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Notify)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id=item.NotificationID }) |
+                @Html.ActionLink("Details", "Details", new { id=item.NotificationID }) |
+                @Html.ActionLink("Delete", "Delete", new { id=item.NotificationID })
+            </td>
+        </tr>
+    }
+    
+    </table>
+</body>
+</html>

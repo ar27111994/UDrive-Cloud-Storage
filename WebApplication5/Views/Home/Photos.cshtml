@@ -1,0 +1,110 @@
+﻿
+
+
+<div class="container">
+
+        <div class="col-md-8" style="border-left:dotted white">
+
+            
+            <table class="pretty" id="dt" >
+<thead>
+   <tr>
+       <th>
+           files
+       </th>
+       <th>
+           Preview
+       </th>
+       <th>
+           Download
+       </th>
+   </tr>
+           
+</thead>
+                <tbody>
+                    @foreach (KeyValuePair<string, string> file in (Dictionary<string, string>)ViewData["filename"])
+                    {
+                        <text>
+                            <tr>
+                                <td>
+                                 @file.Value 
+                                </td>
+                                <td>
+                                    <a class="btn btn-info" href="@Url.Action("picture","home",new {path=file.Key })"  >Preview</a>
+                                </td>
+                                <td>
+                                    <button type="button" class="btn-success">Download</button>
+                                </td>
+                            </tr>
+                        </text>
+                    }
+                </tbody>
+            </table>
+
+
+        </div>
+
+    </div>
+
+
+
+@section scripts{
+
+    <link href="~/Content/datatables/css/jquery.dataTables.css" rel="stylesheet" />
+    <link href="~/Content/datatables/css/dt.css" rel="stylesheet" />
+    <script src="~/Content/datatables/js/jquery.dataTables.js"></script>
+    <script type="text/javascript">
+
+        $(document).ready(function () {
+            $('#operation').hide();
+
+
+            $('.chk').change(function () {
+
+
+
+                if (this.checked) {
+
+
+                    $('#operation').show();
+
+                }
+
+                return;
+
+
+            });
+
+
+            $('#dt thead .files').each(function () {
+                var title = $(this).text();
+                $(this).html('<input type="text" placeholder="Search ' + title + '" />');
+            });
+
+            // DataTable
+            var table = $('#dt').DataTable();
+
+            // Apply the search
+            table.columns().every(function () {
+                var that = this;
+
+                $('input', this.header()).on('keyup change', function () {
+                    if (that.search() !== this.value) {
+                        that
+                            .search(this.value)
+                            .draw();
+                    }
+                });
+            });
+
+
+        });
+
+
+
+    </script>
+
+
+
+}
+

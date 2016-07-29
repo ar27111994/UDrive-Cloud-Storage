@@ -1,0 +1,34 @@
+﻿@model ArtsFileSystemProvider
+
+<script type="text/javascript">
+    $(document).ready(function() {
+        $("#AllowColumnResize, #AllowColumnDragDrop, #AllowColumnSort, #ShowHeaderFilterButton").change(
+            function() {
+                $("form").submit();
+            }
+        );
+    });
+</script>
+
+@{ FileManagerDetailsViewModeDemoOptions options = (FileManagerDetailsViewModeDemoOptions)Session["Options"]; }
+
+@using (Html.BeginForm())
+{
+    <div class="vertOptionsPanel" style="height: 120px">
+        @Html.CheckBox("AllowColumnResize", options.AllowColumnResize, new { @class = "leftMost" })
+        <label class="checkBox" for="AllowColumnResize">AllowColumnResize</label>
+        @Html.CheckBox("AllowColumnDragDrop", options.AllowColumnDragDrop, new { @class = "leftMost" })
+        <label class="checkBox" for="AllowColumnDragDrop">AllowColumnDragDrop</label>
+        @Html.CheckBox("AllowColumnSort", options.AllowColumnSort, new { @class = "leftMost" })
+        <label class="checkBox" for="AllowColumnSort">AllowColumnSort</label>
+        @Html.CheckBox("ShowHeaderFilterButton", options.ShowHeaderFilterButton, new { @class = "leftMost" })
+        <label class="checkBox" for="ShowHeaderFilterButton">ShowHeaderFilterButton</label>
+    </div>
+    <div style="clear: both">
+        @Html.Partial("DetailsViewModePartial", Model)
+    </div>
+    <br />
+    <p class="Note">
+        <b>Allowed Extensions</b>: .jpg, .jpeg, .gif, .rtf, .txt, .avi, .png, .mp3, .xml, .doc, .pdf
+    </p>
+}

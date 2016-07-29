@@ -1,0 +1,663 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Mvc.RazorTools</name>
+    </assembly>
+    <members>
+        <member name="T:Mvc.RazorTools.BundleManager">
+            <summary>
+            Provides management of MVC razor Tools bundles. These bundles allow
+            style sheets and scripts to be easily combined across multiple libraries
+            without the need to manually edit the initialization code or change
+            add and remove render statements in each view.
+            </summary>
+        </member>
+        <member name="P:Mvc.RazorTools.BundleManager.Styles">
+            <summary>
+            Gets the Styles bundle used by MVC Razor Tools.
+            </summary>
+        </member>
+        <member name="P:Mvc.RazorTools.BundleManager.Scripts">
+            <summary>
+            Gets the Scripts bundle used by MVC Razor Tools.
+            </summary>
+        </member>
+        <member name="T:Mvc.RazorTools.IRazorToolsBundle">
+            <summary>
+            The interface definition for an MVC Razor Tools bundle.
+            </summary>
+        </member>
+        <member name="M:Mvc.RazorTools.IRazorToolsBundle.Include(System.String[])">
+            <summary>
+            Specifies a set of files to be included in the System.Web.Optimization.Bundle.
+            </summary>
+            <param name="virtualPaths">The virtual path of the file or file pattern to be 
+            included in the bundle.</param>
+            <returns>The System.Web.Optimization.Bundle object itself for use in subsequent 
+            method chaining.</returns>
+        </member>
+        <member name="M:Mvc.RazorTools.IRazorToolsBundle.Include(System.String,System.Web.Optimization.IItemTransform[])">
+            <summary>
+            Specifies a file to be included in the System.Web.Optimization.Bundle.
+            </summary>
+            <param name="virtualPath">The virtual path of the file or file pattern to be 
+            included in the bundle.</param>
+            <param name="transforms">The System.Web.Optimization.Bundle object itself for use in 
+            subsequent method chaining.</param>
+            <returns></returns>
+        </member>
+        <member name="M:Mvc.RazorTools.IRazorToolsBundle.Render">
+            <summary>
+            Renders link tags for a set of paths.
+            </summary>
+            <returns>An HTML string containing the link tag or tags for the bundle.</returns>
+        </member>
+        <member name="P:Mvc.RazorTools.IRazorToolsBundle.Path">
+            <summary>
+            Gets the virtual path used to reference the System.Web.Optimization. Bundle 
+            from within a view or Web page.
+            </summary>
+        </member>
+        <member name="P:Mvc.RazorTools.IRazorToolsBundle.Bundle">
+            <summary>
+            Gets a reference to the Bundle instance.
+            </summary>
+        </member>
+        <member name="T:Mvc.RazorTools.RazorToolsBundle">
+            <summary>
+            Abstract class implementing Mvc.RazorTools.IRazorToolsBundle.
+            </summary>
+        </member>
+        <member name="M:Mvc.RazorTools.RazorToolsBundle.Include(System.String[])">
+            <summary>
+            Specifies a set of files to be included in the System.Web.Optimization.Bundle.
+            </summary>
+            <param name="virtualPaths">The virtual path of the file or file pattern to be 
+            included in the bundle.</param>
+            <returns>The System.Web.Optimization.Bundle object itself for use in subsequent 
+            method chaining.</returns>
+        </member>
+        <member name="M:Mvc.RazorTools.RazorToolsBundle.Include(System.String,System.Web.Optimization.IItemTransform[])">
+            <summary>
+            Specifies a file to be included in the System.Web.Optimization.Bundle.
+            </summary>
+            <param name="virtualPath">The virtual path of the file or file pattern to be 
+            included in the bundle.</param>
+            <param name="transforms">The System.Web.Optimization.Bundle object itself for use in subsequent 
+            method chaining.</param>
+            <returns>The System.Web.Optimization.Bundle object itself for use in subsequent 
+            method chaining.</returns>
+        </member>
+        <member name="M:Mvc.RazorTools.RazorToolsBundle.Render">
+            <summary>
+            Renders link tags for a set of paths.
+            </summary>
+            <returns>An HTML string containing the link tag or tags for the bundle.</returns>
+        </member>
+        <member name="M:Mvc.RazorTools.RazorToolsBundle.OnGetNewBundle">
+            <summary>
+            Creates a new bundle of the type represented by this instance.
+            </summary>
+            <returns>A newly created bundle.</returns>
+        </member>
+        <member name="M:Mvc.RazorTools.RazorToolsBundle.OnRender">
+            <summary>
+            Called to render link tags for a set of paths.
+            </summary>
+            <returns>An HTML string containing the link tag or tags for the bundle.</returns>
+        </member>
+        <member name="P:Mvc.RazorTools.RazorToolsBundle.Path">
+            <summary>
+            Gets the virtual path used to reference the System.Web.Optimization. Bundle 
+            from within a view or Web page.
+            </summary>
+        </member>
+        <member name="P:Mvc.RazorTools.RazorToolsBundle.Bundle">
+            <summary>
+            Gets a reference to the Bundle instance.
+            </summary>
+        </member>
+        <member name="T:Mvc.RazorTools.ScriptsBundle">
+            <summary>
+            The scripts bundle used by MVC Razor Tools.
+            </summary>
+        </member>
+        <member name="M:Mvc.RazorTools.ScriptsBundle.OnGetNewBundle">
+            <summary>
+            Creates a new bundle of the type represented by this instance.
+            </summary>
+            <returns>A newly created bundle.</returns>
+        </member>
+        <member name="M:Mvc.RazorTools.ScriptsBundle.OnRender">
+            <summary>
+            Called to render link tags for a set of paths.
+            </summary>
+            <returns>An HTML string containing the link tag or tags for the bundle.</returns>
+        </member>
+        <member name="T:Mvc.RazorTools.StylesBundle">
+            <summary>
+            The styles bundle used by MVC Razor Tools.
+            </summary>
+        </member>
+        <member name="M:Mvc.RazorTools.StylesBundle.OnGetNewBundle">
+            <summary>
+            Creates a new bundle of the type represented by this instance.
+            </summary>
+            <returns>A newly created bundle.</returns>
+        </member>
+        <member name="M:Mvc.RazorTools.StylesBundle.OnRender">
+            <summary>
+            Called to render link tags for a set of paths.
+            </summary>
+            <returns>An HTML string containing the link tag or tags for the bundle.</returns>
+        </member>
+        <member name="T:Mvc.RazorTools.IMvcRazorClassAttributes">
+            <summary>
+            The class attributes added when the HTML tag is rendered.
+            </summary>
+        </member>
+        <member name="M:Mvc.RazorTools.IMvcRazorClassAttributes.AddClassAttribute(System.String)">
+            <summary>
+            Add a custom class attribute to the set contained within this implementation. The
+            key and the value will contain the value of 'item'. Item is the value that 
+            will be used when formatting the HTML class attribute.
+            </summary>
+            <param name="item">A System.String value containing the attribute to be included in the HTML markup.</param>
+        </member>
+        <member name="M:Mvc.RazorTools.IMvcRazorClassAttributes.AddClassAttribute(System.String,System.String)">
+            <summary>
+            Add a custom class attribute to the set contained within this implementation. the key is used for 
+            here for lookup and replacement of existing attribute. Item is the value that will be used when 
+            formatting the HTML class attribute.
+            </summary>
+            <param name="key">A System.String value to provide a key to lookup the attribute in this set.</param>
+            <param name="item">A System.String value containing the attribute to be included in the HTML markup.</param>
+        </member>
+        <member name="M:Mvc.RazorTools.IMvcRazorClassAttributes.UpdateClassAttribute(System.String)">
+            <summary>
+            Update an exiting custom class attribute contained in this implementation. The value for
+            item is to lookup the existing attribute. If the value exists it will be replaced 
+            otherwise it will added to the list.
+            </summary>
+            <param name="item">A System.String value containing the attribute to be included in the HTML markup.</param>
+        </member>
+        <member name="M:Mvc.RazorTools.IMvcRazorClassAttributes.UpdateClassAttribute(System.String,System.String)">
+            <summary>
+            Update an exiting custom class attribute contained in this implementation. The value for
+            key is used to lookup the existing attribute. If the value exists it will be 
+            replaced otherwise it will added to the list.
+            </summary>
+            <param name="key">A System.String value to provide a key to lookup the attribute in this set.</param>
+            <param name="item">A System.String value containing the attribute to be included in the HTML markup.</param>
+        </member>
+        <member name="M:Mvc.RazorTools.IMvcRazorClassAttributes.MergeClassAttributes(System.Collections.Generic.IDictionary{System.String,System.String})">
+            <summary>
+            Merges a set of class attributes with the current items.
+            </summary>
+            <param name="items">An list of attribute keys and values to be merged
+            into the current set in this implementation.</param>
+        </member>
+        <member name="M:Mvc.RazorTools.IMvcRazorClassAttributes.MergeClassAttributes(System.Collections.Generic.IEnumerable{System.String})">
+            <summary>
+            Merges a set of class attributes with the current items.
+            </summary>
+            <param name="items">A list of attribute values to be merged
+            into the current set in this implementation.</param>
+        </member>
+        <member name="P:Mvc.RazorTools.IMvcRazorClassAttributes.ClassAttributes">
+            <summary>
+            Gets the set of class attributes used when formatting the HTML tag.
+            </summary>
+        </member>
+        <member name="T:Mvc.RazorTools.IMvcRazorStyles">
+            <summary>
+            The styles added when the HTML tag is rendered.
+            </summary>
+        </member>
+        <member name="M:Mvc.RazorTools.IMvcRazorStyles.AddStyle(System.String,System.String)">
+            <summary>
+            Add a style to the set contained within this instance when formatting the HTML markup.
+            </summary>
+            <param name="name">A System.String representing the style name.</param>
+            <param name="value">A System.String representing the style value..</param>
+        </member>
+        <member name="M:Mvc.RazorTools.IMvcRazorStyles.MergeStyles(System.Collections.Generic.IDictionary{System.String,System.String})">
+            <summary>
+            Merges a set of styles with the current items.
+            </summary>
+            <param name="items">A list of style names and values to be merged
+            into the current set in this instance.</param>
+        </member>
+        <member name="M:Mvc.RazorTools.IMvcRazorStyles.UpdateStyle(System.String,System.String)">
+            <summary>
+            Update an exiting style contained in this instance. If the value exists 
+            it will be replaced otherwise it will added to the list.
+            </summary>
+            <param name="name">A System.String representing the style name.</param>
+            <param name="value">A System.String representing the style value.</param>
+        </member>
+        <member name="P:Mvc.RazorTools.IMvcRazorStyles.Styles">
+            <summary>
+            Gets a list of styles added when formatting the HTML markup.
+            </summary>
+        </member>
+        <member name="T:Mvc.RazorTools.IMvcRazorAttributes">
+            <summary>
+            The attributes added when the HTML tag is rendered.
+            </summary>
+        </member>
+        <member name="M:Mvc.RazorTools.IMvcRazorAttributes.AddAttribute(System.String,System.String)">
+            <summary>
+            Add an attribute to the set contained within this instance when formatting the HTML markup.
+            </summary>
+            <param name="name">A System.String representing the attribute name.</param>
+            <param name="value">A System.String value containing the attribute to be included in the HTML markup.</param>
+        </member>
+        <member name="M:Mvc.RazorTools.IMvcRazorAttributes.MergeAttributes(System.Collections.Generic.IDictionary{System.String,System.String})">
+            <summary>
+            Merges a set of attributes with the current items.
+            </summary>
+            <param name="items">A list of attribute names and values to be merged
+            into the current set in this instance.</param>
+        </member>
+        <member name="M:Mvc.RazorTools.IMvcRazorAttributes.UpdateAttribute(System.String,System.String)">
+            <summary>
+            Update an exiting attribute contained in this instance. If the value exists 
+            it will be replaced otherwise it will added to the list.
+            </summary>
+            <param name="name">A System.String representing the attribute name.</param>
+            <param name="value">A System.String value containing the attribute to be included in the HTML markup.</param>
+        </member>
+        <member name="P:Mvc.RazorTools.IMvcRazorAttributes.Attributes">
+            <summary>
+            Gets a list of attributes added when formatting the HTML markup.
+            </summary>
+        </member>
+        <member name="T:Mvc.RazorTools.MvcRazorException">
+            <summary>
+            Provides a abstract definition for an exception in this library.
+            </summary>
+        </member>
+        <member name="M:Mvc.RazorTools.MvcRazorException.#ctor">
+            <summary>
+            Initializes a new instance of the Mvc.RazorTools.MvcRazorException class.
+            </summary>
+        </member>
+        <member name="M:Mvc.RazorTools.MvcRazorException.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the Mvc.RazorTools.MvcRazorException 
+            class with the specified error message.
+            </summary>
+            <param name="message">A System.String containing the error message that describes the exception.</param>
+        </member>
+        <member name="M:Mvc.RazorTools.MvcRazorException.#ctor(System.String,System.Object[])">
+            <summary>
+            Initializes a new instance of the Mvc.RazorTools.MvcRazorException 
+            class with the specified formatted error message.
+            </summary>
+            <param name="format">A composite format string.</param>
+            <param name="args">An object array that contains zero or more objects to format.</param>
+        </member>
+        <member name="M:Mvc.RazorTools.MvcRazorException.#ctor(System.String,System.Exception)">
+            <summary>
+            Initializes a new instance of the Mvc.RazorTools.MvcRazorException
+            class with a specified error message and a reference to the inner exception 
+            that is the cause of this exception.
+            </summary>
+            <param name="message"></param>
+            <param name="innerException">The exception that is the cause of the current exception, or a null reference
+            (Nothing in Visual Basic) if no inner exception is specified.</param>
+        </member>
+        <member name="M:Mvc.RazorTools.MvcRazorException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            When overridden in a derived class, sets the System.Runtime.Serialization.SerializationInfo 
+            with information about the exception.
+            </summary>
+            <param name="info">The System.Runtime.Serialization.SerializationInfo that holds the serialized 
+            object data about the exception being thrown.</param>
+            <param name="context">The System.Runtime.Serialization.StreamingContext that contains contextual 
+            information about the source or destination.</param>
+        </member>
+        <member name="T:Mvc.RazorTools.ModifyLockedInstanceException">
+            <summary>
+            Defines an exception thrown when trying to modify a locked icon instance.
+            </summary>
+        </member>
+        <member name="M:Mvc.RazorTools.ModifyLockedInstanceException.#ctor">
+            <summary>
+            Initializes a new instance of this exception.
+            </summary>
+        </member>
+        <member name="T:Mvc.RazorTools.MvcRazorObject">
+            <summary>
+            Provides a default abstract implementation of the IFontAwesomeObject interface.
+            </summary>
+        </member>
+        <member name="T:Mvc.RazorTools.IMvcRazorObject">
+            <summary>
+            Provides the basic methods for an HTML tag object in this library
+            including basic operations to add custom class attributes.
+            </summary>
+        </member>
+        <member name="P:Mvc.RazorTools.IMvcRazorObject.Id">
+            <summary>
+            Gets/sets the HTML node ID for this object. Read-only if this implementation is locked.
+            </summary>
+        </member>
+        <member name="P:Mvc.RazorTools.IMvcRazorObject.Name">
+            <summary>
+            Gets/sets the name of this implementation. This value is for display or managing
+            purposes only and is not used internally by this library. Read-only if 
+            this implementation is locked.
+            </summary>
+        </member>
+        <member name="P:Mvc.RazorTools.IMvcRazorObject.HtmlTag">
+            <summary>
+            Gets/sets the default HTML parent tag that will be generated from this
+            MVC Razor Object.
+            </summary>
+        </member>
+        <member name="P:Mvc.RazorTools.IMvcRazorObject.Locked">
+            <summary>
+            Gets/sets value that indicates of this implementation is locked. Once locked,
+            the implementation cannot be unlocked.
+            </summary>
+        </member>
+        <member name="P:Mvc.RazorTools.IMvcRazorObject.Html">
+            <summary>
+            Gets the MvcHtmlString containing the HTML markup of this implementation.
+            </summary>
+        </member>
+        <member name="P:Mvc.RazorTools.IMvcRazorObject.IncludeIdInHtml">
+            <summary>
+            Gets/sets value that determines if the element Id tag is included in the
+            Class Attributes HTL.
+            </summary>
+        </member>
+        <member name="M:Mvc.RazorTools.MvcRazorObject.#ctor">
+            <summary>
+            Initializes a new instance of a Mvc.RazorTools.MvcRazorObject object 
+            </summary>
+        </member>
+        <member name="M:Mvc.RazorTools.MvcRazorObject.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of a Mvc.RazorTools.MvcRazorObject object with the
+            specified Id.
+            </summary>
+            <param name="id">The CSS style sheet name of the icon this instance represents.</param>
+        </member>
+        <member name="M:Mvc.RazorTools.MvcRazorObject.ToString">
+            <summary>
+            Returns a string that contains the HTML of the current object.
+            </summary>
+            <returns>A string that contains the HTML of the current object.</returns>
+        </member>
+        <member name="M:Mvc.RazorTools.MvcRazorObject.Clone">
+            <summary>
+            Returns a deep copy of this instance.
+            </summary>
+            <returns>A newly initialized MVC Razor object.</returns>
+        </member>
+        <member name="M:Mvc.RazorTools.MvcRazorObject.MergeAttributes(System.Collections.Generic.IDictionary{System.String,System.String})">
+            <summary>
+            Merges a set of attributes with the current items.
+            </summary>
+            <param name="items">A list of attribute names and values to be merged
+            into the current set in this instance.</param>
+        </member>
+        <member name="M:Mvc.RazorTools.MvcRazorObject.UpdateAttribute(System.String,System.String)">
+            <summary>
+            Update an exiting attribute contained in this instance. If the value exists 
+            it will be replaced otherwise it will added to the list.
+            </summary>
+            <param name="name">A System.String representing the attribute name.</param>
+            <param name="value">A System.String value containing the attribute to be included in the HTML markup.</param>
+        </member>
+        <member name="M:Mvc.RazorTools.MvcRazorObject.AddAttribute(System.String,System.String)">
+            <summary>
+            Add an attribute to the set contained within this instance when formatting the HTML markup.
+            </summary>
+            <param name="name">A System.String representing the attribute name.</param>
+            <param name="value">A System.String value containing the attribute to be included in the HTML markup.</param>
+        </member>
+        <member name="M:Mvc.RazorTools.MvcRazorObject.MergeStyles(System.Collections.Generic.IDictionary{System.String,System.String})">
+            <summary>
+            Merges a set of styles with the current items.
+            </summary>
+            <param name="items">A list of style names and values to be merged
+            into the current set in this instance.</param>
+        </member>
+        <member name="M:Mvc.RazorTools.MvcRazorObject.UpdateStyle(System.String,System.String)">
+            <summary>
+            Update an exiting style contained in this instance. If the value exists 
+            it will be replaced otherwise it will added to the list.
+            </summary>
+            <param name="name">A System.String representing the style name.</param>
+            <param name="value">A System.String representing the style value.</param>
+        </member>
+        <member name="M:Mvc.RazorTools.MvcRazorObject.AddStyle(System.String,System.String)">
+            <summary>
+            Add a style to the set contained within this instance when formatting the HTML markup.
+            </summary>
+            <param name="name">A System.String representing the style name.</param>
+            <param name="value">A System.String representing the style value..</param>
+        </member>
+        <member name="M:Mvc.RazorTools.MvcRazorObject.AddClassAttribute(System.String)">
+            <summary>
+            Add a custom class attribute to the set contained within this instance. The
+            key and the value will contain the value of 'item'. Item is the value that 
+            will be used when formatting the HTML class attribute.
+            </summary>
+            <param name="item"></param>
+        </member>
+        <member name="M:Mvc.RazorTools.MvcRazorObject.AddClassAttribute(System.String,System.String)">
+            <summary>
+            Add a custom class attribute to the set contained within this instance. the key is used for 
+            here for lookup and replacement of existing attribute. Item is the value that will be used when 
+            formatting the HTML class attribute.
+            </summary>
+            <param name="key">A System.String value to provide a key to lookup the attribute in this set.</param>
+            <param name="item">A System.String value containing the attribute to be included in the HTML markup.</param>
+        </member>
+        <member name="M:Mvc.RazorTools.MvcRazorObject.UpdateClassAttribute(System.String)">
+            <summary>
+            Update an exiting custom class attribute contained in this instance. The value for
+            item is to lookup the existing attribute. If the value exists it will be replaced 
+            otherwise it will added to the list.
+            </summary>
+            <param name="item">A System.String value containing the attribute to be included in the HTML markup.</param>
+        </member>
+        <member name="M:Mvc.RazorTools.MvcRazorObject.UpdateClassAttribute(System.String,System.String)">
+            <summary>
+            Update an exiting custom class attribute contained in this instance. The value for
+            key is used to lookup the existing attribute. If the value exists it will be 
+            replaced otherwise it will added to the list.
+            </summary>
+            <param name="key">A System.String value to provide a key to lookup the attribute in this set.</param>
+            <param name="item">A System.String value containing the attribute to be included in the HTML markup.</param>
+        </member>
+        <member name="M:Mvc.RazorTools.MvcRazorObject.MergeClassAttributes(System.Collections.Generic.IDictionary{System.String,System.String})">
+            <summary>
+            Merges a set of class attributes with the current items.
+            </summary>
+            <param name="items">A list of attribute keys and values to be merged
+            into the current set in this instance.</param>
+        </member>
+        <member name="M:Mvc.RazorTools.MvcRazorObject.MergeClassAttributes(System.Collections.Generic.IEnumerable{System.String})">
+            <summary>
+            Merges a set of class attributes with the current items.
+            </summary>
+            <param name="items">A list of attribute values to be merged
+            into the current set in this instance.</param>
+        </member>
+        <member name="M:Mvc.RazorTools.MvcRazorObject.op_Implicit(Mvc.RazorTools.MvcRazorObject)~System.Web.Mvc.MvcHtmlString">
+            <summary>
+            Converts this instance of the Mvc.RazorTools.FontAwesome.FontAwesomeBase
+            to an System.Web.Mvc.MvcHtmlString object containing the HTML markup 
+            for the icon.
+            </summary>
+            <param name="item">The Mvc.RazorTools.FontAwesome.FontAwesomeBase instance to be converted.</param>
+            <returns>A System.Web.Mvc.MvcHtmlString object containing the HTML markup for this Font Awesome icon.</returns>
+        </member>
+        <member name="M:Mvc.RazorTools.MvcRazorObject.op_Implicit(Mvc.RazorTools.MvcRazorObject)~System.String">
+            <summary>
+            Converts this instance of the Mvc.RazorTools.FontAwesome.FontAwesomeBase
+            to an System.String object containing the HTML markup for the icon.
+            </summary>
+            <param name="item">The Mvc.RazorTools.FontAwesome.FontAwesomeBase instance to be converted.</param>
+            <returns>A System.String object containing the HTML markup for this Font Awesome icon.</returns>
+        </member>
+        <member name="M:Mvc.RazorTools.MvcRazorObject.OnGetHtml">
+            <summary>
+            Gets an MvcHtmlString object containing the HTML markup for this instance. This method must be overridden.
+            </summary>
+            <returns>A System.Web.Mvc.MvcHtmlString object containing the HTML markup for this Font Awesome icon.</returns>
+        </member>
+        <member name="M:Mvc.RazorTools.MvcRazorObject.OnInitializeId">
+            <summary>
+            Allows the derived class to initialize the Id without
+            the need to override the Id property. The default
+            implementation is to use a GUID as the Id value.
+            </summary>
+            <returns>A System.String representing the Id for this instance.</returns>
+        </member>
+        <member name="M:Mvc.RazorTools.MvcRazorObject.OnInitializeName">
+            <summary>
+            Allows the derived class to initialize the Name without
+            the need to override the name property. The default
+            implementation is to use a HTML Tag and the Id value.
+            </summary>
+            <returns>A System.String representing the Name for this instance.</returns>
+        </member>
+        <member name="M:Mvc.RazorTools.MvcRazorObject.OnInitializeHtmlTag">
+            <summary>
+            Allows the derived class to initialize the HTML Tag without
+            the need to override the HtmlTag property. The default
+            implementation is to use 'span' as the HtmlTag.
+            </summary>
+            <returns>A System.String representing the HTML Tag for this instance.</returns>
+        </member>
+        <member name="M:Mvc.RazorTools.MvcRazorObject.OnClone">
+            <summary>
+            Allows the derived class to respond to the Clone() method
+            without the need to override the HtmlTag property.
+            </summary>
+            <returns>Returns a deep copy of this instance.</returns>
+        </member>
+        <member name="M:Mvc.RazorTools.MvcRazorObject.OnGetHtmlStart">
+            <summary>
+            Creates the HTML TagBuilder object used to create the HTML markup. This
+            step is called first in a series of steps to build the markup.
+            </summary>
+            <returns>The TagBuilder object used to create the HTML markup.</returns>
+        </member>
+        <member name="M:Mvc.RazorTools.MvcRazorObject.OnGetHtmlId(System.Web.Mvc.TagBuilder)">
+            <summary>
+            Adds the id attribute to the HTML markup tag. This is the second step in
+            a series of steps to build the markup.
+            </summary>
+            <param name="tag">The TagBuilder object used to create the HTML markup.</param>
+        </member>
+        <member name="M:Mvc.RazorTools.MvcRazorObject.OnGetHtmlClassAttributes(System.Web.Mvc.TagBuilder)">
+            <summary>
+            Adds the class attribute to the HTML markup tag. This is the third step in
+            a series of steps to build the markup.
+            </summary>
+            <param name="tag">The TagBuilder object used to create the HTML markup.</param>
+        </member>
+        <member name="M:Mvc.RazorTools.MvcRazorObject.OnGetHtmlAttributes(System.Web.Mvc.TagBuilder)">
+            <summary>
+            Adds the tag attribute to the HTML markup tag. This is the fourth step in
+            a series of steps to build the markup.
+            </summary>
+            <param name="tag">The TagBuilder object used to create the HTML markup.</param>
+        </member>
+        <member name="M:Mvc.RazorTools.MvcRazorObject.OnGetHtmlStyles(System.Web.Mvc.TagBuilder)">
+            <summary>
+            Adds the tag attribute to the HTML markup tag. This is the fifth step in
+            a series of steps to build the markup.
+            </summary>
+            <param name="tag">The TagBuilder object used to create the HTML markup.</param>
+        </member>
+        <member name="M:Mvc.RazorTools.MvcRazorObject.OnGetInnerHtml(System.Web.Mvc.TagBuilder)">
+            <summary>
+            Called to get inner HTML markup. This is the sixth 
+            step in a series of steps to build the markup.
+            </summary>
+            <param name="html">The TagBuilder object used to create the HTML markup.</param>
+        </member>
+        <member name="M:Mvc.RazorTools.MvcRazorObject.OnGetHtmlStartComplete(System.Web.Mvc.TagBuilder)">
+            <summary>
+            Called to add any final attributes to the HTML markup tag. This is the seventh 
+            and final step in a series of steps to build the markup.
+            </summary>
+            <param name="html">The TagBuilder object used to create the HTML markup.</param>
+        </member>
+        <member name="P:Mvc.RazorTools.MvcRazorObject.Id">
+            <summary>
+            Gets/sets the HTML node ID for this object. Read-only if this instanced is locked.
+            </summary>
+        </member>
+        <member name="P:Mvc.RazorTools.MvcRazorObject.Locked">
+            <summary>
+            Gets/sets value that indicates of this instance is locked. Once locked,
+            the instance cannot be unlocked.
+            </summary>
+        </member>
+        <member name="P:Mvc.RazorTools.MvcRazorObject.HtmlTag">
+            <summary>
+            Gets/sets the HTML tag that is used to represent the object when the
+            the HTML markup is generated. This value should be the text portion of
+            the tag only.
+            </summary>
+        </member>
+        <member name="P:Mvc.RazorTools.MvcRazorObject.Name">
+            <summary>
+            Gets/sets the name of this instance. This value is for display or managing
+            purposes only and is not used internally by this library. Read-only if 
+            this instanced is locked.
+            </summary>
+        </member>
+        <member name="P:Mvc.RazorTools.MvcRazorObject.IncludeIdInHtml">
+            <summary>
+            Gets/sets value that determines if the element Id tag is included in the
+            Class Attributes HTL.
+            </summary>
+        </member>
+        <member name="P:Mvc.RazorTools.MvcRazorObject.Html">
+            <summary>
+            Gets an MvcHtmlString object containing the HTML markup for this instance.
+            </summary>
+        </member>
+        <member name="P:Mvc.RazorTools.MvcRazorObject.Attributes">
+            <summary>
+            Gets a list of attributes added when formatting the HTML markup.
+            </summary>
+        </member>
+        <member name="P:Mvc.RazorTools.MvcRazorObject.Styles">
+            <summary>
+            Gets a list of styles added when formatting the HTML markup.
+            </summary>
+        </member>
+        <member name="P:Mvc.RazorTools.MvcRazorObject.ClassAttributes">
+            <summary>
+            Gets a list of class attributes added when formatting the HTML tag.
+            </summary>
+        </member>
+        <member name="T:Mvc.RazorTools.MvcRazorObject.Constants">
+            <summary>
+            Constants used internally.
+            </summary>
+        </member>
+        <member name="F:Mvc.RazorTools.MvcRazorObject.Constants.IdAttributeName">
+            <summary>
+            This is the name of the Id element in the HTML markup.
+            </summary>
+        </member>
+        <member name="F:Mvc.RazorTools.MvcRazorObject.Constants.Space">
+            <summary>
+            A space.
+            </summary>
+        </member>
+    </members>
+</doc>

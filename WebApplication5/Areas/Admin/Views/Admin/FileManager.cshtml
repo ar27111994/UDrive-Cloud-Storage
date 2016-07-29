@@ -1,0 +1,17 @@
+﻿@model IEnumerable<WebApplication5.Models.ApplicationUser>
+
+@{
+    ViewBag.Title = "ManageUser";
+}
+
+    <!-- Content Wrapper. Contains page content -->
+    <div class="content-wrapper">
+        <!-- Content Header (Page header) -->
+
+        @using (Html.BeginForm())
+        {
+            @Html.Action("FileManager1Partial")
+        }
+
+
+    </div><!-- ./wrapper -->

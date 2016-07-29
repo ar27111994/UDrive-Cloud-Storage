@@ -1,0 +1,60 @@
+﻿@model WebApplication5.Models.RegisterViewModel
+@{
+    ViewBag.Title = "Register";
+}
+
+<h2 style="color:white">@ViewBag.Title.</h2>
+
+@using (Html.BeginForm("Register", "Account", FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
+{
+    @Html.AntiForgeryToken()
+    <h4 style="color:white">Create a new account.</h4>
+
+    <div class="row">
+      
+        <div class="col-md-7">
+            <hr />
+
+            <div style="margin-left:50px">
+                @Html.ValidationSummary("", new { @class = "text-danger" })
+                <div class="form-group" style="color:white">
+                    @Html.LabelFor(m => m.Email, new { @class = "col-md-2 control-label" })
+                    <div class="col-md-10" style="color:white">
+                        @Html.TextBoxFor(m => m.Email, new { @class = "form-control" })
+                    </div>
+                </div>
+                <div class="form-group" style="color:white;">
+                    @Html.LabelFor(m => m.Password, new { @class = "col-md-2 control-label" })
+                    <div class="col-md-10" style="color:white">
+                        @Html.PasswordFor(m => m.Password, new { @class = "form-control" })
+                    </div>
+                </div>
+                <div class="form-group" style="color:white">
+                    @Html.LabelFor(m => m.ConfirmPassword, new { @class = "col-md-2 control-label" })
+                    <div class="col-md-10">
+                        @Html.PasswordFor(m => m.ConfirmPassword, new { @class = "form-control" })
+                    </div>
+                </div>
+                <div class="form-group success">
+                    <div class="col-md-offset-2 col-md-10">
+                        <input type="submit" class="btn btn-success" value="Register" />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-5" style="color:white">
+            <h4>Register and get free storage.</h4>
+            <hr />
+            <p>
+                You only have to remember Email and Password
+                </p>
+            <p> and all your data is secured in UDrive.
+            </p>
+
+        </div>
+    </div>
+}
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

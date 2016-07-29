@@ -1,0 +1,11 @@
+@Html.DevExpress().ImageGallery(settings => {
+    settings.Name = "ImageGallery";
+	settings.CallbackRouteValues = new { Controller = "Home", Action = "ImageGalleryPartial1" };
+	settings.AllowPaging = true;
+	settings.Layout = DevExpress.Web.Layout.Table;
+	settings.SettingsTableLayout.RowsPerPage = 3;
+	settings.SettingsTableLayout.ColumnCount = 4;
+    
+
+    settings.ImageCacheFolder = @"~\ImageCache";
+}).BindToFolder(Model).GetHtml()

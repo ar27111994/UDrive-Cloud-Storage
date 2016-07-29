@@ -1,0 +1,52 @@
+﻿@model IEnumerable<WebApplication5.Models.Package>
+
+@{
+    ViewBag.Title = "dummy";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>dummy</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.PackageName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.OnlineStorage)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.MoneyBack)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Price)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.PackageName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.OnlineStorage)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.MoneyBack)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Price)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.PackageId }) |
+            @Html.ActionLink("Details", "Details", new { id=item.PackageId }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.PackageId })
+        </td>
+    </tr>
+}
+
+</table>

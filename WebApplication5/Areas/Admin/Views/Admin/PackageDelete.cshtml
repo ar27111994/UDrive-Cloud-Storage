@@ -1,0 +1,40 @@
+﻿@model WebApplication5.Models.Package
+<div class="content-wrapper">
+    <div class="row">
+        <div style="margin:50px;">
+
+            <h3>Are you sure you want to delete this?</h3>
+            <div>
+                <h4>Package</h4>
+                <hr />
+                <dl class="dl-horizontal">
+                    <dt>
+                        @Html.DisplayNameFor(model => model.PackageName)
+                    </dt>
+
+                    <dd>
+                        @Html.DisplayFor(model => model.PackageName)
+                    </dd>
+
+                    <dt>
+                        @Html.DisplayNameFor(model => model.Price)
+                    </dt>
+
+                    <dd>
+                        @Html.DisplayFor(model => model.Price)
+                    </dd>
+
+                </dl>
+
+                @using (Html.BeginForm("DeleteConfirmed", "Admin", new { area = "Admin",id=Model.PackageId }))
+            {
+                    @Html.AntiForgeryToken()
+
+                    <div class="form-actions no-color">
+                        <input type="submit" value="Delete" class="btn btn-danger" /> |
+                        @Html.ActionLink("Back to List", "PackageIndex")
+                    </div>
+                }
+            </div>
+        </div>
+    </div>

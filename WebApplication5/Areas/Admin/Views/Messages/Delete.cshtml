@@ -1,0 +1,50 @@
+﻿@model WebApplication5.Models.Messages
+<div class="content-wrapper">
+    <div class="row">
+        <div style="margin:50px;">
+
+
+            <h3>Are you sure you want to delete this?</h3>
+            <div>
+                <h4>Messages</h4>
+                <hr />
+                <dl class="dl-horizontal">
+                    <dt>
+                        @Html.DisplayNameFor(model => model.Message)
+                    </dt>
+
+                    <dd>
+                        @Html.DisplayFor(model => model.Message)
+                    </dd>
+
+                    <dt>
+                        @Html.DisplayNameFor(model => model.EmptyMessage)
+                    </dt>
+
+                    <dd>
+                        @Html.DisplayFor(model => model.EmptyMessage)
+                    </dd>
+
+                    <dt>
+                        @Html.DisplayNameFor(model => model.MessageDate)
+                    </dt>
+
+                    <dd>
+                        @Html.DisplayFor(model => model.MessageDate)
+                    </dd>
+
+                </dl>
+
+                @using (Html.BeginForm())
+                {
+                    @Html.AntiForgeryToken()
+
+                    <div class="form-actions no-color">
+                        <input type="submit" value="Delete" class="btn btn-default" /> |
+                        @Html.ActionLink("Back to List", "Index")
+                    </div>
+                }
+            </div>
+</div>
+</div>
+</div>

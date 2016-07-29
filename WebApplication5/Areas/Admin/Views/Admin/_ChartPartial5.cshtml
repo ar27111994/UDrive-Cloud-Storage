@@ -1,0 +1,7 @@
+@Html.DevExpress().Chart(settings => {
+    settings.Name = "Chart";
+    Series chartSeries = new Series("Series", DevExpress.XtraCharts.ViewType.Bar);
+    chartSeries.ArgumentDataMember = "Email";
+    chartSeries.ValueDataMembers[0] = "Email";
+    settings.Series.Add(chartSeries);
+}).Bind(Model).GetHtml()

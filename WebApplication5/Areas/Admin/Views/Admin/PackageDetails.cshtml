@@ -1,0 +1,45 @@
+﻿@model WebApplication5.Models.Package
+<div class="content-wrapper">
+    <div class="row">
+        <div class="col-md-6" style="margin:50px;">
+            <hr />
+            <dl class="dl-horizontal">
+                <dt>
+                    @Html.DisplayNameFor(model => model.PackageName)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.PackageName)
+                </dd>
+                <dt>
+                    @Html.DisplayNameFor(model => model.OnlineStorage)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.OnlineStorage)
+                </dd>
+                <dt>
+                    @Html.DisplayNameFor(model => model.MoneyBack)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.MoneyBack)
+                </dd>
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.Price)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.Price)
+                </dd>
+
+            </dl>
+
+            <p>
+                @Html.ActionLink("Edit", "PackageEdit", new { id = Model.PackageId }) |
+                @Html.ActionLink("Back to List", "PackageIndex")
+            </p>
+        </div>
+        </div>
+</div>
