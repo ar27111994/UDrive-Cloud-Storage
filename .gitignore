@@ -49,3 +49,7 @@ Temporary Items
 #ASP.NET Binaries
 WebApplication5/obj/
 WebApplication5/bin/
+node_modules/
+obj/
+packages/
+Debug/
